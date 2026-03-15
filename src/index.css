@@ -332,20 +332,27 @@ html, body {
   filter: none;
 }
 
+/* Dialog at bottom on all screens; background only above it (starts below header via .app__main padding-top) */
+.scene .scene-background {
+  bottom: 42% !important;
+}
+
 .scene__chat-wrap {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  width: min(36vw, 520px);
-  min-width: min(360px, calc(100vw - 2rem));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: auto;
+  width: 100%;
+  height: 42%;
+  max-height: 50vh;
   z-index: 30;
 }
 
 .scene__player-dock {
   position: absolute;
   left: 1rem;
-  bottom: 1.1rem;
+  bottom: 42%;
   z-index: 20;
 }
 
@@ -1210,27 +1217,48 @@ html, body {
     justify-content: flex-start;
   }
 
+  /* Progress shrink and left so earned badges have room on all screens */
   .app__progress {
     position: static;
     transform: none;
-    width: 100%;
+    width: auto;
+    max-width: 50%;
     min-width: 0;
     margin-bottom: 0.35rem;
+    padding: 0.08rem 0;
+  }
+
+  .app__progress-label,
+  .app__progress-value {
+    font-size: clamp(0.65rem, 1.5vw + 0.4rem, 0.85rem);
+  }
+
+  .app__progress-track {
+    height: clamp(0.3rem, 0.8vw, 0.45rem);
+  }
+
+  .app__progress-meta {
+    gap: 0.4rem;
+    margin-bottom: 0.25rem;
   }
 
   .scene__chat-wrap {
-    width: calc(100vw - 1rem);
-    min-width: auto;
-    right: 0.5rem;
-    left: 0.5rem;
-    bottom: 0.5rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     top: auto;
-    height: min(68vh, 620px);
+    height: 42%;
+    max-height: 50vh;
+  }
+
+  .scene .scene-background {
+    bottom: 42%;
   }
 
   .scene__player-dock {
     left: 0.5rem;
-    bottom: calc(min(68vh, 620px) + 1rem);
+    bottom: 42%;
   }
 }
 
@@ -1247,18 +1275,20 @@ html, body {
     min-height: calc(100vh - clamp(2.5rem, 10vw, 3.2rem));
   }
 
-  /* Upper half: exactly 50vh, background pinned to top to remove white strip, no overflow */
+  /* Upper half: exactly 50vh, background pinned to top; limit area so image only above dialog */
   .scene .scene-background {
-    flex: 0 0 50vh;
-    height: 50vh;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 50vh !important;
+    height: 50vh !important;
     min-height: 0;
     background-position: center top !important;
     overflow: hidden;
-    /* Pull image up slightly if the asset has white at the top (tune the value as needed) */
     background-position-y: -15px !important;
   }
 
-  /* Bottom half: strictly 50vh, never more, neutral light blue behind dialog */
+  /* Bottom half: strictly 50vh, transparent so background shows through */
   .scene__chat-wrap {
     position: relative;
     flex: 0 0 50vh;
@@ -1271,7 +1301,7 @@ html, body {
     left: auto;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    background: #dceef8;
+    background: transparent;
   }
 
   .scene__player-dock {
@@ -1318,17 +1348,34 @@ html, body {
     gap: 0.3rem;
   }
 
+  /* Keep chat panel semi-transparent (default gradient) on mobile */
   .scene__chat-wrap .chat-panel {
-    background: rgba(220, 238, 248, 0.97);
-    border-color: rgba(120, 180, 220, 0.5);
+    border-color: rgba(171, 126, 255, 0.5);
   }
 
-  .scene__chat-wrap .chat-panel__header {
-    border-bottom-color: rgba(120, 180, 220, 0.4);
+  /* Progress bar: shrink and move left so earned badges have room */
+  .app__progress {
+    max-width: 38%;
+    width: auto;
+    min-width: 0;
+    padding: 0.08rem 0;
   }
 
-  .scene__chat-wrap .chat-panel__title {
-    color: #0d2f47;
+  .app__progress-label {
+    font-size: clamp(0.58rem, 1.8vw + 0.35rem, 0.75rem);
+  }
+
+  .app__progress-value {
+    font-size: clamp(0.58rem, 1.8vw + 0.35rem, 0.75rem);
+  }
+
+  .app__progress-track {
+    height: clamp(0.28rem, 0.9vw, 0.4rem);
+  }
+
+  .app__progress-meta {
+    gap: 0.35rem;
+    margin-bottom: 0.2rem;
   }
 }
 
