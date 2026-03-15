@@ -1278,7 +1278,7 @@ html, body {
     flex-direction: column;
   }
 
-  /* Upper half: background fixed in viewport so it stays above the chatbox */
+  /* Upper half: background fixed in viewport; cover so image fills to 50vh (no white gap) */
   .scene .scene-background {
     position: fixed !important;
     top: 0 !important;
@@ -1287,6 +1287,7 @@ html, body {
     bottom: auto !important;
     height: 50vh !important;
     min-height: 0;
+    background-size: cover !important;
     background-position: center top !important;
     overflow: hidden;
     background-position-y: -15px !important;
