@@ -106,12 +106,12 @@ html, body {
   align-items: center;
   justify-content: flex-start;
   gap: clamp(0.2rem, 0.5vw, 0.35rem);
-  margin-left: clamp(0.5rem, 1.5vw, 1rem);
+  margin-left: clamp(1rem, 2.5vw, 1.75rem);
 }
 
 .app__award-label {
   color: rgba(255, 255, 255, 0.92);
-  font-size: clamp(0.6rem, 1.2vw + 0.4rem, 0.85rem);
+  font-size: clamp(0.5rem, 1vw + 0.35rem, 0.72rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -828,13 +828,13 @@ html, body {
   background: rgba(188, 250, 197, 0.92);
 }
 
-/* Activity panels: same style as chat-panel (transparent gradient), over lower end of background */
+/* Activity panels: same style as chat-panel (transparent gradient), anchored at bottom */
 .monitor-scene--keller-monitor-select .monitor-scene__bezel,
 .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
   position: absolute;
   left: 50%;
-  bottom: clamp(0.5rem, 1.5vh, 1rem);
+  bottom: 0;
   top: auto;
   transform: translateX(-50%);
   width: min(50vw, 960px);
@@ -928,23 +928,25 @@ html, body {
   border-color: rgba(168, 200, 227, 0.6);
 }
 
+/* Aktivität: match chat-panel text and button sizes (same as other chatboxes) */
 .monitor-scene--keller-monitor-select .monitor-scene__option,
 .monitor-scene--grossraum-monitor-select .monitor-scene__option,
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__option {
-  font-size: clamp(0.95rem, 2vw + 0.6rem, 1.2rem);
-  padding: 0.65rem 0.8rem;
+  font-size: 1.45rem;
+  padding: 0.8rem 0.9rem;
+  font-weight: 600;
 }
 
 .monitor-scene--keller-monitor-select .monitor-message__speaker,
 .monitor-scene--grossraum-monitor-select .monitor-message__speaker,
 .monitor-scene--einzelbuero-tablet-select .monitor-message__speaker {
-  font-size: clamp(0.75rem, 1.5vw + 0.4rem, 0.88rem);
+  font-size: 0.9rem;
 }
 
 .monitor-scene--keller-monitor-select .monitor-message__paragraph,
 .monitor-scene--grossraum-monitor-select .monitor-message__paragraph,
 .monitor-scene--einzelbuero-tablet-select .monitor-message__paragraph {
-  font-size: clamp(0.88rem, 1.5vw + 0.45rem, 1.02rem);
+  font-size: 1.02rem;
 }
 
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__screen {
@@ -1081,7 +1083,7 @@ html, body {
     max-width: calc(100vw - 1rem);
     height: min(58vh, 640px);
     left: 50%;
-    bottom: clamp(0.5rem, 1.5vh, 1rem);
+    bottom: 0;
     top: auto;
     transform: translateX(-50%);
     border-radius: 18px;
@@ -1492,6 +1494,35 @@ html, body {
   .app__progress-meta {
     gap: 0.35rem;
     margin-bottom: 0.2rem;
+  }
+
+  /* Aktivität screens: dialog anchored at bottom, same text/button sizes as mobile chat */
+  .monitor-scene--keller-monitor-select .monitor-scene__bezel,
+  .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
+  .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
+    bottom: 0;
+    height: min(50vh, 520px);
+    padding: 0.6rem 0.75rem;
+  }
+
+  .monitor-scene--keller-monitor-select .monitor-message__speaker,
+  .monitor-scene--grossraum-monitor-select .monitor-message__speaker,
+  .monitor-scene--einzelbuero-tablet-select .monitor-message__speaker {
+    font-size: clamp(0.65rem, 2vw, 0.75rem);
+  }
+
+  .monitor-scene--keller-monitor-select .monitor-message__paragraph,
+  .monitor-scene--grossraum-monitor-select .monitor-message__paragraph,
+  .monitor-scene--einzelbuero-tablet-select .monitor-message__paragraph {
+    font-size: clamp(0.7rem, 2.2vw, 0.82rem);
+  }
+
+  .monitor-scene--keller-monitor-select .monitor-scene__option,
+  .monitor-scene--grossraum-monitor-select .monitor-scene__option,
+  .monitor-scene--einzelbuero-tablet-select .monitor-scene__option {
+    font-size: clamp(0.8rem, 2.8vw, 1rem);
+    padding: 0.4rem 0.5rem;
+    font-weight: 500;
   }
 }
 
