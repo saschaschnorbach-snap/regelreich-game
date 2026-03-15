@@ -1379,20 +1379,27 @@ html, body {
     min-height: 50dvh;
   }
 
-  /* Activity screen: fix dialog to viewport bottom so it is always visible */
+  /* Part 4.3/4.4: scale background so room (not only tablet) is visible on mobile */
+  .scene .scene-background--einzelbuero-tablet {
+    background-size: contain !important;
+    background-position: center center !important;
+  }
+
+  /* Activity screen: fix dialog flush with background (top 50svh), no white gap */
   .scene .monitor-scene--keller-monitor-select .monitor-scene__bezel,
   .scene .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
   .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
     position: fixed;
+    top: 50vh;
+    top: 50dvh;
+    top: 50svh;
     left: 50%;
-    bottom: 0;
     right: auto;
-    top: auto;
-    transform: translateX(-50%);
+    bottom: 0;
     width: min(95vw, 980px);
     max-width: calc(100vw - 1rem);
-    height: min(50vh, 520px);
-    height: min(50dvh, 520px);
+    height: auto;
+    transform: translateX(-50%);
     z-index: 30;
   }
 
@@ -1455,6 +1462,51 @@ html, body {
     bottom: 50dvh;
     bottom: 50svh;
     transform: none;
+  }
+
+  /* All activity dialogs (2.3/2.4, 3.x, 4.3/4.4): same layout – text above, buttons fixed at bottom */
+  .scene .monitor-scene--grossraum-monitor-select .monitor-scene__screen,
+  .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .scene .monitor-scene--grossraum-monitor-select .monitor-scene__messages,
+  .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__messages {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: calc(9rem + 1rem);
+    flex: none !important;
+    max-height: none !important;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.35rem 0.45rem;
+  }
+  .scene .monitor-scene--grossraum-monitor-select .monitor-scene__options,
+  .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__options {
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 9rem;
+    transform: none !important;
+    top: auto !important;
+    flex-direction: column !important;
+    padding: 0.45rem 0.5rem;
+    padding-bottom: max(0.45rem, env(safe-area-inset-bottom));
+    gap: 0.4rem;
+  }
+  .scene .monitor-scene--grossraum-monitor-select .monitor-scene__option,
+  .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__option {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    white-space: normal !important;
+    font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+    padding: 0.5rem 0.6rem;
   }
 
   /* Shrink dialog text and buttons further so they fit in lower half */

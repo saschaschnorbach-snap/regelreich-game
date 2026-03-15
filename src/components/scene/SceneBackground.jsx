@@ -11,6 +11,10 @@ export function SceneBackground({
   const isEinzelbueroTablet = String(backgroundImage || '').includes('einzelbuero_tablet')
   const isWelcomeScene = String(backgroundImage || '').includes('/backgrounds/Willkommen.png')
   const size = backgroundFit === 'cover' ? 'cover' : 'contain'
+  const className = [
+    'scene-background',
+    isEinzelbueroTablet ? 'scene-background--einzelbuero-tablet' : '',
+  ].filter(Boolean).join(' ')
   const style = {
     position: 'absolute',
     inset: 0,
@@ -24,5 +28,5 @@ export function SceneBackground({
       ? { backgroundImage: `url(${backgroundImage})` }
       : { background: backgroundPlaceholder || 'var(--scene-bg-fallback, #e0e8f0)' }),
   }
-  return <div className="scene-background" style={style} aria-hidden="true" />
+  return <div className={className} style={style} aria-hidden="true" />
 }
