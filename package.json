@@ -1,0 +1,75 @@
+{
+  "name": "regelreich-game",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/index.js",
+    "server:dev": "node --watch server/index.js",
+    "predev:full": "node scripts/free-ports.mjs 3001 5173 5174",
+    "dev:full": "node scripts/run-dev.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/App.jsx src/pages/GameScreen.jsx src/pages/AdminDialogScreen.jsx src/components/chat/ChatPanel.jsx src/components/scene/MonitorActivityScene.jsx server/app.js server/index.js server/lib/dialogStore.js server/lib/dialogValidation.js server/lib/dialogSeed.js vite.config.js",
+    "lint:fix": "eslint --fix src/App.jsx src/pages/GameScreen.jsx src/pages/AdminDialogScreen.jsx src/components/chat/ChatPanel.jsx src/components/scene/MonitorActivityScene.jsx server/app.js server/index.js server/lib/dialogStore.js server/lib/dialogValidation.js server/lib/dialogSeed.js vite.config.js",
+    "format": "prettier --write package.json vite.config.js src/App.jsx src/pages/GameScreen.jsx src/pages/AdminDialogScreen.jsx src/components/chat/ChatPanel.jsx src/components/scene/MonitorActivityScene.jsx server/app.js server/index.js server/lib/dialogStore.js server/lib/dialogValidation.js server/lib/dialogSeed.js docs/README.md docs/TASKS_NEXT.md",
+    "format:check": "prettier --check package.json vite.config.js src/App.jsx src/pages/GameScreen.jsx src/pages/AdminDialogScreen.jsx src/components/chat/ChatPanel.jsx src/components/scene/MonitorActivityScene.jsx server/app.js server/index.js server/lib/dialogStore.js server/lib/dialogValidation.js server/lib/dialogSeed.js docs/README.md docs/TASKS_NEXT.md"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.2.1",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.6.2",
+    "vite": "^6.0.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2024": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:react-hooks/recommended"
+    ],
+    "plugins": [
+      "react"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "react/jsx-uses-vars": "error",
+      "react-hooks/exhaustive-deps": "off"
+    },
+    "ignorePatterns": [
+      "dist/"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}

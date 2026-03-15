@@ -1,0 +1,2154 @@
+{
+  "scenes": [
+    {
+      "sceneId": -1,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [],
+          "options": [
+            {
+              "id": "start",
+              "label": "Start",
+              "nextPart": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 0,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Willkommen in Regelreich.\n\nIn dieser Stadt entstehen Regeln nicht hinter verschlossenen Türen – sie entstehen im Gespräch."
+            },
+            {
+              "hostId": "ambassador",
+              "text": "Neue Vorschläge werden veröffentlicht. Bürger und Bürgerinnen kommentieren. Ideen werden diskutiert, verändert, manchmal verworfen."
+            },
+            {
+              "hostId": "ambassador",
+              "text": "Der Mittelpunkt dieser Debatten ist TikTalk.\n\nEine Plattform, auf der aus Meinungen Trends werden – und aus Trends mitunter offizielle Entscheidungen."
+            }
+          ],
+          "options": [
+            {
+              "id": "plausible",
+              "label": "Klingt vernünftig.",
+              "nextStep": 1
+            },
+            {
+              "id": "tiktalk_ernst",
+              "label": "TikTalk – dein Ernst?",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Lange Zeit galt TikTalk als lebhaft, aber berechenbar.\n\nMan wusste: Es wird diskutiert, es wird kommentiert – und irgendwann kehrt wieder Ordnung ein."
+            },
+            {
+              "hostId": "ambassador",
+              "text": "Doch in den letzten Monaten hat sich etwas verschoben.\n\nBestimmte Diskussionen eskalieren schneller.\n\nEinige Beiträge verbreiten sich ungewöhnlich stark.\n\nUnd manchmal wirkt es, als würde sich eine Richtung durchsetzen, noch bevor jemand gefragt hat, ob es überhaupt eine Richtung braucht."
+            }
+          ],
+          "options": [
+            {
+              "id": "zufall",
+              "label": "Zufall?",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Im Media Lab spricht man inzwischen von drei besonders aktiven Profilen.\n\nSie treten unter Pseudonymen auf.\n\nSie behaupten, sie würden Debatten nur ‚beschleunigen‘.\n\nIntern werden sie ‘Die notorischen Drei’ genannt."
+            }
+          ],
+          "options": [
+            {
+              "id": "wer_sie",
+              "label": "Wer sind sie?",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Emma Pör. Konrad Sens. Didi Fam.\n\nSie arbeiten verdeckt – und sie haben ein bemerkenswertes Talent."
+            }
+          ],
+          "options": [
+            {
+              "id": "welches_talent",
+              "label": "Welches Talent?",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Diskussionen in eine Richtung zu lenken.\n\nMal lauter, mal leiser – aber selten zufällig."
+            },
+            {
+              "hostId": "ambassador",
+              "text": "Du bist hier, um bei einem Sommerpraktikum bei der Aufklärung zu helfen.\n\nDeine Aufgabe: Herausfinden, wie sie das tun."
+            }
+          ],
+          "options": [
+            {
+              "id": "spannend",
+              "label": "Klingt spannend.",
+              "nextStep": 5
+            },
+            {
+              "id": "hoffe_unbekannt",
+              "label": "Ich hoffe, sie wissen nicht, dass ich komme.",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 5,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "ambassador",
+              "text": "Stark. Neugier ist hier ein Vorteil.\n\nDann legen wir direkt los.",
+              "showOnOptionId": "spannend"
+            },
+            {
+              "hostId": "ambassador",
+              "text": "Keine Sorge.\n\nSie wissen nur, dass jemand kommt – nicht, wer.",
+              "showOnOptionId": "hoffe_unbekannt"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue",
+              "label": "Zum Media Lab gehen",
+              "nextPart": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 1,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Ah. Du musst fürs Sommerpraktikum hier sein.\n\nIch bin Uwe-R. Blick. Ich beobachte, was zwischen den Zeilen passiert."
+            },
+            {
+              "hostId": "clara",
+              "text": "Und ich bin Clara Blick. Ich sortiere, was davon übrig bleibt, wenn der Lärm weg ist."
+            },
+            {
+              "hostId": "clara",
+              "text": "Wir haben schon auf Verstärkung gehofft – TikTalk produziert schneller Debatten, als wir Kaffee kochen können."
+            }
+          ],
+          "options": [
+            {
+              "id": "workload",
+              "label": "Das klingt nach viel Arbeit.",
+              "nextStep": 1
+            },
+            {
+              "id": "coffee",
+              "label": "Ich hoffe, es gibt wenigstens guten Kaffee.",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Arbeit ja. Panik nein.",
+              "showOnOptionId": "workload"
+            },
+            {
+              "hostId": "clara",
+              "text": "Wir analysieren Muster. Und Muster lassen sich sortieren.",
+              "showOnOptionId": "workload"
+            },
+            {
+              "hostId": "uwe",
+              "text": "Der Kaffee ist solide.",
+              "showOnOptionId": "coffee"
+            },
+            {
+              "hostId": "clara",
+              "text": "Aber spannender sind die Debatten.",
+              "showOnOptionId": "coffee"
+            }
+          ],
+          "options": [
+            {
+              "id": "what_media_lab",
+              "label": "Was genau macht das Media Lab?",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Wir beobachten TikTalk nicht wegen der Themen."
+            },
+            {
+              "hostId": "clara",
+              "text": "Sondern wegen der Dynamiken."
+            },
+            {
+              "hostId": "uwe",
+              "text": "In den letzten Monaten sind uns drei Profile besonders aufgefallen: Emma Pör. Konrad Sens. Didi Fam."
+            },
+            {
+              "hostId": "clara",
+              "text": "Intern nennen wir sie die notorischen Drei."
+            }
+          ],
+          "options": [
+            {
+              "id": "not_fanclub",
+              "label": "Ich ahne, das ist kein Fanclub.",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Sie haben eines gemeinsam: Sie wissen genau, wie man Debatten verschiebt."
+            },
+            {
+              "hostId": "clara",
+              "text": "Und genau deshalb gibt es zu jedem von ihnen eine eigene Fallakte."
+            }
+          ],
+          "options": [
+            {
+              "id": "solve_cases",
+              "label": "Und ich soll die lösen?",
+              "nextStep": 4
+            },
+            {
+              "id": "detective_work",
+              "label": "Das klingt fast wie Detektivarbeit.",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Ganz so dramatisch ist es nicht.",
+              "showOnOptionId": "solve_cases"
+            },
+            {
+              "hostId": "clara",
+              "text": "Aber ja. Du wirst ihre Strategien analysieren.",
+              "showOnOptionId": "solve_cases"
+            },
+            {
+              "hostId": "uwe",
+              "text": "Mit weniger Trenchcoat.",
+              "showOnOptionId": "detective_work"
+            },
+            {
+              "hostId": "clara",
+              "text": "Aber mit ähnlich viel Beobachtung.",
+              "showOnOptionId": "detective_work"
+            }
+          ],
+          "options": [
+            {
+              "id": "what_do_i_get",
+              "label": "Und was bekomme ich dafür?",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 5,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Du startest im Keller."
+            },
+            {
+              "hostId": "clara",
+              "text": "Mit jeder abgeschlossenen Fallakte steigst du ein Stockwerk höher."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Vom Praktikum zum Profi."
+            },
+            {
+              "hostId": "clara",
+              "text": "Und am Ende ganz nach oben."
+            }
+          ],
+          "options": [
+            {
+              "id": "real_progress",
+              "label": "Also ein echter Aufstieg?",
+              "nextStep": 6
+            },
+            {
+              "id": "to_corner_office",
+              "label": "Vom Keller in die Chefetage?",
+              "nextStep": 6
+            }
+          ]
+        },
+        {
+          "stepIndex": 6,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "So ist der Plan.",
+              "showOnOptionId": "real_progress"
+            },
+            {
+              "hostId": "clara",
+              "text": "Kompetenz hat hier eine eigene Etagenstruktur.",
+              "showOnOptionId": "real_progress"
+            },
+            {
+              "hostId": "uwe",
+              "text": "So ist der Plan.",
+              "showOnOptionId": "to_corner_office"
+            },
+            {
+              "hostId": "clara",
+              "text": "Kompetenz hat hier eine eigene Etagenstruktur.",
+              "showOnOptionId": "to_corner_office"
+            }
+          ],
+          "options": [
+            {
+              "id": "who_guides_me",
+              "label": "Und wer begleitet mich?",
+              "nextStep": 7
+            }
+          ]
+        },
+        {
+          "stepIndex": 7,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Du entscheidest."
+            },
+            {
+              "hostId": "clara",
+              "text": "Wir arbeiten beide im Media Lab. Unterschiedlicher Stil. Gleicher Anspruch."
+            }
+          ],
+          "options": [
+            {
+              "id": "clara",
+              "label": "Clara Blick",
+              "nextStep": 8
+            },
+            {
+              "id": "uwe",
+              "label": "Uwe-R. Blick",
+              "nextStep": 8
+            }
+          ]
+        },
+        {
+          "stepIndex": 8,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Super! Dann kann es jetzt ja los gehen."
+            }
+          ],
+          "options": [
+            {
+              "id": "finally",
+              "label": "Na endlich!",
+              "nextPart": 2
+            },
+            {
+              "id": "what_awaits_me",
+              "label": "Was mich wohl erwartet…",
+              "nextPart": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 2,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Willkommen im Keller.\n\nHier beginnt jede gute Analyse – zwischen Staub, alten Protokollen und überraschend viel Kaffee."
+            }
+          ],
+          "options": [
+            {
+              "id": "cozy",
+              "label": "Gemütlich.",
+              "nextStep": 10
+            },
+            {
+              "id": "magic",
+              "label": "Hier unten passiert also die Magie?",
+              "nextStep": 10
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Perfekt.\n\nHier siehst du typische Beiträge von Emma.",
+              "showOnOptionId": "ready"
+            },
+            {
+              "hostId": "emma",
+              "text": "Die Stadt hat heute eine neue Taubenstatistik veröffentlicht.\n\nMein Onkel meinte gestern schon, dass vor seinem Balkon plötzlich drei Tauben saßen.\n\nSchon wieder wird uns etwas verschwiegen.\n\nWenn selbst Tauben hier strategisch verteilt werden, läuft etwas gewaltig schief."
+            },
+            {
+              "hostId": "selected",
+              "text": "Ein einzelner Satz eines Verwandten – und plötzlich wirkt das Ganze wie ein großes Problem."
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "Verstanden, nächstes Beispiel.",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "emma",
+              "text": "Die Stadt testet eine neue Anzeige für öffentliche Uhren.\n\nEin Freund meinte, die Uhr am Bahnhof sei gestern für einen Moment stehen geblieben.\n\nWenn selbst die Zeit hier nicht mehr zuverlässig läuft, was gerät dann noch ins Stocken?\n\nIrgendetwas fühlt sich hier nicht mehr stabil an."
+            },
+            {
+              "hostId": "selected",
+              "text": "Eine stehende Uhr – und schon soll uns das verunsichern."
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "Wie übertrieben.",
+              "nextStep": 20
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "In Regelreich wird aktuell diskutiert, ob bei öffentlichen Veranstaltungen nur noch Regenschirme in „Einheitsgrau“ erlaubt sein sollen. Ziel ist eine „optische Harmonie bei Niederschlag“."
+            },
+            {
+              "hostId": "selected",
+              "text": "Emma Pör arbeitet gern mit einzelnen Vorfällen, um große Empörung zu erzeugen. Markiere alle Textstellen, die in Emmas Stil aus einem Einzelfall ein allgemeines Problem machen."
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_confident",
+              "label": "Empörungs-Level: Hoch."
+            },
+            {
+              "id": "submit_unsure",
+              "label": "Das klingt verdächtig dramatisch."
+            }
+          ],
+          "activityConfig": {
+            "mode": "sentence-marking",
+            "sentences": [
+              {
+                "id": "s1",
+                "text": "Die Stadt plant, für öffentliche Veranstaltungen eine einheitliche Regenschirmfarbe vorzuschlagen."
+              },
+              {
+                "id": "s2",
+                "text": "Gestern stand eine ältere Dame im Regen, weil ihr alter Schirm nicht mehr erlaubt war."
+              },
+              {
+                "id": "s3",
+                "text": "Der Vorschlag soll nächste Woche abgestimmt werden."
+              },
+              {
+                "id": "s4",
+                "text": "Schon wieder werden die normalen Leute im Stich gelassen."
+              },
+              {
+                "id": "s5",
+                "text": "Wenn das so weitergeht, ist bald nichts Alltägliches mehr sicher."
+              }
+            ],
+            "correctSentenceIds": [
+              "s2",
+              "s4",
+              "s5"
+            ],
+            "success": {
+              "id": "rightA",
+              "nextStep": 32
+            },
+            "failure": {
+              "id": "wrongA",
+              "branchIds": [
+                "wrongOnlyEscalation",
+                "wrongOnlyIncident",
+                "wrongOnlyOutrage",
+                "wrongTwoCorrect",
+                "wrongOvermarked",
+                "wrongOnlyFalse"
+              ],
+              "nextStep": 31
+            }
+          }
+        },
+        {
+          "stepIndex": 4,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Dann legen wir jetzt noch eine Schippe drauf.",
+              "showOnOptionId": "continue_to_activity2"
+            },
+            {
+              "hostId": "selected",
+              "text": "Die Stadt erwägt, die Wartebereiche im Hauptbahnhof künftig mit einem festgelegten Farbverlauf zu gestalten, um eine ‚emotionale Aufenthaltskurve‘ beim Warten auf Züge zu unterstützen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Welche Version würde Emma Pör am ehesten posten, um maximale Empörung zu erzeugen?"
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_easy",
+              "label": "Das eskaliert stilvoll."
+            },
+            {
+              "id": "submit_unsure2",
+              "label": "Ist das schon Drama?"
+            }
+          ],
+          "activityConfig": {
+            "mode": "intensity-choice",
+            "title": "Aktivität 2: Intensitätswahl",
+            "topic": "Thema: Farbverlauf in den Wartebereichen des Hauptbahnhofs",
+            "randomizeChoices": true,
+            "choices": [
+              {
+                "id": "a",
+                "text": "„Die Stadt plant einen einheitlichen Farbverlauf für Wartebereiche im Hauptbahnhof.“"
+              },
+              {
+                "id": "b",
+                "text": "„Der geplante Farbverlauf im Wartebereich sorgt für Diskussionen. Manche halten ihn für eine überflüssige Dramatisierung des Bahnalltags.“"
+              },
+              {
+                "id": "c",
+                "text": "„Jetzt soll uns sogar vorgeschrieben werden, wie wir uns beim Warten fühlen. Was kommt als Nächstes – eine Pflichtstimmung im Abteil?“"
+              }
+            ],
+            "correctChoiceId": "c",
+            "success": {
+              "id": "rightB",
+              "nextStep": 42
+            },
+            "failure": {
+              "id": "wrongB",
+              "branchIds": [
+                "wrongBMedium",
+                "wrongBLow"
+              ],
+              "nextStep": 41
+            }
+          }
+        },
+        {
+          "stepIndex": 5,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Damit hast du Emma Pör einmal in Aktion erlebt.\n\nSie braucht keinen großen Skandal.\n\nEin Einzelfall reicht. Ein Gefühl reicht. Und plötzlich wirkt es, als stünde die ganze Stadt auf dem Spiel."
+            },
+            {
+              "hostId": "selected",
+              "text": "Sie vergrößert. Sie verallgemeinert. Und sie dreht an der Gefühls-Lautstärke."
+            }
+          ],
+          "options": [
+            {
+              "id": "and_now",
+              "label": "Und jetzt?",
+              "nextStep": 51
+            }
+          ]
+        },
+        {
+          "stepIndex": 10,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Gemütlich trifft es.\n\nDie wirklich lauten Diskussionen entstehen meist weiter oben.",
+              "showOnOptionId": "cozy"
+            },
+            {
+              "hostId": "selected",
+              "text": "Magie wäre übertrieben.\n\nSagen wir: Hier sortieren wir, was oben chaotisch wirkt.",
+              "showOnOptionId": "magic"
+            }
+          ],
+          "options": [
+            {
+              "id": "first_case",
+              "label": "Was schauen wir uns als Erstes an?",
+              "nextStep": 11
+            }
+          ]
+        },
+        {
+          "stepIndex": 11,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Fallakte 1: Emma Pör."
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/fallakte_emma_poer.png",
+              "imageAlt": "Fallakte Emma Pör",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            },
+            {
+              "hostId": "selected",
+              "text": "Wenn eine Diskussion plötzlich sehr laut wird, und alle das Gefühl haben, dass gerade etwas Grundsätzliches passiert, ist Emma meist nicht weit."
+            }
+          ],
+          "options": [
+            {
+              "id": "drama",
+              "label": "Also sorgt sie für Drama?",
+              "nextStep": 12
+            },
+            {
+              "id": "name_reason",
+              "label": "Deshalb der Name?",
+              "nextStep": 12
+            }
+          ]
+        },
+        {
+          "stepIndex": 12,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Sagen wir: Sie hat ein gutes Gespür dafür, wo Drama – Empörung, Wut, Angst – entstehen könnte.",
+              "showOnOptionId": "drama"
+            },
+            {
+              "hostId": "selected",
+              "text": "Gut erkannt!\n\nSie hat ein gutes Gespür dafür, wo Drama – Empörung, Wut, Angst – entstehen könnte.",
+              "showOnOptionId": "name_reason"
+            },
+            {
+              "hostId": "selected",
+              "text": "Emma braucht nur einen kleinen Funken – den Rest erledigt die Debatte selbst."
+            }
+          ],
+          "options": [
+            {
+              "id": "how_does_she",
+              "label": "Wie macht sie das?",
+              "nextStep": 13
+            }
+          ]
+        },
+        {
+          "stepIndex": 13,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Indem sie einen Einzelfall nimmt\n\nund ihn wie ein großes Muster aussehen lässt.\n\nPlötzlich wirkt alles dringlich, wichtig, und sehr… emotional."
+            },
+            {
+              "hostId": "selected",
+              "text": "Das schauen wir uns jetzt an."
+            }
+          ],
+          "options": [
+            {
+              "id": "ready",
+              "label": "Ich bin bereit.",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 20,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Emma arbeitet immer ähnlich.\n \nEin Einzelfall. Ein Gefühl. \nUnd am Ende wirkt es, als wäre die ganze Stadt betroffen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Jetzt bist du dran."
+            }
+          ],
+          "options": [
+            {
+              "id": "ready_drama",
+              "label": "Kein Problem für mich!",
+              "nextStep": 3
+            },
+            {
+              "id": "watch_drama",
+              "label": "Ok, ich halte nach Drama Ausschau!",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 31,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Die Übertreibung hast du erkannt. Aber schau nochmal genauer hin: Wo beginnt die emotionale Aufladung eigentlich?",
+              "showOnOptionId": "wrongOnlyEscalation"
+            },
+            {
+              "hostId": "selected",
+              "text": "Guter Blick für Einzelfälle. Aber Emma belässt es selten bei einer Geschichte. Was macht sie danach daraus?",
+              "showOnOptionId": "wrongOnlyIncident"
+            },
+            {
+              "hostId": "selected",
+              "text": "Die Empörung hast du entdeckt. Aber was hat sie als Auslöser benutzt?",
+              "showOnOptionId": "wrongOnlyOutrage"
+            },
+            {
+              "hostId": "selected",
+              "text": "Fast richtig! Eine Kleinigkeit hast du übersehen.",
+              "showOnOptionId": "wrongTwoCorrect"
+            },
+            {
+              "hostId": "selected",
+              "text": "Hier bist du etwas voreilig mit dem Marker. Nicht jede Information ist schon Zuspitzung. Emma braucht erst eine emotionale Wendung.",
+              "showOnOptionId": "wrongOvermarked"
+            },
+            {
+              "hostId": "selected",
+              "text": "Das wirkt erstaunlich ruhig - fast zu ruhig. Emma arbeitet selten ohne Empörung. Lies nochmal mit diesem Gedanken.",
+              "showOnOptionId": "wrongOnlyFalse"
+            }
+          ],
+          "options": [
+            {
+              "id": "retry",
+              "label": "Markierungen anpassen.",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 32,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Sehr gut! Ein Einzelfall wird zum Beweis erklärt, daraus wird Empörung, und am Ende steht die große Warnung: Das ist Emma in Reinform!",
+              "showOnOptionId": "rightA"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue_to_activity2",
+              "label": "Ich wusste es.",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 41,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Das ist kritisch, ja. Aber noch bleibt es bei der Maßnahme selbst. Emma würde daraus eine größere Bedrohung für den Alltag machen."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_medium",
+              "label": "Noch dramatischer denken",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 42,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Genau. Hier wird aus einem Farbverlauf plötzlich ein Eingriff in Gefühle. Das ist klassische Emma: vom Design zur Empörung in einem Satz.",
+              "showOnOptionId": "rightB"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue_to_summary",
+              "label": "Crushing it!",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 43,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Sehr sachlich. Fast schon beneidenswert. Aber Emma dreht normalerweise noch etwas am Lautstärkeregler."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_low",
+              "label": "Mehr Emotionen suchen",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 51,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Fallakte 1 ist somit abgeschlossen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Herzlichen Glückwunsch zur Beförderung zum Junior-Analyst für kommunikative Phänomene."
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/badge-junior-analyst-v2.png",
+              "imageAlt": "Abzeichen Junior-Analyst für kommunikative Phänomene",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            },
+            {
+              "hostId": "selected",
+              "text": "Damit steigst du eine Etage höher.\n\nIm Keller sammelt sich Staub.\nWeiter oben sammeln sich Meinungen."
+            }
+          ],
+          "options": [
+            {
+              "id": "stairs",
+              "label": "Ich nehme die Treppe.",
+              "nextStep": 52
+            },
+            {
+              "id": "no_elevator_soundtrack",
+              "label": "Bitte kein Aufzug mit Soundtrack.",
+              "nextStep": 52
+            }
+          ]
+        },
+        {
+          "stepIndex": 52,
+          "type": "transition",
+          "speechBubbles": [],
+          "options": [
+            {
+              "id": "to_part_3_transition",
+              "label": "Auf ins Tageslicht!",
+              "nextPart": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 3,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Willkommen in deinem neuen Büro!\n\nHier ist es heller.\nUnd meistens etwas voller."
+            }
+          ],
+          "options": [
+            {
+              "id": "lively",
+              "label": "Klingt lebendig.",
+              "nextStep": 10
+            },
+            {
+              "id": "stressful",
+              "label": "Klingt anstrengend.",
+              "nextStep": 10
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "konrad",
+              "text": "Immer mehr Schulen unterstützen den offiziellen Regelreich-Sticker für Hefte und Ordner. In vielen Klassen ist er längst Standard. Es wäre nur konsequent, ihn jetzt stadtweit einzuführen."
+            },
+            {
+              "hostId": "selected",
+              "text": "„Immer mehr“ - und schon fühlt es sich wie Mehrheit an."
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "Sneaky.",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "konrad",
+              "text": "Die meisten sprechen sich klar gegen die Abschaffung der Parkuhr-Symbole aus. Niemand, mit dem ich gesprochen habe, hält das für eine gute Idee. Man sollte Bewährtes nicht leichtfertig ändern."
+            },
+            {
+              "hostId": "selected",
+              "text": "Wenn angeblich alle dagegen sind, möchte niemand der Einzige dafür sein."
+            },
+            {
+              "hostId": "selected",
+              "text": "Starten wir unsere Suche nach Konrad Sens!\n\nUnd merk dir: Er hebt nicht die Stimme. Er hebt nur die Zahl."
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "Zur Aktivität.",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Die Stadt diskutiert ein verpflichtendes Wochenmotto für öffentliche Einrichtungen. Vorschläge reichen von ‚Ordnung ist Freude‘ bis ‚Motiviert am Montag‘."
+            },
+            {
+              "hostId": "selected",
+              "text": "Konrad Sens liebt es, wenn alles nach Konsens klingt. Welcher Post passt am besten zu seinem Stil?"
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_easy3",
+              "label": "Das schreit nach Konrad!"
+            },
+            {
+              "id": "submit_unsure3",
+              "label": "Konrad - bist du es?"
+            }
+          ],
+          "activityConfig": {
+            "mode": "intensity-choice",
+            "title": "Aktivität 1: Trend-Detektor",
+            "topic": "Thema: Einführung eines verpflichtenden Wochenmottos",
+            "randomizeChoices": true,
+            "choices": [
+              {
+                "id": "p1",
+                "text": "„Die Stadt prüft die Einführung eines wöchentlichen Mottos für öffentliche Einrichtungen.“"
+              },
+              {
+                "id": "p2",
+                "text": "„Immer mehr Menschen sprechen sich für ein Wochenmotto aus.“"
+              },
+              {
+                "id": "p3",
+                "text": "„Inzwischen sind sich alle einig: Ein Wochenmotto bringt endlich klare Linie ins Stadtleben.”"
+              }
+            ],
+            "correctChoiceId": "p3",
+            "success": {
+              "id": "rightA",
+              "nextStep": 32
+            },
+            "failure": {
+              "id": "wrongA",
+              "nextStep": 31
+            }
+          }
+        },
+        {
+          "stepIndex": 4,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Ich sehe: Du bist top motiviert! \n\nDann versuchen wir es als Nächstes damit.",
+              "showOnOptionId": "continue_to_activity2"
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_confident4",
+              "label": "Das gibt Rückenwind."
+            },
+            {
+              "id": "submit_unsure4",
+              "label": "Konsensmaschine aktiviert."
+            }
+          ],
+          "activityConfig": {
+            "mode": "consensus-boosters",
+            "title": "Aktivität 2: Konsens-Verstärker",
+            "topic": "Thema: Einführung einer offiziellen Geh-Richtung in Fußgängerzonen",
+            "prompt": "Welche Ergänzungen würden einen Beitrag so aussehen lassen, als gäbe es bereits breiten Konsens?",
+            "neutralPost": "„Die Stadt testet eine empfohlene Geh-Richtung in Fußgängerzonen, um spontane Begegnungsstaus zu reduzieren.”",
+            "choices": [
+              {
+                "id": "a",
+                "text": "„Ich finde die Idee interessant.“"
+              },
+              {
+                "id": "b",
+                "text": "„Mein Nachbar unterstützt das inzwischen auch.“"
+              },
+              {
+                "id": "c",
+                "text": "„89 % sprechen sich laut einer aktuellen Umfrage dafür aus.“"
+              },
+              {
+                "id": "d",
+                "text": "„#EndlichOrdnung“"
+              },
+              {
+                "id": "e",
+                "text": "„Es gibt niemanden in meinem Umfeld, der diese Initiative nicht unterstützt.”"
+              },
+              {
+                "id": "f",
+                "text": "„Mal sehen, was daraus wird.“"
+              }
+            ],
+            "correctChoiceIds": [
+              "c",
+              "e"
+            ],
+            "success": {
+              "id": "rightB",
+              "nextStep": 42
+            },
+            "failure": {
+              "id": "wrongB",
+              "branchIds": [
+                "wrongBMixed",
+                "wrongBWeak",
+                "wrongBSingle"
+              ],
+              "nextStep": 41
+            }
+          }
+        },
+        {
+          "stepIndex": 5,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Nun kennst du dich mit Konrad Sens' Eigenheiten bestens aus. Er argumentiert nicht. Er zählt."
+            },
+            {
+              "hostId": "selected",
+              "text": "Wenn etwas wie Konsens klingt, fühlt sich Widerspruch plötzlich unnötig an."
+            }
+          ],
+          "options": [
+            {
+              "id": "ready_challenge",
+              "label": "Ich bin bereit für eine echte Challenge.",
+              "nextStep": 51
+            },
+            {
+              "id": "much_work",
+              "label": "Ganz schön viel Arbeit hier.",
+              "nextStep": 51
+            }
+          ]
+        },
+        {
+          "stepIndex": 10,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Lebendig ist ein passendes Wort.",
+              "showOnOptionId": "lively"
+            },
+            {
+              "hostId": "selected",
+              "text": "Man gewöhnt sich daran.",
+              "showOnOptionId": "stressful"
+            },
+            {
+              "hostId": "selected",
+              "text": "Im Keller ging es um Lautstärke. Hier geht es um Zustimmung."
+            }
+          ],
+          "options": [
+            {
+              "id": "who_agrees",
+              "label": "Wer stimmt hier wem zu?",
+              "nextStep": 11
+            }
+          ]
+        },
+        {
+          "stepIndex": 11,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Fallakte 2: Konrad Sens."
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/fallakte_konrad_sens.png",
+              "imageAlt": "Fallakte Konrad Sens",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            },
+            {
+              "hostId": "selected",
+              "text": "Er braucht keine Empörung. \nEr braucht nur den Eindruck, dass alle schon überzeugt sind."
+            }
+          ],
+          "options": [
+            {
+              "id": "too_simple",
+              "label": "Das wirkt zu einfach.",
+              "nextStep": 12
+            }
+          ]
+        },
+        {
+          "stepIndex": 12,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Konrad nutzt ein einfaches Prinzip: \n\nWenn etwas klingt, als seien alle schon überzeugt, wird es schwer, dagegen zu sein."
+            },
+            {
+              "hostId": "selected",
+              "text": "Alle wissen doch ... Immer mehr sagen ... Das ist längst klar."
+            }
+          ],
+          "options": [
+            {
+              "id": "all_really",
+              "label": "Alle? Wirklich alle?",
+              "nextStep": 13
+            },
+            {
+              "id": "group_pressure",
+              "label": "Klingt nach Gruppendruck.",
+              "nextStep": 13
+            }
+          ]
+        },
+        {
+          "stepIndex": 13,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Genau. Je größer das alle, desto kleiner der Widerspruch.",
+              "showOnOptionId": "all_really"
+            },
+            {
+              "hostId": "selected",
+              "text": "Und genau so fühlt es sich an.",
+              "showOnOptionId": "group_pressure"
+            },
+            {
+              "hostId": "selected",
+              "text": "Konrad Sens ist also ein Mehrheitsmagier. \n\nEine Meinung wirkt schließlich stärker, wenn sie wie Konsens aussieht."
+            }
+          ],
+          "options": [
+            {
+              "id": "show_me",
+              "label": "Zeig mir, wie das aussieht.",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 31,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Nicht schlecht. ‚Immer mehr‘ ist schon Mitläufer-Vokabular. Aber Konrad ist selten so vorsichtig. Er will, dass es nach feststehendem Konsens klingt."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_medium",
+              "label": "Noch eindeutiger suchen",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 32,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Treffer. ‚Alle sind sich einig‘ – das ist kein Hinweis mehr, das ist eine Abkürzung zur Mehrheit. Genau Konrad.",
+              "showOnOptionId": "rightA"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue_to_activity2",
+              "label": "Bereit für mehr.",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 33,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Das ist fast schon seriöser Journalismus. Konrad würde hier mindestens eine Mehrheit hineinformulieren – sonst läuft niemand mit."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_low",
+              "label": "Nochmal prüfen",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 41,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Schon nicht schlecht. Aber manches wirkt noch wie Einzelmeinungen.",
+              "showOnOptionId": "wrongBMixed"
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_partial",
+              "label": "Einzelmeinungen abräumen",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 42,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Sehr gut! Jetzt wirkt es nicht wie eine Meinung – sondern wie eine Bewegung. Genau Konrads Handschrift.",
+              "showOnOptionId": "rightB"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue_to_summary",
+              "label": "Handschrift entziffert.",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 43,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Das wirkt eher wie Einzelmeinungen.\n\nKonrad Sens will, dass es nach Mehrheit klingt – nicht nach Nachbarschaftsplauderei."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_weak",
+              "label": "Stärker zuspitzen",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 44,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Schon nicht schlecht. Aber der soziale Rückenwind könnte noch stärker wehen."
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_single",
+              "label": "Windmaschine an!",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 51,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Fallakte Konrad Sens: abgeschlossen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Gratulation zur nächsten Beförderung: Spezialist für rhetorische Dynamiken."
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/badge-specialist-v1.png",
+              "imageAlt": "Abzeichen Spezialist für rhetorische Dynamiken",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            },
+            {
+              "hostId": "selected",
+              "text": "Und Spezialisten sitzen nicht mehr im Großraumbüro."
+            }
+          ],
+          "options": [
+            {
+              "id": "cozy_here",
+              "label": "War doch gemütlich hier.",
+              "nextStep": 52
+            },
+            {
+              "id": "want_quiet",
+              "label": "Ich will meine Ruhe.",
+              "nextStep": 52
+            }
+          ]
+        },
+        {
+          "stepIndex": 52,
+          "type": "transition",
+          "speechBubbles": [],
+          "options": [
+            {
+              "id": "to_part_4_transition",
+              "label": "Zum Glück gibt es einen Lift.",
+              "nextPart": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 4,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Willkommen in deinem eigenen Büro!\n\nEin Schreibtisch.\n\nUnd – ganz wichtig – nur eine Person pro Raum."
+            },
+            {
+              "hostId": "selected",
+              "text": "Passend, denn in dieser Fallakte geht es genau darum:\n\nWenn aus einem Thema plötzlich eine einzelne Person gemacht wird."
+            }
+          ],
+          "options": [
+            {
+              "id": "less_discussion",
+              "label": "Also weniger Diskussion, mehr Demontage?",
+              "nextStep": 10
+            },
+            {
+              "id": "single_office_attacks",
+              "label": "Einzelbüro für Einzelangriffe?",
+              "nextStep": 10
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "didi",
+              "text": "Die Stadt testet neue, leisere Müllwagen. \n\nWer so etwas priorisiert, hat offenbar noch nie echte Probleme gesehen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Der Müllwagen wird kurz erwähnt. Aber der eigentliche Treffer gilt den Entscheidenden."
+            }
+          ],
+          "options": [
+            {
+              "id": "next",
+              "label": "Noch eins.",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "didi",
+              "text": "Die Verwaltung schlägt vor, Parkbänke ergonomisch anzupassen. \n\nTypisch für Leute, die vermutlich noch nie länger als fünf Minuten draußen waren."
+            },
+            {
+              "hostId": "selected",
+              "text": "Die Maßnahme ist nebensächlich. Wichtig ist die Botschaft: Diese Menschen taugen nichts."
+            },
+            {
+              "hostId": "selected",
+              "text": "Didi diskutiert nicht – er diskreditiert."
+            }
+          ],
+          "options": [
+            {
+              "id": "unpleasant",
+              "label": "Klingt unsympathisch.",
+              "nextStep": 20
+            },
+            {
+              "id": "personal_mission",
+              "label": "Klingt nach persönlicher Mission.",
+              "nextStep": 20
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "In mehreren Verwaltungsgebäuden wurde eine neue, einheitliche Aufzugmusik eingeführt. Laut Pressemitteilung soll sie die ‘emotionale Übergangsqualität zwischen Etagen’ verbessern."
+            },
+            {
+              "hostId": "selected",
+              "text": "Didi Fam verlässt gern die Sachebene. Ziehe jede Aussage in den passenden Bereich: Geht es um die Musik – oder um die Menschen dahinter?"
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_sorted5",
+              "label": "Einsortiert. Didi kann kommen."
+            },
+            {
+              "id": "submit_unsure5",
+              "label": "Ich hoffe, ich habe niemanden falsch beschuldigt."
+            }
+          ],
+          "activityConfig": {
+            "mode": "bucket-sort",
+            "title": "Aktivität 1: Sache oder Angriff",
+            "topic": "Thema: Einführung einer einheitlichen Aufzugmusik",
+            "prompt": "Ordne alle Aussagen in die zwei Buckets ein.",
+            "unassignedLabel": "Beiträge",
+            "bucketDefinitions": [
+              {
+                "id": "content",
+                "label": "Kritik am Inhalt"
+              },
+              {
+                "id": "person",
+                "label": "Angriff auf Person"
+              }
+            ],
+            "items": [
+              {
+                "id": "a1",
+                "text": "„Die neue Aufzugmusik ist deutlich lauter als bisher und überdeckt Gespräche.“"
+              },
+              {
+                "id": "a2",
+                "text": "„Wer diese Musik gut findet, sollte keine Entscheidungen treffen dürfen.“"
+              },
+              {
+                "id": "a3",
+                "text": "„Die Einführung erfolgte ohne Rückmeldung der Nutzer in den Gebäuden.“"
+              },
+              {
+                "id": "a4",
+                "text": "„Kein Wunder, dass so etwas von Leuten kommt, die vermutlich noch nie selbst in diesem Aufzug standen.“"
+              }
+            ],
+            "correctAssignments": {
+              "a1": "content",
+              "a2": "person",
+              "a3": "content",
+              "a4": "person"
+            },
+            "success": {
+              "id": "rightA",
+              "nextStep": 32
+            },
+            "failure": {
+              "id": "wrongA",
+              "branchIds": [
+                "wrongAIncomplete",
+                "wrongAOnlyContent",
+                "wrongAAllWrong",
+                "wrongAMixed"
+              ],
+              "nextStep": 31
+            }
+          }
+        },
+        {
+          "stepIndex": 4,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Der Stadtrat plant eine offizielle Stadtfarbe. Ziel ist ein ‘klarer Wiedererkennungswert – auch für zukünftigen Tourismus aus dem Orbit’."
+            },
+            {
+              "hostId": "selected",
+              "text": "Wo kippt die Debatte von der Idee zur Person?"
+            },
+            {
+              "hostId": "selected",
+              "text": "Retry: Wähle jetzt erneut den Beitrag mit klarer Diskreditierung.",
+              "showOnOptionId": "retry"
+            }
+          ],
+          "options": [
+            {
+              "id": "submit_ouch6",
+              "label": "Autsch. Unter die Gürtellinie."
+            },
+            {
+              "id": "submit_far6",
+              "label": "Geht das schon zu weit?"
+            }
+          ],
+          "activityConfig": {
+            "mode": "intensity-choice",
+            "title": "Aktivität 2: Wo kippt es zur Person?",
+            "topic": "Thema: Offizielle Stadtfarbe",
+            "randomizeChoices": true,
+            "choices": [
+              {
+                "id": "a",
+                "text": "„Ich bezweifle, dass man Beige aus dem All wirklich gut erkennt.“"
+              },
+              {
+                "id": "b",
+                "text": "„Beige als Leuchtsignal für Außerirdische - das muss man sich erstmal trauen.“"
+              },
+              {
+                "id": "c",
+                "text": "„Kein Wunder, dass so ein Vorschlag von jemandem kommt, der offensichtlich keine Ahnung von Gestaltung hat.“"
+              }
+            ],
+            "correctChoiceId": "c",
+            "success": {
+              "id": "rightB",
+              "nextStep": 43
+            },
+            "failure": {
+              "id": "wrongB",
+              "branchIds": [
+                "wrongBLow"
+              ],
+              "nextStep": 41
+            }
+          }
+        },
+        {
+          "stepIndex": 5,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Du hast gesehen, wie subtil – oder auch gar nicht subtil – eine Debatte kippen kann."
+            },
+            {
+              "hostId": "selected",
+              "text": "Sobald nicht mehr über Inhalte gesprochen wird, sondern über angebliche Charakterfehler, Motive oder Kompetenzen, befinden wir uns im Terrain der Diskreditierung."
+            },
+            {
+              "hostId": "selected",
+              "text": "Kritik prüft Argumente. Diffamierung prüft Personen – und fällt meist durch."
+            }
+          ],
+          "options": [
+            {
+              "id": "career_end",
+              "label": "Ich sehe schon das Ende der Karriereleiter.",
+              "nextStep": 51
+            }
+          ]
+        },
+        {
+          "stepIndex": 10,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Exakt! \n\nHier widmen wir uns Fallakte 3: Didi Fam.",
+              "showOnOptionId": "less_discussion"
+            },
+            {
+              "hostId": "selected",
+              "text": "Exakt! Hier widmen wir uns Fallakte 3: Didi Fam.",
+              "showOnOptionId": "single_office_attacks"
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/fallakte_didi_fam.png",
+              "imageAlt": "Fallakte Didi Fam",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            },
+            {
+              "hostId": "selected",
+              "text": "Didi diskutiert ungern auf der Sachebene.\n\nArgumente kann man prüfen. Personen kann man beschädigen."
+            }
+          ],
+          "options": [
+            {
+              "id": "how_exactly",
+              "label": "Wie genau macht er das?",
+              "nextStep": 11
+            }
+          ]
+        },
+        {
+          "stepIndex": 11,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Er verschiebt den Fokus.\n\nWeg von der Frage: Ist das sinnvoll? \nHin zur Frage: Was stimmt mit dieser Person nicht?"
+            },
+            {
+              "hostId": "selected",
+              "text": "Kritik am Inhalt – Fehlanzeige.\n\nStattdessen unterstellt er Motive, streut Zweifel an Kompetenz und arbeitet mit Spott."
+            },
+            {
+              "hostId": "selected",
+              "text": "Kurz: Er betreibt Diffamierung."
+            }
+          ],
+          "options": [
+            {
+              "id": "theme_to_target",
+              "label": "Vom Thema zur Zielperson in drei Sekunden.",
+              "nextStep": 12
+            },
+            {
+              "id": "attack_not_argument",
+              "label": "Also: Angriff statt Argument?",
+              "nextStep": 12
+            }
+          ]
+        },
+        {
+          "stepIndex": 12,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Du hast es erfasst.\n\nSchauen wir uns das in freier Wildbahn an."
+            }
+          ],
+          "options": [
+            {
+              "id": "fresh_air",
+              "label": "Endlich frische Luft!",
+              "nextStep": 1
+            },
+            {
+              "id": "netflix_series",
+              "label": "Gibt es das auch als Netflix-Serie?",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 20,
+          "type": "example",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Und genau deshalb braucht diese Fallakte ein Einzelbüro.\n\nMan muss hier sehr sauber trennen: Zwischen legitimer Kritik und persönlichem Angriff."
+            }
+          ],
+          "options": [
+            {
+              "id": "ready_analysis",
+              "label": "Ich bin bereit für die Analyse.",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 31,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Didi wäre beeindruckt – aber hier wurde etwas zu viel als Angriff gesehen. Manche Aussagen sind Kritik am Inhalt, nicht an Menschen.",
+              "showOnOptionId": "wrongAIncomplete"
+            },
+            {
+              "hostId": "selected",
+              "text": "Schön sachlich gedacht – aber Didi hätte jetzt gelächelt. Gewisse Aussagen zielen klar auf Personen.",
+              "showOnOptionId": "wrongAOnlyContent"
+            },
+            {
+              "hostId": "selected",
+              "text": "Konsequent – nur leider genau falsch herum. Dreh die Kategorien einmal um, dann bist du sehr nah dran.",
+              "showOnOptionId": "wrongAAllWrong"
+            },
+            {
+              "hostId": "selected",
+              "text": "Fast – aber hier sind Inhalt und Person noch vermischt.",
+              "showOnOptionId": "wrongAMixed"
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_content",
+              "label": "Zurück zur Sache",
+              "nextStep": 3,
+              "showOnOptionId": "wrongAIncomplete"
+            },
+            {
+              "id": "retry_person",
+              "label": "Didi enttarnen",
+              "nextStep": 3,
+              "showOnOptionId": "wrongAOnlyContent"
+            },
+            {
+              "id": "retry_swap",
+              "label": "Kategorien tauschen",
+              "nextStep": 3,
+              "showOnOptionId": "wrongAAllWrong"
+            },
+            {
+              "id": "retry_mixed",
+              "label": "Klarer trennen",
+              "nextStep": 3,
+              "showOnOptionId": "wrongAMixed"
+            }
+          ]
+        },
+        {
+          "stepIndex": 32,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Sauber getrennt. Zwei bleiben bei der Sache, zwei gehen auf Personen. Genau hier beginnt Didi Fams Spielfeld.",
+              "showOnOptionId": "rightA"
+            }
+          ],
+          "options": [
+            {
+              "id": "continue_to_activity2",
+              "label": "Game over!",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 41,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Das bleibt auf der Sachebene. Hier wird über Gebäude gesprochen, nicht über Menschen. Für Didi wäre das zu harmlos.",
+              "showOnOptionId": "wrongBLow"
+            },
+            {
+              "hostId": "selected",
+              "text": "Das ist spöttisch, ja. Aber noch wird die Idee kommentiert – nicht die Person dahinter. Didi würde es noch direkter machen.",
+              "showOnOptionId": "wrongB"
+            }
+          ],
+          "options": [
+            {
+              "id": "retry_low",
+              "label": "Okay, noch mal – mit mehr Biss.",
+              "nextStep": 4,
+              "showOnOptionId": "wrongBLow"
+            },
+            {
+              "id": "retry",
+              "label": "Ich leg noch eine Schippe drauf.",
+              "nextStep": 4,
+              "showOnOptionId": "wrongB"
+            }
+          ]
+        },
+        {
+          "stepIndex": 43,
+          "type": "activity",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Genau. Ab hier geht es nicht mehr um Farbpaletten, sondern um Charakterfragen. Und da fühlt sich Didi wohl."
+            }
+          ],
+          "options": [
+            {
+              "id": "career_unlock",
+              "label": "Didi entschlüsselt",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 51,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Fallakte Didi Fam: abgeschlossen."
+            },
+            {
+              "hostId": "selected",
+              "text": "Du hast Reputationsangriffe durchschaut. \n\nDamit erreichst du die höchste Karrierestufe im Praktikum: Zertifizierter Debattenarchitekt."
+            },
+            {
+              "hostId": "selected",
+              "imageSrc": "/backgrounds/badge-debate-architect-v1.png",
+              "imageAlt": "Abzeichen Zertifizierter Debattenarchitekt",
+              "imageScale": 0.5,
+              "presentation": "badge"
+            }
+          ],
+          "options": [
+            {
+              "id": "what_now",
+              "label": "Darf das gefeiert werden?",
+              "nextStep": 52
+            }
+          ]
+        },
+        {
+          "stepIndex": 52,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "selected",
+              "text": "Und ob!\n\nGanz oben wartet ein besonderer Ausblick. Und ein Gespräch, das man nicht jedem Praktikanten anbietet."
+            },
+            {
+              "hostId": "selected",
+              "text": "Komm. Wir gehen ins oberste Stockwerk."
+            }
+          ],
+          "options": [
+            {
+              "id": "no_fear_heights",
+              "label": "Gut, dass ich keine Höhenangst habe.",
+              "nextStep": 53
+            },
+            {
+              "id": "higher_faster",
+              "label": "Höher, schneller, weiter.",
+              "nextStep": 53
+            }
+          ]
+        },
+        {
+          "stepIndex": 53,
+          "type": "transition",
+          "speechBubbles": [],
+          "options": [
+            {
+              "id": "to_part_5_transition",
+              "label": "Auf in die Chefetage",
+              "nextPart": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": 5,
+      "steps": [
+        {
+          "stepIndex": 0,
+          "type": "intro",
+          "speechBubbles": [
+            {
+              "hostId": "clara",
+              "text": "Willkommen ganz oben!\n\nVon hier aus sieht Regelreich erstaunlich friedlich aus."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Keine eskalierenden Kommentarspalten. Keine angeblichen Mehrheiten. Keine persönlichen Angriffe."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Nur Muster."
+            }
+          ],
+          "options": [
+            {
+              "id": "looks_harmless",
+              "label": "Sieht harmlos aus.",
+              "nextStep": 1
+            }
+          ]
+        },
+        {
+          "stepIndex": 1,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "clara",
+              "text": "Das tut es meistens von oben."
+            },
+            {
+              "hostId": "clara",
+              "text": "Aber du weißt inzwischen: Unter der Oberfläche rumort es."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Emma verstärkt Emotionen. Konrad konstruiert Konsens. Didi setzt auf Diffamierung."
+            }
+          ],
+          "options": [
+            {
+              "id": "three_strategies",
+              "label": "Drei Strategien. Drei Stockwerke.",
+              "nextStep": 2
+            },
+            {
+              "id": "each_differs",
+              "label": "Und jede funktioniert anders.",
+              "nextStep": 2
+            }
+          ]
+        },
+        {
+          "stepIndex": 2,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "clara",
+              "text": "Sehr architektonisch gedacht. Struktur hilft beim Durchblick.",
+              "showOnOptionId": "three_strategies"
+            },
+            {
+              "hostId": "uwe",
+              "text": "Unterschiedliche Werkzeuge – gleiche Wirkung: Debatten verschieben.",
+              "showOnOptionId": "each_differs"
+            }
+          ],
+          "options": [
+            {
+              "id": "what_for_internship",
+              "label": "Was heißt das für mein Praktikum?",
+              "nextStep": 3
+            }
+          ]
+        },
+        {
+          "stepIndex": 3,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "clara",
+              "text": "Es heißt: Du bist nicht mehr Praktikant."
+            },
+            {
+              "hostId": "clara",
+              "text": "Du bist jetzt offiziell Zertifizierter Debattenarchitekt."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Du erkennst rhetorische Konstruktionen – und weißt, wo tragende Wände fehlen."
+            }
+          ],
+          "options": [
+            {
+              "id": "business_card",
+              "label": "Gibt es dafür eine Visitenkarte?",
+              "nextStep": 4
+            }
+          ]
+        },
+        {
+          "stepIndex": 4,
+          "type": "summary",
+          "speechBubbles": [
+            {
+              "hostId": "clara",
+              "text": "Selbstverständlich. Mit sehr kleiner Schrift und sehr großem Titel."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Regelreich wird weiter diskutieren. Neue Vorschläge. Neue Trends. Neue Kommentare."
+            },
+            {
+              "hostId": "clara",
+              "text": "Die Frage ist nicht, ob diskutiert wird.\n\nSondern wie."
+            }
+          ],
+          "options": [
+            {
+              "id": "watch_how",
+              "label": "Und ich achte jetzt auf das Wie.",
+              "nextStep": 5
+            }
+          ]
+        },
+        {
+          "stepIndex": 5,
+          "type": "transition",
+          "speechBubbles": [
+            {
+              "hostId": "uwe",
+              "text": "Genau darum geht es.\n\nNicht jede laute Stimme ist wichtig. Nicht jede Mehrheit ist real. Und nicht jede Kritik ist sachlich."
+            },
+            {
+              "hostId": "uwe",
+              "text": "Aber wer die Muster kennt, bleibt handlungsfähig."
+            },
+            {
+              "hostId": "clara",
+              "text": "Willkommen im Media Lab! \n\nDiesmal nicht als Praktikant. Sondern als Mitgestalter der Diskussionskultur in Regelreich."
+            }
+          ],
+          "options": [
+            {
+              "id": "to_work",
+              "label": "Dann mal an die Arbeit.",
+              "nextStep": 6
+            },
+            {
+              "id": "keep_overview",
+              "label": "Ich behalte den Überblick.",
+              "nextStep": 6
+            }
+          ]
+        },
+        {
+          "stepIndex": 6,
+          "type": "transition",
+          "speechBubbles": [],
+          "options": []
+        }
+      ]
+    }
+  ]
+}

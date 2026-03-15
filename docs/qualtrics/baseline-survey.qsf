@@ -1,0 +1,4920 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_baseline2026",
+    "SurveyName": "Baseline Survey",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_IMPORT",
+    "SurveyBrandID": "IMPORT",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_import",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2026-03-12 00:00:00",
+    "CreatorID": "UR_IMPORT",
+    "LastModified": "2026-03-12 00:00:00"
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "INTRO_INFO",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Information on Participating in a Scientific Study<br><br>Dear students,<br><br>You are invited to participate in a scientific study. In this study, we are investigating how young people handle information on the internet and how they evaluate content on social media.<br><br>Participation is voluntary. The questionnaire lasts approximately 15-20 minutes per class period. No names or directly identifying information are stored, and results are only published in anonymized form.<br><br>Please read the next section carefully and only continue if you agree.",
+        "DataExportTag": "INTRO_INFO",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "SubSelector": "ML",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "INTRO_INFO",
+        "QuestionID": "QID1",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Information on Participating in a Scientific Study<br><br>Dear students,<br><br>You are invited to participate in a scientific study. In this study, we are investigating how young people handle information on the internet and how they evaluate content on social media.<br><br>Participation is voluntary. The questionnaire lasts approximately 15-20 minutes per class period. No names or directly identifying information are stored, and results are only published in anonymized form.<br><br>Please read the next section carefully and only continue if you agree."
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "INTRO_PRIVACY",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Informed Consent and Data Privacy<br><br>The project team operates in accordance with the GDPR and the German Federal Data Protection Act. Questionnaire data on media literacy, demographic characteristics, and political attitudes will be collected and analyzed by authorized researchers only.<br><br>You may withdraw your consent until October 31, 2026, using your anonymous participation code. After anonymization, withdrawal is no longer possible.",
+        "DataExportTag": "INTRO_PRIVACY",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "SubSelector": "ML",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "INTRO_PRIVACY",
+        "QuestionID": "QID2",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Informed Consent and Data Privacy<br><br>The project team operates in accordance with the GDPR and the German Federal Data Protection Act. Questionnaire data on media literacy, demographic characteristics, and political attitudes will be collected and analyzed by authorized researchers only.<br><br>You may withdraw your consent until October 31, 2026, using your anonymous participation code. After anonymization, withdrawal is no longer possible."
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "CONSENT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "I have read the information above and agree to participate in the study and to the use of my data as described.",
+        "DataExportTag": "CONSENT",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CONSENT",
+        "QuestionID": "QID3",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "I have read the information above and agree to participate in the study and to the use of my data as described.",
+        "Choices": {
+          "1": {
+            "Display": "I agree and want to participate."
+          },
+          "2": {
+            "Display": "I do not agree."
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "CODE_MOTHER",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "First two letters of your mother's first name (a-z):",
+        "DataExportTag": "CODE_MOTHER",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CODE_MOTHER",
+        "QuestionID": "QID4",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "First two letters of your mother's first name (a-z):",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "CODE_BIRTHMONTH",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Your birth month (01-12):",
+        "DataExportTag": "CODE_BIRTHMONTH",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CODE_BIRTHMONTH",
+        "QuestionID": "QID5",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Your birth month (01-12):",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "CODE_SIBLINGS",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many older siblings do you have (00-99)?",
+        "DataExportTag": "CODE_SIBLINGS",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CODE_SIBLINGS",
+        "QuestionID": "QID6",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How many older siblings do you have (00-99)?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID7",
+      "SecondaryAttribute": "CODE_STREET",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "First two letters of the street you live on (a-z):",
+        "DataExportTag": "CODE_STREET",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CODE_STREET",
+        "QuestionID": "QID7",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "First two letters of the street you live on (a-z):",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID8",
+      "SecondaryAttribute": "ZIP_CODE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which zip code do you currently live in?",
+        "DataExportTag": "ZIP_CODE",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "ZIP_CODE",
+        "QuestionID": "QID8",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which zip code do you currently live in?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID9",
+      "SecondaryAttribute": "GENDER",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which of the following categories best describes your gender identity?",
+        "DataExportTag": "GENDER",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "GENDER",
+        "QuestionID": "QID9",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which of the following categories best describes your gender identity?",
+        "Choices": {
+          "1": {
+            "Display": "Female"
+          },
+          "2": {
+            "Display": "Male"
+          },
+          "3": {
+            "Display": "Non-binary/diverse"
+          },
+          "4": {
+            "Display": "Other/Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID10",
+      "SecondaryAttribute": "BIRTH_YEAR",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please select your year of birth from the list below.",
+        "DataExportTag": "BIRTH_YEAR",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "BIRTH_YEAR",
+        "QuestionID": "QID10",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 12,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Please select your year of birth from the list below.",
+        "Choices": {
+          "1": {
+            "Display": "2006"
+          },
+          "2": {
+            "Display": "2007"
+          },
+          "3": {
+            "Display": "2008"
+          },
+          "4": {
+            "Display": "2009"
+          },
+          "5": {
+            "Display": "2010"
+          },
+          "6": {
+            "Display": "2011"
+          },
+          "7": {
+            "Display": "2012"
+          },
+          "8": {
+            "Display": "2013"
+          },
+          "9": {
+            "Display": "2014"
+          },
+          "10": {
+            "Display": "2015"
+          },
+          "11": {
+            "Display": "2016"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID11",
+      "SecondaryAttribute": "FAMILY_ROOTS",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "From which world regions do your family roots originate? Select all that apply.",
+        "DataExportTag": "FAMILY_ROOTS",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "FAMILY_ROOTS",
+        "QuestionID": "QID11",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 16,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "From which world regions do your family roots originate? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "Germany"
+          },
+          "2": {
+            "Display": "Other Western Europe"
+          },
+          "3": {
+            "Display": "Eastern Europe"
+          },
+          "4": {
+            "Display": "Middle East"
+          },
+          "5": {
+            "Display": "West Asia"
+          },
+          "6": {
+            "Display": "North Africa"
+          },
+          "7": {
+            "Display": "Sub-Saharan Africa"
+          },
+          "8": {
+            "Display": "Central or South Asia"
+          },
+          "9": {
+            "Display": "East or Southeast Asia"
+          },
+          "10": {
+            "Display": "North America"
+          },
+          "11": {
+            "Display": "Central America"
+          },
+          "12": {
+            "Display": "Caribbean"
+          },
+          "13": {
+            "Display": "South America"
+          },
+          "14": {
+            "Display": "Other",
+            "TextEntry": "true"
+          },
+          "15": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID12",
+      "SecondaryAttribute": "BIRTH_COUNTRY",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In which country were you born?",
+        "DataExportTag": "BIRTH_COUNTRY",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "BIRTH_COUNTRY",
+        "QuestionID": "QID12",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 80,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "In which country were you born?",
+        "Choices": {
+          "1": {
+            "Display": "Germany"
+          },
+          "2": {
+            "Display": "Turkey"
+          },
+          "3": {
+            "Display": "Poland"
+          },
+          "4": {
+            "Display": "Russia"
+          },
+          "5": {
+            "Display": "Syria"
+          },
+          "6": {
+            "Display": "Ukraine"
+          },
+          "7": {
+            "Display": "Afghanistan"
+          },
+          "8": {
+            "Display": "Albania"
+          },
+          "9": {
+            "Display": "Algeria"
+          },
+          "10": {
+            "Display": "Argentina"
+          },
+          "11": {
+            "Display": "Armenia"
+          },
+          "12": {
+            "Display": "Australia"
+          },
+          "13": {
+            "Display": "Austria"
+          },
+          "14": {
+            "Display": "Azerbaijan"
+          },
+          "15": {
+            "Display": "Bangladesh"
+          },
+          "16": {
+            "Display": "Belarus"
+          },
+          "17": {
+            "Display": "Belgium"
+          },
+          "18": {
+            "Display": "Bosnia and Herzegovina"
+          },
+          "19": {
+            "Display": "Brazil"
+          },
+          "20": {
+            "Display": "Bulgaria"
+          },
+          "21": {
+            "Display": "Canada"
+          },
+          "22": {
+            "Display": "Chile"
+          },
+          "23": {
+            "Display": "China"
+          },
+          "24": {
+            "Display": "Colombia"
+          },
+          "25": {
+            "Display": "Croatia"
+          },
+          "26": {
+            "Display": "Cyprus"
+          },
+          "27": {
+            "Display": "Czech Republic"
+          },
+          "28": {
+            "Display": "Denmark"
+          },
+          "29": {
+            "Display": "Egypt"
+          },
+          "30": {
+            "Display": "Estonia"
+          },
+          "31": {
+            "Display": "Ethiopia"
+          },
+          "32": {
+            "Display": "Finland"
+          },
+          "33": {
+            "Display": "France"
+          },
+          "34": {
+            "Display": "Georgia"
+          },
+          "35": {
+            "Display": "Ghana"
+          },
+          "36": {
+            "Display": "Greece"
+          },
+          "37": {
+            "Display": "Hungary"
+          },
+          "38": {
+            "Display": "India"
+          },
+          "39": {
+            "Display": "Indonesia"
+          },
+          "40": {
+            "Display": "Iran"
+          },
+          "41": {
+            "Display": "Iraq"
+          },
+          "42": {
+            "Display": "Ireland"
+          },
+          "43": {
+            "Display": "Israel"
+          },
+          "44": {
+            "Display": "Italy"
+          },
+          "45": {
+            "Display": "Japan"
+          },
+          "46": {
+            "Display": "Jordan"
+          },
+          "47": {
+            "Display": "Kazakhstan"
+          },
+          "48": {
+            "Display": "Kenya"
+          },
+          "49": {
+            "Display": "Kosovo"
+          },
+          "50": {
+            "Display": "Latvia"
+          },
+          "51": {
+            "Display": "Lebanon"
+          },
+          "52": {
+            "Display": "Libya"
+          },
+          "53": {
+            "Display": "Lithuania"
+          },
+          "54": {
+            "Display": "Luxembourg"
+          },
+          "55": {
+            "Display": "Morocco"
+          },
+          "56": {
+            "Display": "Netherlands"
+          },
+          "57": {
+            "Display": "Nigeria"
+          },
+          "58": {
+            "Display": "North Macedonia"
+          },
+          "59": {
+            "Display": "Norway"
+          },
+          "60": {
+            "Display": "Pakistan"
+          },
+          "61": {
+            "Display": "Palestine"
+          },
+          "62": {
+            "Display": "Portugal"
+          },
+          "63": {
+            "Display": "Romania"
+          },
+          "64": {
+            "Display": "Saudi Arabia"
+          },
+          "65": {
+            "Display": "Serbia"
+          },
+          "66": {
+            "Display": "Slovakia"
+          },
+          "67": {
+            "Display": "Slovenia"
+          },
+          "68": {
+            "Display": "Somalia"
+          },
+          "69": {
+            "Display": "South Africa"
+          },
+          "70": {
+            "Display": "South Korea"
+          },
+          "71": {
+            "Display": "Spain"
+          },
+          "72": {
+            "Display": "Sudan"
+          },
+          "73": {
+            "Display": "Sweden"
+          },
+          "74": {
+            "Display": "Switzerland"
+          },
+          "75": {
+            "Display": "Tunisia"
+          },
+          "76": {
+            "Display": "United Kingdom"
+          },
+          "77": {
+            "Display": "United States"
+          },
+          "78": {
+            "Display": "Vietnam"
+          },
+          "79": {
+            "Display": "Other"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID13",
+      "SecondaryAttribute": "AGE_ARRIVAL",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you were not born in Germany: How old were you when you arrived in Germany?",
+        "DataExportTag": "AGE_ARRIVAL",
+        "QuestionType": "MC",
+        "Selector": "DL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "AGE_ARRIVAL",
+        "QuestionID": "QID13",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 20,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you were not born in Germany: How old were you when you arrived in Germany?",
+        "Choices": {
+          "1": {
+            "Display": "age 0-1"
+          },
+          "2": {
+            "Display": "age 2"
+          },
+          "3": {
+            "Display": "age 3"
+          },
+          "4": {
+            "Display": "age 4"
+          },
+          "5": {
+            "Display": "age 5"
+          },
+          "6": {
+            "Display": "age 6"
+          },
+          "7": {
+            "Display": "age 7"
+          },
+          "8": {
+            "Display": "age 8"
+          },
+          "9": {
+            "Display": "age 9"
+          },
+          "10": {
+            "Display": "age 10"
+          },
+          "11": {
+            "Display": "age 11"
+          },
+          "12": {
+            "Display": "age 12"
+          },
+          "13": {
+            "Display": "age 13"
+          },
+          "14": {
+            "Display": "age 14"
+          },
+          "15": {
+            "Display": "age 15"
+          },
+          "16": {
+            "Display": "age 16"
+          },
+          "17": {
+            "Display": "age 17"
+          },
+          "18": {
+            "Display": "age 18"
+          },
+          "19": {
+            "Display": "age 19"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID14",
+      "SecondaryAttribute": "HOME_LANGUAGE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What language do you speak at home most of the time?",
+        "DataExportTag": "HOME_LANGUAGE",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "HOME_LANGUAGE",
+        "QuestionID": "QID14",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "What language do you speak at home most of the time?",
+        "Choices": {
+          "1": {
+            "Display": "German only"
+          },
+          "2": {
+            "Display": "German and another language"
+          },
+          "3": {
+            "Display": "Another language",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID15",
+      "SecondaryAttribute": "RELIGION",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is your religion, if any?",
+        "DataExportTag": "RELIGION",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "RELIGION",
+        "QuestionID": "QID15",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "What is your religion, if any?",
+        "Choices": {
+          "1": {
+            "Display": "None"
+          },
+          "2": {
+            "Display": "Christian (Catholic/Protestant/Orthodox)"
+          },
+          "3": {
+            "Display": "Muslim"
+          },
+          "4": {
+            "Display": "Jewish"
+          },
+          "5": {
+            "Display": "Hindu"
+          },
+          "6": {
+            "Display": "Buddhist"
+          },
+          "7": {
+            "Display": "Other",
+            "TextEntry": "true"
+          },
+          "8": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID16",
+      "SecondaryAttribute": "BOOKS_HOME",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many books are there in your home?",
+        "DataExportTag": "BOOKS_HOME",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "BOOKS_HOME",
+        "QuestionID": "QID16",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How many books are there in your home?",
+        "Choices": {
+          "1": {
+            "Display": "There are no books."
+          },
+          "2": {
+            "Display": "1-10 books"
+          },
+          "3": {
+            "Display": "11-25 books"
+          },
+          "4": {
+            "Display": "26-100 books"
+          },
+          "5": {
+            "Display": "101-200 books"
+          },
+          "6": {
+            "Display": "201-500 books"
+          },
+          "7": {
+            "Display": "More than 500 books"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID17",
+      "SecondaryAttribute": "CAR_OWNERSHIP",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Does your family own a car, van or truck?",
+        "DataExportTag": "CAR_OWNERSHIP",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CAR_OWNERSHIP",
+        "QuestionID": "QID17",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Does your family own a car, van or truck?",
+        "Choices": {
+          "1": {
+            "Display": "No"
+          },
+          "2": {
+            "Display": "Yes, one"
+          },
+          "3": {
+            "Display": "Yes, two or more"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID18",
+      "SecondaryAttribute": "OWN_BEDROOM",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Do you have your own bedroom for yourself?",
+        "DataExportTag": "OWN_BEDROOM",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "OWN_BEDROOM",
+        "QuestionID": "QID18",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Do you have your own bedroom for yourself?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID19",
+      "SecondaryAttribute": "COMPUTERS_HOME",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many computers do your family own (including laptops and tablets, not including game consoles and smartphones)?",
+        "DataExportTag": "COMPUTERS_HOME",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "COMPUTERS_HOME",
+        "QuestionID": "QID19",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How many computers do your family own (including laptops and tablets, not including game consoles and smartphones)?",
+        "Choices": {
+          "1": {
+            "Display": "None"
+          },
+          "2": {
+            "Display": "One"
+          },
+          "3": {
+            "Display": "Two"
+          },
+          "4": {
+            "Display": "More than two"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID20",
+      "SecondaryAttribute": "BATHROOMS_HOME",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many bathrooms (room with a bath/shower or both) are in your home?",
+        "DataExportTag": "BATHROOMS_HOME",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "BATHROOMS_HOME",
+        "QuestionID": "QID20",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How many bathrooms (room with a bath/shower or both) are in your home?",
+        "Choices": {
+          "1": {
+            "Display": "None"
+          },
+          "2": {
+            "Display": "One"
+          },
+          "3": {
+            "Display": "Two"
+          },
+          "4": {
+            "Display": "More than two"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID21",
+      "SecondaryAttribute": "DISHWASHER",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Does your family have a dishwasher at home?",
+        "DataExportTag": "DISHWASHER",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "DISHWASHER",
+        "QuestionID": "QID21",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Does your family have a dishwasher at home?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID22",
+      "SecondaryAttribute": "HOLIDAYS_ABROAD",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How many times did you and your family travel out of Germany for a holiday/vacation last year?",
+        "DataExportTag": "HOLIDAYS_ABROAD",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "HOLIDAYS_ABROAD",
+        "QuestionID": "QID22",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How many times did you and your family travel out of Germany for a holiday/vacation last year?",
+        "Choices": {
+          "1": {
+            "Display": "Not at all"
+          },
+          "2": {
+            "Display": "Once"
+          },
+          "3": {
+            "Display": "Twice"
+          },
+          "4": {
+            "Display": "More than twice"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID23",
+      "SecondaryAttribute": "ATTN_VOTE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Help us keep track of who is paying attention. Please select \"Somewhat disagree\" in the options below.",
+        "DataExportTag": "ATTN_VOTE",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "ATTN_VOTE",
+        "QuestionID": "QID23",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 8,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Help us keep track of who is paying attention. Please select \"Somewhat disagree\" in the options below.",
+        "Choices": {
+          "1": {
+            "Display": "Strongly agree"
+          },
+          "2": {
+            "Display": "Agree"
+          },
+          "3": {
+            "Display": "Somewhat agree"
+          },
+          "4": {
+            "Display": "Neither agree nor disagree"
+          },
+          "5": {
+            "Display": "Somewhat disagree"
+          },
+          "6": {
+            "Display": "Disagree"
+          },
+          "7": {
+            "Display": "Strongly disagree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID24",
+      "SecondaryAttribute": "VOTE_LIKELIHOOD_100",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If the upcoming Berlin state election were held next Sunday, how likely is it that you would vote for each of the following parties? Please distribute 100 percentage points across the options below.",
+        "DataExportTag": "VOTE_LIKELIHOOD_100",
+        "QuestionType": "CS",
+        "Selector": "TE",
+        "SubSelector": "IV",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "AllowTotalOver": "false",
+          "AllowTotalUnder": "false",
+          "TotalSum": 100,
+          "TextPosition": "inline"
+        },
+        "QuestionDescription": "VOTE_LIKELIHOOD_100",
+        "QuestionID": "QID24",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 13,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If the upcoming Berlin state election were held next Sunday, how likely is it that you would vote for each of the following parties? Please distribute 100 percentage points across the options below.",
+        "Choices": {
+          "1": {
+            "Display": "CDU"
+          },
+          "2": {
+            "Display": "SPD"
+          },
+          "3": {
+            "Display": "Bündnis 90/Die Grünen"
+          },
+          "4": {
+            "Display": "FDP"
+          },
+          "5": {
+            "Display": "AfD"
+          },
+          "6": {
+            "Display": "Die Linke"
+          },
+          "7": {
+            "Display": "Volt"
+          },
+          "8": {
+            "Display": "Freie Wähler"
+          },
+          "9": {
+            "Display": "BSW"
+          },
+          "10": {
+            "Display": "Other"
+          },
+          "11": {
+            "Display": "I would not vote"
+          },
+          "12": {
+            "Display": "Prefer not to answer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID25",
+      "SecondaryAttribute": "LEGAL_VOTE_2026",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Are you legally allowed to vote in the upcoming 2026 state elections in Berlin?",
+        "DataExportTag": "LEGAL_VOTE_2026",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "LEGAL_VOTE_2026",
+        "QuestionID": "QID25",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Are you legally allowed to vote in the upcoming 2026 state elections in Berlin?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID26",
+      "SecondaryAttribute": "WOULD_VOTE_IF_ALLOWED",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you were allowed to vote, would you intend to vote?",
+        "DataExportTag": "WOULD_VOTE_IF_ALLOWED",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "WOULD_VOTE_IF_ALLOWED",
+        "QuestionID": "QID26",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you were allowed to vote, would you intend to vote?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Not sure yet"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID27",
+      "SecondaryAttribute": "PARTY_IF_ALLOWED",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you were allowed to vote, which party would you intend to vote for?",
+        "DataExportTag": "PARTY_IF_ALLOWED",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "PARTY_IF_ALLOWED",
+        "QuestionID": "QID27",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 12,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you were allowed to vote, which party would you intend to vote for?",
+        "Choices": {
+          "1": {
+            "Display": "CDU"
+          },
+          "2": {
+            "Display": "SPD"
+          },
+          "3": {
+            "Display": "Bündnis 90/Die Grünen"
+          },
+          "4": {
+            "Display": "FDP"
+          },
+          "5": {
+            "Display": "AfD"
+          },
+          "6": {
+            "Display": "Die Linke"
+          },
+          "7": {
+            "Display": "Volt"
+          },
+          "8": {
+            "Display": "Freie Wähler"
+          },
+          "9": {
+            "Display": "BSW"
+          },
+          "10": {
+            "Display": "Another party",
+            "TextEntry": "true"
+          },
+          "11": {
+            "Display": "Prefer not to answer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID28",
+      "SecondaryAttribute": "WHY_NOT_VOTE_IF_ALLOWED",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you were allowed to vote and would not intend to vote, which of the following best describes why?",
+        "DataExportTag": "WHY_NOT_VOTE_IF_ALLOWED",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "WHY_NOT_VOTE_IF_ALLOWED",
+        "QuestionID": "QID28",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you were allowed to vote and would not intend to vote, which of the following best describes why?",
+        "Choices": {
+          "1": {
+            "Display": "I am not interested in the election"
+          },
+          "2": {
+            "Display": "I do not have enough information to decide"
+          },
+          "3": {
+            "Display": "I do not like any of the parties or candidates"
+          },
+          "4": {
+            "Display": "I do not believe voting makes a difference"
+          },
+          "5": {
+            "Display": "Other",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID29",
+      "SecondaryAttribute": "INTEND_TO_VOTE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you are legally allowed to vote: Do you intend to vote?",
+        "DataExportTag": "INTEND_TO_VOTE",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "INTEND_TO_VOTE",
+        "QuestionID": "QID29",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you are legally allowed to vote: Do you intend to vote?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No"
+          },
+          "3": {
+            "Display": "Not sure yet"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID30",
+      "SecondaryAttribute": "PARTY_INTEND",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which party do you intend to vote for?",
+        "DataExportTag": "PARTY_INTEND",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "PARTY_INTEND",
+        "QuestionID": "QID30",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 12,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which party do you intend to vote for?",
+        "Choices": {
+          "1": {
+            "Display": "CDU"
+          },
+          "2": {
+            "Display": "SPD"
+          },
+          "3": {
+            "Display": "Bündnis 90/Die Grünen"
+          },
+          "4": {
+            "Display": "FDP"
+          },
+          "5": {
+            "Display": "AfD"
+          },
+          "6": {
+            "Display": "Die Linke"
+          },
+          "7": {
+            "Display": "Volt"
+          },
+          "8": {
+            "Display": "Freie Wähler"
+          },
+          "9": {
+            "Display": "BSW"
+          },
+          "10": {
+            "Display": "Another party",
+            "TextEntry": "true"
+          },
+          "11": {
+            "Display": "Prefer not to answer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID31",
+      "SecondaryAttribute": "WHY_NOT_VOTE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "If you do not intend to vote, which of the following best describes why?",
+        "DataExportTag": "WHY_NOT_VOTE",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "WHY_NOT_VOTE",
+        "QuestionID": "QID31",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "If you do not intend to vote, which of the following best describes why?",
+        "Choices": {
+          "1": {
+            "Display": "I am not interested in the election"
+          },
+          "2": {
+            "Display": "I do not have enough information to decide"
+          },
+          "3": {
+            "Display": "I do not like any of the parties or candidates"
+          },
+          "4": {
+            "Display": "I do not believe voting makes a difference"
+          },
+          "5": {
+            "Display": "Other",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID32",
+      "SecondaryAttribute": "VOTED_2025",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did you vote in the last federal election in Germany (2025 Bundestag election)?",
+        "DataExportTag": "VOTED_2025",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "VOTED_2025",
+        "QuestionID": "QID32",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Did you vote in the last federal election in Germany (2025 Bundestag election)?",
+        "Choices": {
+          "1": {
+            "Display": "Yes"
+          },
+          "2": {
+            "Display": "No, I wasn’t eligible to vote"
+          },
+          "3": {
+            "Display": "No, I chose not to"
+          },
+          "4": {
+            "Display": "Prefer not to say"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID33",
+      "SecondaryAttribute": "POL_KNOW_1",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Who elects the German Federal Chancellor?",
+        "DataExportTag": "POL_KNOW_1",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_KNOW_1",
+        "QuestionID": "QID33",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Who elects the German Federal Chancellor?",
+        "Choices": {
+          "1": {
+            "Display": "The public directly"
+          },
+          "2": {
+            "Display": "The Bundestag"
+          },
+          "3": {
+            "Display": "The Federal President"
+          },
+          "4": {
+            "Display": "I don’t know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID34",
+      "SecondaryAttribute": "POL_KNOW_2",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What is the main role of the Bundestag?",
+        "DataExportTag": "POL_KNOW_2",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_KNOW_2",
+        "QuestionID": "QID34",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "What is the main role of the Bundestag?",
+        "Choices": {
+          "1": {
+            "Display": "To interpret the constitution"
+          },
+          "2": {
+            "Display": "To make laws and oversee the government"
+          },
+          "3": {
+            "Display": "To run local governments"
+          },
+          "4": {
+            "Display": "I don’t know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID35",
+      "SecondaryAttribute": "POL_KNOW_3",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which of the following is a key feature of democracy?",
+        "DataExportTag": "POL_KNOW_3",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_KNOW_3",
+        "QuestionID": "QID35",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which of the following is a key feature of democracy?",
+        "Choices": {
+          "1": {
+            "Display": "One leader makes decisions alone"
+          },
+          "2": {
+            "Display": "Citizens can vote in free elections"
+          },
+          "3": {
+            "Display": "The military controls government"
+          },
+          "4": {
+            "Display": "I don’t know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID36",
+      "SecondaryAttribute": "POL_KNOW_4",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Why are opposition parties important in a democracy?",
+        "DataExportTag": "POL_KNOW_4",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_KNOW_4",
+        "QuestionID": "QID36",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Why are opposition parties important in a democracy?",
+        "Choices": {
+          "1": {
+            "Display": "They help the government stay in power"
+          },
+          "2": {
+            "Display": "They represent different views and hold government accountable"
+          },
+          "3": {
+            "Display": "They control the courts"
+          },
+          "4": {
+            "Display": "I don’t know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID37",
+      "SecondaryAttribute": "POL_KNOW_5",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which institution ensures that laws follow the constitution in Germany?",
+        "DataExportTag": "POL_KNOW_5",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_KNOW_5",
+        "QuestionID": "QID37",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which institution ensures that laws follow the constitution in Germany?",
+        "Choices": {
+          "1": {
+            "Display": "Bundestag"
+          },
+          "2": {
+            "Display": "Federal Constitutional Court"
+          },
+          "3": {
+            "Display": "Federal Police"
+          },
+          "4": {
+            "Display": "I don’t know"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID38",
+      "SecondaryAttribute": "SM_HOURS",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "On an average day, how many hours in total do you spend using social media platforms?",
+        "DataExportTag": "SM_HOURS",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 24,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 24,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_HOURS",
+        "QuestionID": "QID38",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "On an average day, how many hours in total do you spend using social media platforms?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID39",
+      "SecondaryAttribute": "SM_POLINFO_FREQ",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the past 3 months, how often have you used the following sources for political information?",
+        "DataExportTag": "SM_POLINFO_FREQ",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_POLINFO_FREQ",
+        "QuestionID": "QID39",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 13,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "In the past 3 months, how often have you used the following sources for political information?",
+        "Choices": {
+          "1": {
+            "Display": "Instagram"
+          },
+          "2": {
+            "Display": "TikTok"
+          },
+          "3": {
+            "Display": "Snapchat"
+          },
+          "4": {
+            "Display": "Podcasts"
+          },
+          "5": {
+            "Display": "Radio"
+          },
+          "6": {
+            "Display": "Newspapers (print or online)"
+          },
+          "7": {
+            "Display": "Television news"
+          },
+          "8": {
+            "Display": "Friends"
+          },
+          "9": {
+            "Display": "Family"
+          },
+          "10": {
+            "Display": "School"
+          },
+          "11": {
+            "Display": "Fact-checking websites"
+          },
+          "12": {
+            "Display": "Other online sources"
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Very often"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID40",
+      "SecondaryAttribute": "SM_TOP_SOURCE_1",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Thinking about the past three months, which source have you used most often to get political information? (1 of up to 5)",
+        "DataExportTag": "SM_TOP_SOURCE_1",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_TOP_SOURCE_1",
+        "QuestionID": "QID40",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Thinking about the past three months, which source have you used most often to get political information? (1 of up to 5)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID41",
+      "SecondaryAttribute": "SM_TOP_SOURCE_2",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Most-used political information source (2 of up to 5)",
+        "DataExportTag": "SM_TOP_SOURCE_2",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_TOP_SOURCE_2",
+        "QuestionID": "QID41",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Most-used political information source (2 of up to 5)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID42",
+      "SecondaryAttribute": "SM_TOP_SOURCE_3",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Most-used political information source (3 of up to 5)",
+        "DataExportTag": "SM_TOP_SOURCE_3",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_TOP_SOURCE_3",
+        "QuestionID": "QID42",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Most-used political information source (3 of up to 5)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID43",
+      "SecondaryAttribute": "SM_TOP_SOURCE_4",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Most-used political information source (4 of up to 5)",
+        "DataExportTag": "SM_TOP_SOURCE_4",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_TOP_SOURCE_4",
+        "QuestionID": "QID43",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Most-used political information source (4 of up to 5)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID44",
+      "SecondaryAttribute": "SM_TOP_SOURCE_5",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Most-used political information source (5 of up to 5)",
+        "DataExportTag": "SM_TOP_SOURCE_5",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_TOP_SOURCE_5",
+        "QuestionID": "QID44",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Most-used political information source (5 of up to 5)",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID45",
+      "SecondaryAttribute": "SM_SHARE_TYPES",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Which of these types of content would you consider sharing on social media (if any)? Select all that apply.",
+        "DataExportTag": "SM_SHARE_TYPES",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_SHARE_TYPES",
+        "QuestionID": "QID45",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Which of these types of content would you consider sharing on social media (if any)? Select all that apply.",
+        "Choices": {
+          "1": {
+            "Display": "Political news"
+          },
+          "2": {
+            "Display": "Sports news"
+          },
+          "3": {
+            "Display": "Celebrity news/entertainment"
+          },
+          "4": {
+            "Display": "Science/technology news"
+          },
+          "5": {
+            "Display": "Business news"
+          },
+          "6": {
+            "Display": "Other",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID46",
+      "SecondaryAttribute": "SM_NEWS_BEHAVIOR",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How often do you engage in the following activities related to news and information?",
+        "DataExportTag": "SM_NEWS_BEHAVIOR",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_NEWS_BEHAVIOR",
+        "QuestionID": "QID46",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "How often do you engage in the following activities related to news and information?",
+        "Choices": {
+          "1": {
+            "Display": "Read, view, or listen to news and information produced by major news organizations or publications at the original source."
+          },
+          "2": {
+            "Display": "Read or listen to information or points of view from people, media sources, or organizations with whom you often disagree."
+          },
+          "3": {
+            "Display": "Confirm that a news story is really true by looking across multiple information sources."
+          },
+          "4": {
+            "Display": "Pass on news and information to others without first checking its accuracy or the integrity of the source."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Very often"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID47",
+      "SecondaryAttribute": "SM_MANIPULATIVE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In the past two weeks, how often have you thought while viewing online content: “This seems manipulative”?",
+        "DataExportTag": "SM_MANIPULATIVE",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SM_MANIPULATIVE",
+        "QuestionID": "QID47",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "In the past two weeks, how often have you thought while viewing online content: “This seems manipulative”?",
+        "Choices": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "Rarely"
+          },
+          "3": {
+            "Display": "Sometimes"
+          },
+          "4": {
+            "Display": "Often"
+          },
+          "5": {
+            "Display": "Very often"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID48",
+      "SecondaryAttribute": "POL_EFFICACY",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please indicate to what extent you agree or disagree with each of the statements.",
+        "DataExportTag": "POL_EFFICACY",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_EFFICACY",
+        "QuestionID": "QID48",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "Please indicate to what extent you agree or disagree with each of the statements.",
+        "Choices": {
+          "1": {
+            "Display": "I am good at understanding and assessing important political issues."
+          },
+          "2": {
+            "Display": "Politicians strive to keep in close touch with the people."
+          },
+          "3": {
+            "Display": "I have the confidence to take active part in a discussion about political issues."
+          },
+          "4": {
+            "Display": "Politicians care about what ordinary people think."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Do not agree at all"
+          },
+          "2": {
+            "Display": "Slightly agree"
+          },
+          "3": {
+            "Display": "Somewhat agree"
+          },
+          "4": {
+            "Display": "Agree"
+          },
+          "5": {
+            "Display": "Completely agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID49",
+      "SecondaryAttribute": "POL_INTEREST",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How interested would you say you are in politics?",
+        "DataExportTag": "POL_INTEREST",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "POL_INTEREST",
+        "QuestionID": "QID49",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How interested would you say you are in politics?",
+        "Choices": {
+          "1": {
+            "Display": "Very interested"
+          },
+          "2": {
+            "Display": "Quite interested"
+          },
+          "3": {
+            "Display": "Hardly interested"
+          },
+          "4": {
+            "Display": "Not at all interested"
+          },
+          "5": {
+            "Display": "Don’t know / don’t want to answer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID50",
+      "SecondaryAttribute": "LEFT_RIGHT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In politics people sometimes talk of 'left' and 'right'. Where would you place yourself on this scale, where 0 means the left and 10 means the right?",
+        "DataExportTag": "LEFT_RIGHT",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 10,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 10,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "LEFT_RIGHT",
+        "QuestionID": "QID50",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "In politics people sometimes talk of 'left' and 'right'. Where would you place yourself on this scale, where 0 means the left and 10 means the right?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID51",
+      "SecondaryAttribute": "PARTY_CLOSENESS",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How close do you feel to the following parties?",
+        "DataExportTag": "PARTY_CLOSENESS",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "PARTY_CLOSENESS",
+        "QuestionID": "QID51",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "How close do you feel to the following parties?",
+        "Choices": {
+          "1": {
+            "Display": "CDU"
+          },
+          "2": {
+            "Display": "SPD"
+          },
+          "3": {
+            "Display": "Bündnis 90/Die Grünen"
+          },
+          "4": {
+            "Display": "FDP"
+          },
+          "5": {
+            "Display": "AfD"
+          },
+          "6": {
+            "Display": "Die Linke"
+          },
+          "7": {
+            "Display": "Volt"
+          },
+          "8": {
+            "Display": "BSW"
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Very close"
+          },
+          "2": {
+            "Display": "Quite close"
+          },
+          "3": {
+            "Display": "Not close"
+          },
+          "4": {
+            "Display": "Not at all close"
+          },
+          "5": {
+            "Display": "Don’t know / don’t want to answer"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID52",
+      "SecondaryAttribute": "INST_TRUST",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How much do you personally trust each of the institutions or groups of people listed below?",
+        "DataExportTag": "INST_TRUST",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "INST_TRUST",
+        "QuestionID": "QID52",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 12,
+        "QuestionText_Unsafe": "How much do you personally trust each of the institutions or groups of people listed below?",
+        "Choices": {
+          "1": {
+            "Display": "Germany’s parliament"
+          },
+          "2": {
+            "Display": "The legal system"
+          },
+          "3": {
+            "Display": "The police"
+          },
+          "4": {
+            "Display": "Politicians"
+          },
+          "5": {
+            "Display": "Political parties"
+          },
+          "6": {
+            "Display": "The European Parliament"
+          },
+          "7": {
+            "Display": "The United Nations"
+          },
+          "8": {
+            "Display": "Scientists"
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "0"
+          },
+          "2": {
+            "Display": "1"
+          },
+          "3": {
+            "Display": "2"
+          },
+          "4": {
+            "Display": "3"
+          },
+          "5": {
+            "Display": "4"
+          },
+          "6": {
+            "Display": "5"
+          },
+          "7": {
+            "Display": "6"
+          },
+          "8": {
+            "Display": "7"
+          },
+          "9": {
+            "Display": "8"
+          },
+          "10": {
+            "Display": "9"
+          },
+          "11": {
+            "Display": "10"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID53",
+      "SecondaryAttribute": "SOCIAL_TRUST",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people?",
+        "DataExportTag": "SOCIAL_TRUST",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 10,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 10,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SOCIAL_TRUST",
+        "QuestionID": "QID53",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Generally speaking, would you say that most people can be trusted, or that you can't be too careful in dealing with people?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID54",
+      "SecondaryAttribute": "SYSTEM_EVAL",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please think about the political system in our country. For each statement, indicate whether you strongly approve, widely approve, widely disapprove, or strongly disapprove.",
+        "DataExportTag": "SYSTEM_EVAL",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SYSTEM_EVAL",
+        "QuestionID": "QID54",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 5,
+        "QuestionText_Unsafe": "Please think about the political system in our country. For each statement, indicate whether you strongly approve, widely approve, widely disapprove, or strongly disapprove.",
+        "Choices": {
+          "1": {
+            "Display": "The political system of the Federal Republic of Germany is just and fair."
+          },
+          "2": {
+            "Display": "The political system of the Federal Republic of Germany protects the fundamental freedoms of its citizens."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Strongly approve"
+          },
+          "2": {
+            "Display": "Widely approve"
+          },
+          "3": {
+            "Display": "Widely disapprove"
+          },
+          "4": {
+            "Display": "Strongly disapprove"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID55",
+      "SecondaryAttribute": "SYSTEM_VIEWS",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "For each of the following views, indicate whether you strongly approve, widely approve, widely disapprove, or strongly disapprove.",
+        "DataExportTag": "SYSTEM_VIEWS",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SYSTEM_VIEWS",
+        "QuestionID": "QID55",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 5,
+        "QuestionText_Unsafe": "For each of the following views, indicate whether you strongly approve, widely approve, widely disapprove, or strongly disapprove.",
+        "Choices": {
+          "1": {
+            "Display": "In the political system of the Federal Republic of Germany, only the well-being of a few special interest groups is considered, not the well-being of all population groups."
+          },
+          "2": {
+            "Display": "Every population group has an equal opportunity to influence politics in the political system of the Federal Republic of Germany."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Strongly approve"
+          },
+          "2": {
+            "Display": "Widely approve"
+          },
+          "3": {
+            "Display": "Widely disapprove"
+          },
+          "4": {
+            "Display": "Strongly disapprove"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID56",
+      "SecondaryAttribute": "BERLIN_ISSUES",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Below is a list of topics often discussed in Berlin and/or Germany. For each statement, please indicate how strongly you agree or do not agree.",
+        "DataExportTag": "BERLIN_ISSUES",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "BERLIN_ISSUES",
+        "QuestionID": "QID56",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 16,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "Below is a list of topics often discussed in Berlin and/or Germany. For each statement, please indicate how strongly you agree or do not agree.",
+        "Choices": {
+          "1": {
+            "Display": "Berlin should continue to pursue the goal of climate neutrality."
+          },
+          "2": {
+            "Display": "Public broadcasting (e.g., RBB) should be reduced in size."
+          },
+          "3": {
+            "Display": "Asylum seekers should remain in collective accommodation until a decision has been made on their application."
+          },
+          "4": {
+            "Display": "Every public building should provide at least one gender-neutral restroom that can be used regardless of gender."
+          },
+          "5": {
+            "Display": "In Berlin daycare centers and schools, the traditional family model (father, mother, children) should be emphasized."
+          },
+          "6": {
+            "Display": "Berlin should continue to comply with the legal limit on public borrowing (debt brake)."
+          },
+          "7": {
+            "Display": "The state of Berlin should advocate for easing the sanctions against Russia."
+          },
+          "8": {
+            "Display": "The rent control regulation (Mietpreisbremse) in Berlin should be abolished."
+          },
+          "9": {
+            "Display": "The use of social media should be more strictly restricted for minors."
+          },
+          "10": {
+            "Display": "The German armed forces (Bundeswehr) should be allowed to provide information about their work in schools in Rhineland-Palatinate."
+          },
+          "11": {
+            "Display": "Recipients of citizens’ income (Bürgergeld) who repeatedly miss appointments at the job center should continue to face benefit reductions."
+          },
+          "12": {
+            "Display": "All employees should be able to retire without reductions after 40 contribution years."
+          },
+          "13": {
+            "Display": "The top income tax rate should be increased."
+          },
+          "14": {
+            "Display": "New heating systems should continue to be allowed to run entirely on fossil fuels (e.g., gas or oil)."
+          },
+          "15": {
+            "Display": "The statutory minimum wage should be increased to at least 15 euros per hour."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Strongly agree"
+          },
+          "2": {
+            "Display": "Somewhat agree"
+          },
+          "3": {
+            "Display": "Neither agree nor disagree"
+          },
+          "4": {
+            "Display": "Somewhat disagree"
+          },
+          "5": {
+            "Display": "Strongly disagree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID57",
+      "SecondaryAttribute": "DONATION_PARTIES",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Imagine you are given €100. Please decide how you would divide the €100 among the following parties. The total must add up to €100.",
+        "DataExportTag": "DONATION_PARTIES",
+        "QuestionType": "CS",
+        "Selector": "TE",
+        "SubSelector": "IV",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText",
+          "AllowTotalOver": "false",
+          "AllowTotalUnder": "false",
+          "TotalSum": 100,
+          "TextPosition": "inline"
+        },
+        "QuestionDescription": "DONATION_PARTIES",
+        "QuestionID": "QID57",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 9,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Imagine you are given €100. Please decide how you would divide the €100 among the following parties. The total must add up to €100.",
+        "Choices": {
+          "1": {
+            "Display": "CDU"
+          },
+          "2": {
+            "Display": "SPD"
+          },
+          "3": {
+            "Display": "Bündnis 90/Die Grünen"
+          },
+          "4": {
+            "Display": "FDP"
+          },
+          "5": {
+            "Display": "AfD"
+          },
+          "6": {
+            "Display": "Die Linke"
+          },
+          "7": {
+            "Display": "Volt"
+          },
+          "8": {
+            "Display": "BSW"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID58",
+      "SecondaryAttribute": "SOCIAL_DESIRABILITY",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "The following statements may apply more or less to you personally. Please indicate to what extent they apply to you.",
+        "DataExportTag": "SOCIAL_DESIRABILITY",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SOCIAL_DESIRABILITY",
+        "QuestionID": "QID58",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "The following statements may apply more or less to you personally. Please indicate to what extent they apply to you.",
+        "Choices": {
+          "1": {
+            "Display": "In an argument, I always remain objective and stick to the facts."
+          },
+          "2": {
+            "Display": "Even if I am feeling stressed, I am always friendly and polite to others."
+          },
+          "3": {
+            "Display": "When talking to someone, I always listen carefully to what the other person says."
+          },
+          "4": {
+            "Display": "It has happened that I have taken advantage of someone in the past."
+          },
+          "5": {
+            "Display": "I have occasionally thrown litter away in the countryside or on to the road."
+          },
+          "6": {
+            "Display": "Sometimes I only help people if I expect to get something in return."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Doesn’t apply at all"
+          },
+          "2": {
+            "Display": "Applies a bit"
+          },
+          "3": {
+            "Display": "Applies somewhat"
+          },
+          "4": {
+            "Display": "Applies mostly"
+          },
+          "5": {
+            "Display": "Applies completely"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID59",
+      "SecondaryAttribute": "CLASS_LEFT_PERCENT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Among students in your class, what percentage do you think supports left-leaning political parties?",
+        "DataExportTag": "CLASS_LEFT_PERCENT",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 100,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 100,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CLASS_LEFT_PERCENT",
+        "QuestionID": "QID59",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Among students in your class, what percentage do you think supports left-leaning political parties?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID60",
+      "SecondaryAttribute": "CLASS_RIGHT_PERCENT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Among students in your class, what percentage do you think supports right-leaning political parties?",
+        "DataExportTag": "CLASS_RIGHT_PERCENT",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 100,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 100,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CLASS_RIGHT_PERCENT",
+        "QuestionID": "QID60",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Among students in your class, what percentage do you think supports right-leaning political parties?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID61",
+      "SecondaryAttribute": "SELF_EFFICACY",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "To what extent do you think each statement applies to you personally?",
+        "DataExportTag": "SELF_EFFICACY",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SELF_EFFICACY",
+        "QuestionID": "QID61",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 4,
+        "NextAnswerId": 6,
+        "QuestionText_Unsafe": "To what extent do you think each statement applies to you personally?",
+        "Choices": {
+          "1": {
+            "Display": "I can rely on my own abilities in difficult situations."
+          },
+          "2": {
+            "Display": "I am able to solve most problems on my own."
+          },
+          "3": {
+            "Display": "I can usually solve even challenging and complex tasks well."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Does not apply at all"
+          },
+          "2": {
+            "Display": "Applies a bit"
+          },
+          "3": {
+            "Display": "Applies somewhat"
+          },
+          "4": {
+            "Display": "Applies mostly"
+          },
+          "5": {
+            "Display": "Applies completely"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID62",
+      "SecondaryAttribute": "LIFE_LADDER",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please imagine a ladder with steps numbered from zero at the bottom to 10 at the top. On which step of the ladder would you say you personally feel you stand at this time?",
+        "DataExportTag": "LIFE_LADDER",
+        "QuestionType": "Slider",
+        "Selector": "HBAR",
+        "SubSelector": "SN",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 10,
+          "ShowValue": "true",
+          "SnapToGrid": "true",
+          "GridLines": 10,
+          "NumDecimals": 0,
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "LIFE_LADDER",
+        "QuestionID": "QID62",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Please imagine a ladder with steps numbered from zero at the bottom to 10 at the top. On which step of the ladder would you say you personally feel you stand at this time?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID63",
+      "SecondaryAttribute": "AOT_SCALE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please indicate the extent to which you agree or disagree with the following statements.",
+        "DataExportTag": "AOT_SCALE",
+        "QuestionType": "Matrix",
+        "Selector": "Likert",
+        "SubSelector": "SingleAnswer",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "AOT_SCALE",
+        "QuestionID": "QID63",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 7,
+        "NextAnswerId": 7,
+        "QuestionText_Unsafe": "Please indicate the extent to which you agree or disagree with the following statements.",
+        "Choices": {
+          "1": {
+            "Display": "When you encounter experiences or observations that seem to contradict your beliefs, you consider revising those beliefs."
+          },
+          "2": {
+            "Display": "If something feels true to you, you are still open to considering experiences or observations that may challenge it."
+          },
+          "3": {
+            "Display": "When you have experiences or observations that conflict with your current beliefs, you take time to re-evaluate those beliefs."
+          },
+          "4": {
+            "Display": "You are willing to reconsider your beliefs if you encounter convincing experiences or observations that seem to contradict them."
+          },
+          "5": {
+            "Display": "Encountering experiences or observations that challenge your beliefs encourages you to reflect on whether your beliefs might need to change."
+          },
+          "6": {
+            "Display": "When faced with experiences or observations that challenge what you believe to be true, you are open to exploring new perspectives."
+          }
+        },
+        "Answers": {
+          "1": {
+            "Display": "Strongly disagree"
+          },
+          "2": {
+            "Display": "Disagree"
+          },
+          "3": {
+            "Display": "Somewhat disagree"
+          },
+          "4": {
+            "Display": "Somewhat agree"
+          },
+          "5": {
+            "Display": "Agree"
+          },
+          "6": {
+            "Display": "Strongly agree"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "AnswerOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID64",
+      "SecondaryAttribute": "SUBJECT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "In which subject did you take this survey?",
+        "DataExportTag": "SUBJECT",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "SUBJECT",
+        "QuestionID": "QID64",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 5,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "In which subject did you take this survey?",
+        "Choices": {
+          "1": {
+            "Display": "History"
+          },
+          "2": {
+            "Display": "Politics/Civics"
+          },
+          "3": {
+            "Display": "Social Studies"
+          },
+          "4": {
+            "Display": "Other",
+            "TextEntry": "true"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID65",
+      "SecondaryAttribute": "COURSE_LEVEL",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Is this course taught at a basic level or an advanced level?",
+        "DataExportTag": "COURSE_LEVEL",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "COURSE_LEVEL",
+        "QuestionID": "QID65",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Is this course taught at a basic level or an advanced level?",
+        "Choices": {
+          "1": {
+            "Display": "Basic level"
+          },
+          "2": {
+            "Display": "Advanced level"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID66",
+      "SecondaryAttribute": "CLASS_DISCUSSION",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How often did you discuss political or social issues in class in the past school year?",
+        "DataExportTag": "CLASS_DISCUSSION",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CLASS_DISCUSSION",
+        "QuestionID": "QID66",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "How often did you discuss political or social issues in class in the past school year?",
+        "Choices": {
+          "1": {
+            "Display": "Never"
+          },
+          "2": {
+            "Display": "A few times during the year"
+          },
+          "3": {
+            "Display": "About once a month"
+          },
+          "4": {
+            "Display": "A few times a month"
+          },
+          "5": {
+            "Display": "About once a week or more"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID67",
+      "SecondaryAttribute": "GRADING_SYSTEM",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Do you receive points (0-15) or grades (1-6) for exams?",
+        "DataExportTag": "GRADING_SYSTEM",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "GRADING_SYSTEM",
+        "QuestionID": "QID67",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 3,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Do you receive points (0-15) or grades (1-6) for exams?",
+        "Choices": {
+          "1": {
+            "Display": "Points"
+          },
+          "2": {
+            "Display": "Grades"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID68",
+      "SecondaryAttribute": "LAST_MATH_GRADE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What was the last math grade you got?",
+        "DataExportTag": "LAST_MATH_GRADE",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "LAST_MATH_GRADE",
+        "QuestionID": "QID68",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "What was the last math grade you got?",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID69",
+      "SecondaryAttribute": "CLASS_CODE",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please enter the class code provided by your teacher:",
+        "DataExportTag": "CLASS_CODE",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "CLASS_CODE",
+        "QuestionID": "QID69",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Please enter the class code provided by your teacher:",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID70",
+      "SecondaryAttribute": "EFFORT",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Lastly, please tell us how much effort you put forth towards this study.",
+        "DataExportTag": "EFFORT",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "EFFORT",
+        "QuestionID": "QID70",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 6,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Lastly, please tell us how much effort you put forth towards this study.",
+        "Choices": {
+          "1": {
+            "Display": "Almost no"
+          },
+          "2": {
+            "Display": "Very little"
+          },
+          "3": {
+            "Display": "Some"
+          },
+          "4": {
+            "Display": "Quite a bit"
+          },
+          "5": {
+            "Display": "A lot"
+          }
+        },
+        "ChoiceOrder": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID71",
+      "SecondaryAttribute": "THANK_YOU",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Thank you very much for taking part in this study.<br><br>We appreciate the time and effort you invested in answering the questions. Your participation contributes meaningfully to our research.",
+        "DataExportTag": "THANK_YOU",
+        "QuestionType": "DB",
+        "Selector": "TB",
+        "SubSelector": "ML",
+        "Configuration": {
+          "QuestionDescriptionOption": "UseText"
+        },
+        "QuestionDescription": "THANK_YOU",
+        "QuestionID": "QID71",
+        "DataVisibility": {
+          "Private": false,
+          "Hidden": false
+        },
+        "Language": [],
+        "NextChoiceId": 1,
+        "NextAnswerId": 1,
+        "QuestionText_Unsafe": "Thank you very much for taking part in this study.<br><br>We appreciate the time and effort you invested in answering the questions. Your participation contributes meaningfully to our research."
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Intro & Consent",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Intro & Consent",
+        "ID": "BL_1",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID1"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID2"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID3"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Anonymous Code",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Anonymous Code",
+        "ID": "BL_2",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID4"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID5"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID6"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID7"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Demographics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Demographics",
+        "ID": "BL_3",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID8"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID9"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID10"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID11"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID12"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID13"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID14"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID15"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID16"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID17"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID18"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID19"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID20"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID21"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID22"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Voting Experiences Intentions",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Voting Experiences Intentions",
+        "ID": "BL_4",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID23"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID24"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID25"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID26"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID27"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID28"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID29"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID30"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID31"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID32"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID33"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID34"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID35"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID36"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID37"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Social Media Use",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Social Media Use",
+        "ID": "BL_5",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID38"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID39"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID40"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID41"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID42"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID43"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID44"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID45"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID46"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID47"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Socio-Political Opinions",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Socio-Political Opinions",
+        "ID": "BL_6",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID48"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID49"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID50"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID51"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID52"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID53"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID54"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID55"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID56"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID57"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Personality & Misc Measures",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Personality & Misc Measures",
+        "ID": "BL_7",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID58"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID59"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID60"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID61"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID62"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID63"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "School Background",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "School Background",
+        "ID": "BL_8",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID64"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID65"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID66"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID67"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID68"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID69"
+          },
+          {
+            "Type": "Question",
+            "QuestionID": "QID70"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "BL",
+      "PrimaryAttribute": "Thank You",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Standard",
+        "Description": "Thank You",
+        "ID": "BL_9",
+        "BlockElements": [
+          {
+            "Type": "Question",
+            "QuestionID": "QID71"
+          }
+        ]
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "Flow": [
+          {
+            "ID": "BL_1",
+            "Type": "Block",
+            "FlowID": "FL_BL_1",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_2",
+            "Type": "Block",
+            "FlowID": "FL_BL_2",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_3",
+            "Type": "Block",
+            "FlowID": "FL_BL_3",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_4",
+            "Type": "Block",
+            "FlowID": "FL_BL_4",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_5",
+            "Type": "Block",
+            "FlowID": "FL_BL_5",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_6",
+            "Type": "Block",
+            "FlowID": "FL_BL_6",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_7",
+            "Type": "Block",
+            "FlowID": "FL_BL_7",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_8",
+            "Type": "Block",
+            "FlowID": "FL_BL_8",
+            "Autofill": []
+          },
+          {
+            "ID": "BL_9",
+            "Type": "Block",
+            "FlowID": "FL_BL_9",
+            "Autofill": []
+          }
+        ],
+        "Properties": {
+          "Count": 9
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "SurveyProtection": "ByInvitation",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "None",
+        "PartialData": "+1 week",
+        "ValidationMessage": {
+          "Settings": {
+            "ForceResponse": "Please answer this question before continuing."
+          }
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "PROJ",
+      "PrimaryAttribute": "CORE",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "ProjectCategory": "CORE"
+      }
+    },
+    {
+      "SurveyID": "SV_baseline2026",
+      "Element": "STAT",
+      "PrimaryAttribute": "Survey Statistics",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "SurveyStartDate": "0000-00-00 00:00:00",
+        "SurveyCreationDate": "2026-03-12 00:00:00",
+        "LastModified": "2026-03-12 00:00:00",
+        "ResponseCount": 0
+      }
+    }
+  ]
+}
