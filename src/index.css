@@ -809,36 +809,37 @@ html, body {
   background: rgba(188, 250, 197, 0.92);
 }
 
+/* Activity panels: same style as chat-panel (transparent gradient), over lower end of background */
 .monitor-scene--keller-monitor-select .monitor-scene__bezel,
 .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
   position: absolute;
-  left: 52.2%;
-  top: 53%;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: clamp(0.5rem, 1.5vh, 1rem);
+  top: auto;
+  transform: translateX(-50%);
   width: min(50vw, 960px);
-  height: min(60vh, 660px);
-  border-radius: 10px;
-  padding: 0.25rem;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  max-width: calc(100vw - 1rem);
+  height: min(58vh, 640px);
+  min-height: 280px;
+  border-radius: 18px;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(180deg, rgba(5, 16, 41, 0.78) 0%, rgba(5, 18, 52, 0.72) 100%);
+  border: 2px solid rgba(171, 126, 255, 0.5);
+  box-shadow: 0 10px 34px rgba(8, 17, 35, 0.45);
 }
 
 .monitor-scene--keller-monitor-select .monitor-scene__bezel {
-  left: calc(52.2% - 2vh);
+  width: min(52vw, 980px);
 }
 
 .monitor-scene--grossraum-monitor-select .monitor-scene__bezel {
-  top: calc(53% - 8vh);
-  left: calc(52.2% - 5vh);
-  width: min(calc(50vw + 5vw), 1200px);
-  height: min(55vh, 605px);
+  width: min(54vw, 1100px);
+  height: min(55vh, 600px);
 }
 
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
-  top: calc(53% - 8vh);
-  height: min(70vh, 770px);
+  height: min(62vh, 680px);
 }
 
 .monitor-scene--keller-monitor-select .monitor-scene__messages {
@@ -884,6 +885,47 @@ html, body {
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__screen {
   background: transparent;
   border: none;
+}
+
+/* Activity: transparent bubbles and options to match chat-panel style */
+.monitor-scene--keller-monitor-select .monitor-message--host .monitor-message__bubble,
+.monitor-scene--grossraum-monitor-select .monitor-message--host .monitor-message__bubble,
+.monitor-scene--einzelbuero-tablet-select .monitor-message--host .monitor-message__bubble {
+  background: rgba(232, 244, 255, 0.92);
+  color: #15283f;
+}
+
+.monitor-scene--keller-monitor-select .monitor-message--player .monitor-message__bubble,
+.monitor-scene--grossraum-monitor-select .monitor-message--player .monitor-message__bubble,
+.monitor-scene--einzelbuero-tablet-select .monitor-message--player .monitor-message__bubble {
+  background: rgba(182, 242, 143, 0.92);
+  color: #123119;
+}
+
+.monitor-scene--keller-monitor-select .monitor-select__paragraph--post,
+.monitor-scene--grossraum-monitor-select .monitor-select__paragraph--post,
+.monitor-scene--einzelbuero-tablet-select .monitor-select__paragraph--post {
+  background: rgba(232, 244, 255, 0.9);
+  border-color: rgba(168, 200, 227, 0.6);
+}
+
+.monitor-scene--keller-monitor-select .monitor-scene__option,
+.monitor-scene--grossraum-monitor-select .monitor-scene__option,
+.monitor-scene--einzelbuero-tablet-select .monitor-scene__option {
+  font-size: clamp(0.95rem, 2vw + 0.6rem, 1.2rem);
+  padding: 0.65rem 0.8rem;
+}
+
+.monitor-scene--keller-monitor-select .monitor-message__speaker,
+.monitor-scene--grossraum-monitor-select .monitor-message__speaker,
+.monitor-scene--einzelbuero-tablet-select .monitor-message__speaker {
+  font-size: clamp(0.75rem, 1.5vw + 0.4rem, 0.88rem);
+}
+
+.monitor-scene--keller-monitor-select .monitor-message__paragraph,
+.monitor-scene--grossraum-monitor-select .monitor-message__paragraph,
+.monitor-scene--einzelbuero-tablet-select .monitor-message__paragraph {
+  font-size: clamp(0.88rem, 1.5vw + 0.45rem, 1.02rem);
 }
 
 .monitor-scene--einzelbuero-tablet-select .monitor-scene__screen {
@@ -957,8 +999,9 @@ html, body {
 .monitor-scene--grossraum-monitor-select .monitor-choice__topic,
 .monitor-scene--einzelbuero-tablet-select .monitor-select__title,
 .monitor-scene--einzelbuero-tablet-select .monitor-choice__topic {
-  color: #d8f7e8;
-  text-shadow: 0 0 6px rgba(51, 153, 99, 0.45);
+  color: #dff1ff;
+  font-size: clamp(0.8rem, 1.2vw + 0.45rem, 0.95rem);
+  text-shadow: 0 0 6px rgba(51, 153, 99, 0.35);
 }
 
 .monitor-scene--keller-monitor-select .monitor-choice__item,
@@ -990,7 +1033,7 @@ html, body {
 .monitor-scene--grossraum-monitor-select .monitor-select__sentence,
 .monitor-scene--einzelbuero-tablet-select .monitor-choice__text,
 .monitor-scene--einzelbuero-tablet-select .monitor-select__sentence {
-  font-size: 1.08rem;
+  font-size: clamp(0.85rem, 1.2vw + 0.5rem, 1rem);
 }
 
 .monitor-scene--keller-monitor-select .monitor-choice__item:hover,
@@ -1016,21 +1059,24 @@ html, body {
   .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
   .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
     width: min(95vw, 980px);
-    height: min(78vh, 760px);
+    max-width: calc(100vw - 1rem);
+    height: min(58vh, 640px);
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    bottom: clamp(0.5rem, 1.5vh, 1rem);
+    top: auto;
+    transform: translateX(-50%);
     border-radius: 18px;
-    padding: 0.7rem;
-    background: rgba(10, 38, 28, 0.26);
-    border: 1px solid rgba(145, 227, 179, 0.3);
+    padding: 0.7rem 0.85rem;
+    background: linear-gradient(180deg, rgba(5, 16, 41, 0.78) 0%, rgba(5, 18, 52, 0.72) 100%);
+    border: 2px solid rgba(171, 126, 255, 0.5);
+    box-shadow: 0 10px 34px rgba(8, 17, 35, 0.45);
   }
 
   .monitor-scene--keller-monitor-select .monitor-scene__screen,
   .monitor-scene--grossraum-monitor-select .monitor-scene__screen,
   .monitor-scene--einzelbuero-tablet-select .monitor-scene__screen {
-    background: rgba(5, 24, 17, 0.25);
-    border: 1px solid rgba(145, 227, 179, 0.24);
+    background: transparent;
+    border: none;
   }
 }
 
