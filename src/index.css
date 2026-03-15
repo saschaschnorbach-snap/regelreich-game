@@ -1234,31 +1234,36 @@ html, body {
   }
 }
 
-/* Mobile phones: top half = background (fully visible), bottom half = dialog, max 50% */
+/* Mobile phones: top half = background (to the top), bottom half = dialog strictly 50vh */
 @media (max-width: 640px) {
+  /* Only enough padding to clear the fixed header – no extra white strip */
   .app__main {
-    padding-top: clamp(3rem, 12vw, 4rem);
+    padding-top: clamp(2.5rem, 10vw, 3.2rem);
   }
 
   .scene {
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - clamp(3rem, 12vw, 4rem));
+    min-height: calc(100vh - clamp(2.5rem, 10vw, 3.2rem));
   }
 
-  /* Upper half: background image entirely used, neutral fill for any letterboxing */
+  /* Upper half: exactly 50vh, background pinned to top to remove white strip, no overflow */
   .scene .scene-background {
-    flex: 0 0 50%;
+    flex: 0 0 50vh;
+    height: 50vh;
     min-height: 0;
-    max-height: 50vh;
+    background-position: center top !important;
+    overflow: hidden;
+    /* Pull image up slightly if the asset has white at the top (tune the value as needed) */
+    background-position-y: -15px !important;
   }
 
-  /* Bottom half: dialog area, max 50% of viewport, neutral light blue behind dialog */
+  /* Bottom half: strictly 50vh, never more, neutral light blue behind dialog */
   .scene__chat-wrap {
     position: relative;
-    flex: 1 1 50%;
+    flex: 0 0 50vh;
+    height: 50vh;
     min-height: 0;
-    max-height: 50vh;
     width: 100%;
     top: auto;
     right: auto;
@@ -1272,44 +1277,45 @@ html, body {
   .scene__player-dock {
     position: absolute;
     left: 0.5rem;
-    bottom: 50%;
+    bottom: 50vh;
     transform: none;
   }
 
-  /* Scale dialog text down on mobile */
+  /* Shrink dialog text and buttons further so they fit in lower half */
   .scene__chat-wrap .chat-panel__title {
-    font-size: clamp(1rem, 4vw, 1.35rem);
+    font-size: clamp(0.85rem, 3vw, 1.1rem);
   }
 
   .scene__chat-wrap .chat-message__speaker {
-    font-size: clamp(0.75rem, 2.5vw, 0.85rem);
+    font-size: clamp(0.65rem, 2vw, 0.75rem);
   }
 
   .scene__chat-wrap .chat-message__paragraph {
-    font-size: clamp(0.8rem, 2.8vw, 0.95rem);
+    font-size: clamp(0.7rem, 2.2vw, 0.82rem);
   }
 
   .scene__chat-wrap .chat-panel__option {
-    font-size: clamp(0.95rem, 3.5vw, 1.2rem);
-    padding: 0.55rem 0.65rem;
+    font-size: clamp(0.8rem, 2.8vw, 1rem);
+    padding: 0.4rem 0.5rem;
+    font-weight: 500;
   }
 
   .scene__chat-wrap .chat-panel__header {
-    padding: 0.5rem 0.75rem;
+    padding: 0.35rem 0.5rem;
   }
 
   .scene__chat-wrap .chat-panel__messages {
-    padding: 0.5rem 0.6rem;
-    gap: 0.5rem;
+    padding: 0.35rem 0.45rem;
+    gap: 0.35rem;
   }
 
   .scene__chat-wrap .chat-message__bubble {
-    padding: 0.5rem 0.6rem;
+    padding: 0.35rem 0.45rem;
   }
 
   .scene__chat-wrap .chat-panel__options {
-    padding: 0.5rem 0.6rem;
-    gap: 0.4rem;
+    padding: 0.35rem 0.45rem;
+    gap: 0.3rem;
   }
 
   .scene__chat-wrap .chat-panel {
