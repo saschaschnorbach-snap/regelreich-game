@@ -483,7 +483,7 @@ export function App() {
               {!!visibleAwardBadges.length && (
                 <div className="app__award-strip" aria-label="Erreichte Abzeichen">
                   <span className="app__award-label">
-                    Gesammelte Karriere-Abzeichen
+                    Karriere-Abzeichen
                   </span>
                   <div className="app__award-badges">
                     {visibleAwardBadges.map((src, index) => (

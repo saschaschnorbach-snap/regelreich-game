@@ -94,23 +94,23 @@ html, body {
 
 .app__header-game-row {
   display: flex;
-  align-items: center;
-  gap: clamp(0.75rem, 2vw, 1.25rem);
+  align-items: flex-start;
+  gap: clamp(0.6rem, 1.5vw, 1rem);
   flex-wrap: wrap;
-  min-height: clamp(2rem, 5vw, 2.6rem);
+  min-height: 0;
 }
 
 .app__award-strip {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: clamp(0.25rem, 0.6vw, 0.4rem);
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(0.2rem, 0.5vw, 0.35rem);
 }
 
 .app__award-label {
   color: rgba(255, 255, 255, 0.92);
-  font-size: clamp(0.7rem, 1.5vw + 0.5rem, 1rem);
+  font-size: clamp(0.6rem, 1.2vw + 0.4rem, 0.85rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -120,21 +120,34 @@ html, body {
 .app__award-badges {
   display: flex;
   align-items: center;
-  gap: clamp(0.35rem, 1vw, 0.55rem);
+  justify-content: center;
+  gap: clamp(0.25rem, 0.8vw, 0.45rem);
   flex-wrap: wrap;
 }
 
 .app__award-badge {
   display: block;
-  width: clamp(1.5rem, 4vw, 2.9rem);
-  height: clamp(1.5rem, 4vw, 2.9rem);
+  width: clamp(1.25rem, 3.5vw, 2.5rem);
+  height: clamp(1.25rem, 3.5vw, 2.5rem);
   object-fit: contain;
 }
 
 .app__progress {
-  width: min(22rem, calc(100% - 2rem));
-  min-width: min(22rem, 100%);
-  padding: clamp(0.1rem, 0.4vw, 0.15rem) 0;
+  width: min(18rem, calc(100% - 2rem));
+  min-width: 0;
+  padding: 0;
+}
+
+.app__progress-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-bottom: 0.2rem;
+}
+
+.app__progress-label,
+.app__progress-value {
+  font-size: clamp(0.6rem, 1.2vw + 0.4rem, 0.85rem);
 }
 
 .app__nav-controls {
@@ -148,14 +161,12 @@ html, body {
 .app__progress-meta {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
-  gap: 1.25rem;
-  margin-bottom: 0.35rem;
+  gap: 0.35rem;
+  margin-bottom: 0.2rem;
 }
 
 .app__progress-label {
   color: rgba(255, 255, 255, 0.92);
-  font-size: clamp(0.7rem, 1.5vw + 0.5rem, 1rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -163,7 +174,6 @@ html, body {
 
 .app__progress-value {
   color: #ffffff;
-  font-size: clamp(0.7rem, 1.5vw + 0.5rem, 1rem);
 }
 
 .app__progress-track {
@@ -1034,6 +1044,7 @@ html, body {
 .chat-panel__header {
   padding: 0.85rem 1rem;
   border-bottom: 1px solid rgba(136, 171, 233, 0.35);
+  flex-shrink: 0;
 }
 
 .chat-panel__title {
@@ -1112,6 +1123,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  flex-shrink: 0;
 }
 
 .chat-panel__option {
@@ -1376,6 +1388,7 @@ html, body {
   .scene__chat-wrap .chat-panel__options {
     padding: 0.35rem 0.45rem;
     gap: 0.3rem;
+    flex-shrink: 0;
   }
 
   /* Keep chat panel semi-transparent (default gradient) on mobile */
