@@ -457,42 +457,48 @@ export function App() {
           ⚙
         </button>
         <nav className="app__nav">
-          {viewMode === 'game' && internshipProgress && (
-            <div
-              className="app__progress"
-              aria-label={`${internshipProgress.label}: ${internshipProgress.percent} Prozent`}
-            >
-              <div className="app__progress-meta">
-                <span className="app__progress-label">
-                  {internshipProgress.label}
-                </span>
-                <strong className="app__progress-value">
-                  {internshipProgress.percent}%
-                </strong>
-              </div>
-              <div className="app__progress-track" aria-hidden="true">
+          {viewMode === 'game' && (internshipProgress || visibleAwardBadges.length) ? (
+            <div className="app__header-game-row">
+              {internshipProgress && (
                 <div
-                  className="app__progress-fill"
-                  style={{ width: `${internshipProgress.percent}%` }}
-                />
-              </div>
+                  className="app__progress"
+                  aria-label={`${internshipProgress.label}: ${internshipProgress.percent} Prozent`}
+                >
+                  <div className="app__progress-meta">
+                    <span className="app__progress-label">
+                      {internshipProgress.label}
+                    </span>
+                    <strong className="app__progress-value">
+                      {internshipProgress.percent}%
+                    </strong>
+                  </div>
+                  <div className="app__progress-track" aria-hidden="true">
+                    <div
+                      className="app__progress-fill"
+                      style={{ width: `${internshipProgress.percent}%` }}
+                    />
+                  </div>
+                </div>
+              )}
+              {!!visibleAwardBadges.length && (
+                <div className="app__award-strip" aria-label="Erreichte Abzeichen">
+                  <span className="app__award-label">
+                    Gesammelte Karriere-Abzeichen
+                  </span>
+                  <div className="app__award-badges">
+                    {visibleAwardBadges.map((src, index) => (
+                      <img
+                        key={src}
+                        className="app__award-badge"
+                        src={src}
+                        alt={`Abzeichen ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-          )}
-          {!!visibleAwardBadges.length && (
-            <div className="app__award-strip" aria-label="Erreichte Abzeichen">
-              <span className="app__award-label">
-                Gesammelte Karriere-Abzeichen:
-              </span>
-              {visibleAwardBadges.map((src, index) => (
-                <img
-                  key={src}
-                  className="app__award-badge"
-                  src={src}
-                  alt={`Abzeichen ${index + 1}`}
-                />
-              ))}
-            </div>
-          )}
+          ) : null}
           {showNavigation && (
             <div className="app__nav-controls">
               <button

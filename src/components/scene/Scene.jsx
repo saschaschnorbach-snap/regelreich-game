@@ -17,6 +17,7 @@ export function Scene({ scene, messages = [], options = [], onSelectOption, sele
       <SceneBackground
         backgroundImage={backgroundImage}
         backgroundPlaceholder={backgroundPlaceholder}
+        backgroundFit="cover"
       />
 
       {!hideChatPanel && (

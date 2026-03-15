@@ -92,18 +92,20 @@ html, body {
   flex-wrap: wrap;
 }
 
-.app__award-strip {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.app__header-game-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: clamp(0.35rem, 1vw, 0.55rem);
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+  flex-wrap: wrap;
   min-height: clamp(2rem, 5vw, 2.6rem);
-  width: max-content;
-  max-width: calc(100% - 28rem);
+}
+
+.app__award-strip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: clamp(0.25rem, 0.6vw, 0.4rem);
 }
 
 .app__award-label {
@@ -115,18 +117,21 @@ html, body {
   white-space: nowrap;
 }
 
+.app__award-badges {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.35rem, 1vw, 0.55rem);
+  flex-wrap: wrap;
+}
+
 .app__award-badge {
   display: block;
-  width: clamp(2rem, 5vw, 2.9rem);
-  height: clamp(2rem, 5vw, 2.9rem);
+  width: clamp(1.5rem, 4vw, 2.9rem);
+  height: clamp(1.5rem, 4vw, 2.9rem);
   object-fit: contain;
 }
 
 .app__progress {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
   width: min(22rem, calc(100% - 2rem));
   min-width: min(22rem, 100%);
   padding: clamp(0.1rem, 0.4vw, 0.15rem) 0;
@@ -1304,9 +1309,25 @@ html, body {
     width: 100%;
     height: 50vh;
     z-index: 30;
-    overflow: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     -webkit-overflow-scrolling: touch;
     background: transparent;
+  }
+
+  .scene__chat-wrap .chat-panel {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .scene__chat-wrap .chat-panel__messages {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .scene__player-dock {
@@ -1342,6 +1363,10 @@ html, body {
   .scene__chat-wrap .chat-panel__messages {
     padding: 0.35rem 0.45rem;
     gap: 0.35rem;
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .scene__chat-wrap .chat-message__bubble {
@@ -1356,6 +1381,10 @@ html, body {
   /* Keep chat panel semi-transparent (default gradient) on mobile */
   .scene__chat-wrap .chat-panel {
     border-color: rgba(171, 126, 255, 0.5);
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Progress bar: shrink and move left so earned badges have room */

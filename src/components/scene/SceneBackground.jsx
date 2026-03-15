@@ -6,7 +6,7 @@
 export function SceneBackground({
   backgroundImage,
   backgroundPlaceholder,
-  backgroundFit = 'contain',
+  backgroundFit = 'cover',
 }) {
   const isEinzelbueroTablet = String(backgroundImage || '').includes('einzelbuero_tablet')
   const isWelcomeScene = String(backgroundImage || '').includes('/backgrounds/Willkommen.png')
