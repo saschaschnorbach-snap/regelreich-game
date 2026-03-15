@@ -98,15 +98,17 @@ html, body {
   gap: clamp(0.6rem, 1.5vw, 1rem);
   flex-wrap: wrap;
   min-height: 0;
+  width: 100%;
+  padding-right: clamp(2.75rem, 9vw, 3.5rem);
 }
 
 .app__award-strip {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
   gap: clamp(0.2rem, 0.5vw, 0.35rem);
-  margin-left: clamp(1rem, 2.5vw, 1.75rem);
+  margin-left: auto;
 }
 
 .app__award-label {
@@ -1367,6 +1369,23 @@ html, body {
     min-height: 0;
     display: flex;
     flex-direction: column;
+    min-height: 50vh;
+  }
+
+  /* Activity screen: fix dialog to viewport bottom so it is always visible */
+  .scene .monitor-scene--keller-monitor-select .monitor-scene__bezel,
+  .scene .monitor-scene--grossraum-monitor-select .monitor-scene__bezel,
+  .scene .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    transform: translateX(-50%);
+    width: min(95vw, 980px);
+    max-width: calc(100vw - 1rem);
+    height: min(50vh, 520px);
+    z-index: 30;
   }
 
   /* Upper half: background fixed in viewport; cover so image fills to 50vh (no white gap) */
