@@ -19,6 +19,7 @@ export function MonitorActivityScene({
   })
   const dragItemIdRef = useRef('')
   const [dragOverBucketId, setDragOverBucketId] = useState('')
+  const [selectedBucketItemId, setSelectedBucketItemId] = useState(null)
   const sentenceOptions = options.filter((opt) => opt.kind === 'sentence')
   const choiceOptions = options.filter((opt) => opt.kind === 'choice')
   const boosterOptions = options.filter((opt) => opt.kind === 'booster')
@@ -399,6 +400,8 @@ export function MonitorActivityScene({
                       )}
 
                       <div
+                        role="button"
+                        tabIndex={0}
                         className={`monitor-bucket monitor-bucket--unassigned ${dragOverBucketId === 'unassigned' ? 'monitor-bucket--dragover' : ''}`}
                         onDragOver={(event) => {
                           event.preventDefault()
@@ -418,6 +421,27 @@ export function MonitorActivityScene({
                           })
                           dragItemIdRef.current = ''
                         }}
+                        onClick={() => {
+                          if (selectedBucketItemId && !bucketOptions[0]?.disabled) {
+                            onSelectOption?.(0, {
+                              kind: 'bucket-drop',
+                              itemId: selectedBucketItemId,
+                              bucketId: '',
+                            })
+                            setSelectedBucketItemId(null)
+                          }
+                        }}
+                        onKeyDown={(e) => {
+                          if ((e.key === 'Enter' || e.key === ' ') && selectedBucketItemId && !bucketOptions[0]?.disabled) {
+                            e.preventDefault()
+                            onSelectOption?.(0, {
+                              kind: 'bucket-drop',
+                              itemId: selectedBucketItemId,
+                              bucketId: '',
+                            })
+                            setSelectedBucketItemId(null)
+                          }
+                        }}
                       >
                         <h4 className="monitor-bucket__title">
                           {unassignedBucketLabel}
@@ -429,7 +453,7 @@ export function MonitorActivityScene({
                               <button
                                 key={item.id}
                                 type="button"
-                                className="monitor-bucket__item"
+                                className={`monitor-bucket__item ${selectedBucketItemId === item.itemId ? 'monitor-bucket__item--selected' : ''}`}
                                 draggable={!item.disabled}
                                 disabled={Boolean(item.disabled)}
                                 onDragStart={() => {
@@ -438,6 +462,13 @@ export function MonitorActivityScene({
                                 onDragEnd={() => {
                                   dragItemIdRef.current = ''
                                   setDragOverBucketId('')
+                                }}
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  if (item.disabled) return
+                                  setSelectedBucketItemId((prev) =>
+                                    prev === item.itemId ? null : item.itemId
+                                  )
                                 }}
                               >
                                 {item.text}
@@ -450,6 +481,8 @@ export function MonitorActivityScene({
                         {bucketDefinitions.map((bucket) => (
                           <div
                             key={bucket.id}
+                            role="button"
+                            tabIndex={0}
                             className={`monitor-bucket ${dragOverBucketId === bucket.id ? 'monitor-bucket--dragover' : ''}`}
                             onDragOver={(event) => {
                               event.preventDefault()
@@ -469,6 +502,27 @@ export function MonitorActivityScene({
                               })
                               dragItemIdRef.current = ''
                             }}
+                            onClick={() => {
+                              if (selectedBucketItemId && !bucketOptions[0]?.disabled) {
+                                onSelectOption?.(0, {
+                                  kind: 'bucket-drop',
+                                  itemId: selectedBucketItemId,
+                                  bucketId: bucket.id,
+                                })
+                                setSelectedBucketItemId(null)
+                              }
+                            }}
+                            onKeyDown={(e) => {
+                              if ((e.key === 'Enter' || e.key === ' ') && selectedBucketItemId && !bucketOptions[0]?.disabled) {
+                                e.preventDefault()
+                                onSelectOption?.(0, {
+                                  kind: 'bucket-drop',
+                                  itemId: selectedBucketItemId,
+                                  bucketId: bucket.id,
+                                })
+                                setSelectedBucketItemId(null)
+                              }
+                            }}
                           >
                             <h4 className="monitor-bucket__title">
                               {bucket.label}
@@ -482,7 +536,7 @@ export function MonitorActivityScene({
                                   <button
                                     key={item.id}
                                     type="button"
-                                    className="monitor-bucket__item"
+                                    className={`monitor-bucket__item ${selectedBucketItemId === item.itemId ? 'monitor-bucket__item--selected' : ''}`}
                                     draggable={!item.disabled}
                                     disabled={Boolean(item.disabled)}
                                     onDragStart={() => {
@@ -491,6 +545,13 @@ export function MonitorActivityScene({
                                     onDragEnd={() => {
                                       dragItemIdRef.current = ''
                                       setDragOverBucketId('')
+                                    }}
+                                    onClick={(e) => {
+                                      e.stopPropagation()
+                                      if (item.disabled) return
+                                      setSelectedBucketItemId((prev) =>
+                                        prev === item.itemId ? null : item.itemId
+                                      )
                                     }}
                                   >
                                     {item.text}

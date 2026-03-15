@@ -161,7 +161,7 @@ html, body {
 
 .app__progress-label,
 .app__progress-value {
-  font-size: clamp(0.6rem, 1.2vw + 0.4rem, 0.85rem);
+  font-size: clamp(0.5rem, 1vw + 0.35rem, 0.72rem);
 }
 
 .app__nav-controls {
@@ -312,6 +312,15 @@ html, body {
   overflow: hidden;
 }
 
+.scene .scene-background {
+  z-index: 0;
+}
+
+.scene .monitor-scene {
+  position: relative;
+  z-index: 25;
+}
+
 .start-screen {
   position: absolute;
   inset: 0;
@@ -354,7 +363,7 @@ html, body {
   filter: none;
 }
 
-/* Browser/desktop: dialog anchored to the right */
+/* Chat and activity panel above background on all screens */
 .scene__chat-wrap {
   position: absolute;
   top: 1rem;
@@ -719,6 +728,16 @@ html, body {
 .monitor-bucket__item:disabled {
   cursor: default;
   opacity: 0.9;
+}
+
+.monitor-bucket__item--selected {
+  border-color: #6de2a1;
+  background: rgba(48, 128, 90, 0.4);
+  box-shadow: 0 0 0 2px rgba(109, 226, 161, 0.6);
+}
+
+.monitor-bucket[role="button"] {
+  cursor: pointer;
 }
 
 .monitor-scene__options {
@@ -1295,7 +1314,7 @@ html, body {
 
   .app__progress-label,
   .app__progress-value {
-    font-size: clamp(0.65rem, 1.5vw + 0.4rem, 0.85rem);
+    font-size: clamp(0.5rem, 1vw + 0.35rem, 0.72rem);
   }
 
   .app__progress-track {
@@ -1361,7 +1380,7 @@ html, body {
     background-position: center top !important;
     overflow: hidden;
     background-position-y: -15px !important;
-    z-index: 1;
+    z-index: 0;
   }
 
   /* Bottom half: chatbox fixed to viewport bottom so it’s always anchored (no white gap) */
@@ -1461,12 +1480,9 @@ html, body {
     padding: 0.08rem 0;
   }
 
-  .app__progress-label {
-    font-size: clamp(0.58rem, 1.8vw + 0.35rem, 0.75rem);
-  }
-
+  .app__progress-label,
   .app__progress-value {
-    font-size: clamp(0.58rem, 1.8vw + 0.35rem, 0.75rem);
+    font-size: clamp(0.5rem, 1vw + 0.35rem, 0.72rem);
   }
 
   .app__progress-track {
