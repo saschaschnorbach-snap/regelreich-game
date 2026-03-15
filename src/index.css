@@ -40,6 +40,7 @@ html, body {
    ----------------------------------------------- */
 .app {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
@@ -310,6 +311,7 @@ html, body {
 .scene {
   position: relative;
   min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
   width: 100%;
   overflow: hidden;
 }
@@ -1339,11 +1341,13 @@ html, body {
     bottom: 0.5rem;
     top: auto;
     height: min(68vh, 620px);
+    height: min(68dvh, 620px);
   }
 
   .scene__player-dock {
     left: 0.5rem;
     bottom: calc(min(68vh, 620px) + 1rem);
+    bottom: calc(min(68dvh, 620px) + 1rem);
   }
 }
 
@@ -1352,7 +1356,9 @@ html, body {
   /* Force full viewport height so scene fills and chatbox sits at true bottom */
   .app {
     height: 100vh;
+    height: 100dvh;
     min-height: 100vh;
+    min-height: 100dvh;
     overflow: hidden;
   }
 
@@ -1370,6 +1376,7 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 50vh;
+    min-height: 50dvh;
   }
 
   /* Activity screen: fix dialog to viewport bottom so it is always visible */
@@ -1385,10 +1392,11 @@ html, body {
     width: min(95vw, 980px);
     max-width: calc(100vw - 1rem);
     height: min(50vh, 520px);
+    height: min(50dvh, 520px);
     z-index: 30;
   }
 
-  /* Upper half: background fixed in viewport; cover so image fills to 50vh (no white gap) */
+  /* Upper half: background fixed in viewport; cover so image fills to 50dvh (no white gap) */
   .scene .scene-background {
     position: fixed !important;
     top: 0 !important;
@@ -1396,6 +1404,7 @@ html, body {
     right: 0 !important;
     bottom: auto !important;
     height: 50vh !important;
+    height: 50dvh !important;
     min-height: 0;
     background-size: cover !important;
     background-position: center top !important;
@@ -1439,6 +1448,7 @@ html, body {
     position: absolute;
     left: 0.5rem;
     bottom: 50vh;
+    bottom: 50dvh;
     transform: none;
   }
 
@@ -1521,6 +1531,7 @@ html, body {
   .monitor-scene--einzelbuero-tablet-select .monitor-scene__bezel {
     bottom: 0;
     height: min(50vh, 520px);
+    height: min(50dvh, 520px);
     padding: 0.6rem 0.75rem;
   }
 
@@ -1673,6 +1684,7 @@ html, body {
    ----------------------------------------------- */
 .avatar-selection-scene {
   min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
   background:
     linear-gradient(180deg, rgba(250, 253, 255, 0.2) 0%, rgba(245, 251, 255, 0.35) 100%),
     url('/backgrounds/Willkommen.png') center / cover no-repeat;
@@ -1796,6 +1808,7 @@ html, body {
    ----------------------------------------------- */
 .admin {
   min-height: calc(100vh - 3rem);
+  min-height: calc(100dvh - 3rem);
   background: linear-gradient(180deg, #eff4f9 0%, #dce8f2 100%);
   padding: 1.25rem;
 }
