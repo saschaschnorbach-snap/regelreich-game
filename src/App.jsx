@@ -468,15 +468,17 @@ export function App() {
                     <span className="app__progress-label">
                       {internshipProgress.label}
                     </span>
+                  </div>
+                  <div className="app__progress-bar-row">
+                    <div className="app__progress-track" aria-hidden="true">
+                      <div
+                        className="app__progress-fill"
+                        style={{ width: `${internshipProgress.percent}%` }}
+                      />
+                    </div>
                     <strong className="app__progress-value">
                       {internshipProgress.percent}%
                     </strong>
-                  </div>
-                  <div className="app__progress-track" aria-hidden="true">
-                    <div
-                      className="app__progress-fill"
-                      style={{ width: `${internshipProgress.percent}%` }}
-                    />
                   </div>
                 </div>
               )}

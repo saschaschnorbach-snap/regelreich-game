@@ -94,7 +94,7 @@ html, body {
 
 .app__header-game-row {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   gap: clamp(0.6rem, 1.5vw, 1rem);
   flex-wrap: wrap;
   min-height: 0;
@@ -106,6 +106,7 @@ html, body {
   align-items: center;
   justify-content: flex-start;
   gap: clamp(0.2rem, 0.5vw, 0.35rem);
+  margin-left: clamp(0.5rem, 1.5vw, 1rem);
 }
 
 .app__award-label {
@@ -139,10 +140,23 @@ html, body {
 }
 
 .app__progress-meta {
-  display: flex;
-  align-items: baseline;
-  gap: 0.35rem;
   margin-bottom: 0.2rem;
+}
+
+.app__progress-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.app__progress-bar-row .app__progress-track {
+  flex: 1;
+  min-width: 0;
+}
+
+.app__progress-label {
+  white-space: nowrap;
 }
 
 .app__progress-label,
@@ -156,13 +170,6 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.app__progress-meta {
-  display: flex;
-  align-items: baseline;
-  gap: 0.35rem;
-  margin-bottom: 0.2rem;
 }
 
 .app__progress-label {
