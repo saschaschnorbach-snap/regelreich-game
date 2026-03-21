@@ -609,9 +609,8 @@ function shouldSuppressTransitionPlayerMessage({
 function buildPlayerMessage(currentPart, index, option, options = []) {
   if (!option?.label || isAvatarOption(option)) return null
 
-  const avatarOptionsCount = options.filter(isAvatarOption).length
-  const textOptionIndex = Math.max(0, index - avatarOptionsCount)
-  const bubbleColor = textOptionIndex % 2 === 0 ? 'blue' : 'green'
+  // ALWAYS use green for player messages
+  const bubbleColor = 'green'
 
   return {
     id: `player:${currentPart}:${Date.now()}:${index}`,

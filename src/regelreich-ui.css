@@ -25,12 +25,15 @@
   background-color: var(--rr-blue-primary);
   color: var(--rr-text-white);
   font-family: var(--rr-font-main);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   border: var(--rr-border-width) solid var(--rr-text-dark);
-  border-radius: 12px;
+  border-radius: 999px; /* Pill shape */
+  width: 80%; /* Match width */
+  max-width: 320px;
+  text-align: center;
   cursor: pointer;
   box-shadow: 0 var(--rr-shadow-offset) 0 var(--rr-text-dark);
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);

@@ -2169,8 +2169,7 @@ html, body {
   align-items: center;
   gap: 2rem;
   z-index: 10;
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2180,7 +2179,7 @@ html, body {
 @media (max-width: 768px) {
   .start-screen--comic {
     top: auto;
-    bottom: 8%;
+    bottom: 8.5%;
     transform: translateX(-50%);
   }
 }
@@ -2320,11 +2319,20 @@ html, body {
   position: relative;
 }
 
+.scene--szene-0 .scene__chat-wrap .chat-message--player {
+  justify-content: flex-end;
+}
+
 .scene--szene-0 .scene__chat-wrap .speech-bubble-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
+}
+
+.scene--szene-0 .scene__chat-wrap .chat-message--player .speech-bubble-wrapper {
+  flex: 0 1 85%; /* Make player bubbles slightly narrower (shorter) */
+  align-items: flex-end; /* Align the content to the right */
 }
 
 .scene--szene-0 .scene__chat-wrap .chat-message__speaker {
