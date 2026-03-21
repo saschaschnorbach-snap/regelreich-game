@@ -12,7 +12,7 @@ export function Scene({ scene, messages = [], options = [], onSelectOption, sele
   const AvatarComponent = getPlayerAvatarComponent(selectedAvatarId)
   const hideChatPanel = scene?.hideChatPanel === true
 
-  const sceneClass = scene?.id === 0 ? 'scene scene--szene-0' : 'scene'
+  const sceneClass = `scene ${scene?.id === 0 ? 'scene--szene-0' : ''} ${scene?.id === 1 ? 'scene--szene-1' : ''}`.trim()
 
   return (
     <div className={sceneClass}>

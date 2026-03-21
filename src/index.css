@@ -2235,6 +2235,11 @@ html, body {
 }
 
 /* Mobile Chatbox */
+.scene--szene-1 .scene-background {
+  height: 100svh !important;
+  max-height: none !important;
+}
+
 .scene__chat-wrap {
   position: absolute !important;
   top: 40svh !important;
