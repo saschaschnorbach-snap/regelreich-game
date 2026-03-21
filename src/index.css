@@ -1403,57 +1403,7 @@ html, body {
     z-index: 30;
   }
 
-  /* Upper half: background fixed in viewport; cover so image fills to 50dvh (no white gap) */
-  .scene .scene-background {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: auto !important;
-    height: 50vh !important;
-    height: 50dvh !important;
-    height: 50svh !important;
-    min-height: 0;
-    background-size: cover !important;
-    background-position: center top !important;
-    overflow: hidden;
-    background-position-y: -15px !important;
-    z-index: 0;
-  }
-
-  /* Bottom half: chatbox fixed to viewport bottom so it’s always anchored (no white gap) */
-  .scene__chat-wrap {
-    position: fixed;
-    top: 50vh;
-    top: 50dvh;
-    top: 50svh;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    z-index: 30;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    -webkit-overflow-scrolling: touch;
-    background: linear-gradient(180deg, rgba(5, 16, 41, 0.98) 0%, rgba(5, 18, 52, 0.95) 100%);
-  }
-
-  .scene__chat-wrap .chat-panel {
-    flex: 1;
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .scene__chat-wrap .chat-panel__messages {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+  /* Bottom half: chatbox removed old rules */
 
   .scene__player-dock {
     position: absolute;
@@ -2184,7 +2134,7 @@ html, body {
 @media (max-width: 768px) {
   .start-screen--comic {
     top: auto;
-    bottom: 18%; /* moved down by its own size */
+    bottom: 5svh; /* move down to the bottom */
     transform: translateX(-50%);
     width: 95%;
   }
