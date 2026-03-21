@@ -2012,15 +2012,15 @@ export function GameScreen({
 
   if (isSingleButtonTransition && singleButtonTransitionConfig) {
     return (
-      <div className="scene">
+      <div className="scene scene--landing-start">
         <SceneBackground
           backgroundImage={singleButtonTransitionConfig.backgroundImage}
           backgroundPlaceholder={scene.backgroundPlaceholder}
         />
-        <div className="start-screen">
+        <div className="start-screen start-screen--comic">
           <button
             type="button"
-            className="start-screen__button"
+            className="btn-dialog-option blue"
             onClick={() => onPartChange?.(singleButtonTransitionConfig.nextPart)}
           >
             {singleButtonTransitionConfig.label}
