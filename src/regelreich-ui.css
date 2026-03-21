@@ -123,3 +123,13 @@
   border-bottom: 10px solid transparent;
   border-right: 12px solid var(--rr-text-dark);
 }
+
+.speech-bubble.blue {
+  background-color: #3182CE;
+  color: white;
+}
+
+.speech-bubble.green {
+  background-color: var(--rr-green-primary);
+  color: var(--rr-text-dark);
+}

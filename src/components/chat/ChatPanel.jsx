@@ -175,7 +175,7 @@ export function ChatPanel({
                 )}
                 
                 <div
-                  className={`${isRegelreich ? 'speech-bubble' : 'chat-message__bubble'} ${isImageOnlyMessage ? 'chat-message__bubble--image-only' : ''} ${isBadgeImage ? 'chat-message__bubble--badge-only' : ''}`}
+                  className={`${isRegelreich ? 'speech-bubble' : 'chat-message__bubble'} ${isImageOnlyMessage ? 'chat-message__bubble--image-only' : ''} ${isBadgeImage ? 'chat-message__bubble--badge-only' : ''} ${isRegelreich && message.speakerType === 'player' && message.bubbleColor ? message.bubbleColor : ''}`}
                 >
                   {!!message.imageSrc && (
                     isJuniorBadge ? (

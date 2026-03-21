@@ -5,6 +5,7 @@
  */
 export function SceneBackground({
   backgroundImage,
+  backgroundImageMobile,
   backgroundPlaceholder,
   backgroundFit = 'cover',
 }) {
@@ -15,7 +16,8 @@ export function SceneBackground({
     'scene-background',
     isEinzelbueroTablet ? 'scene-background--einzelbuero-tablet' : '',
   ].filter(Boolean).join(' ')
-  const style = {
+  
+  const desktopStyle = {
     position: 'absolute',
     inset: 0,
     width: '100%',
@@ -28,5 +30,34 @@ export function SceneBackground({
       ? { backgroundImage: `url(${backgroundImage})` }
       : { background: backgroundPlaceholder || 'var(--scene-bg-fallback, #e0e8f0)' }),
   }
-  return <div className={className} style={style} aria-hidden="true" />
+
+  // If mobile background is provided, we can render two divs and use CSS to show/hide them.
+  // Actually, since we want inline styles, let's just render a single div and use a <style> tag or two divs.
+  if (backgroundImageMobile) {
+    return (
+      <>
+        <div className={`${className} hidden-on-mobile`} style={desktopStyle} aria-hidden="true" />
+        <div 
+          className={`${className} hidden-on-desktop`} 
+          style={{
+            ...desktopStyle,
+            backgroundImage: `url(${backgroundImageMobile})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }} 
+          aria-hidden="true" 
+        />
+        <style dangerouslySetInnerHTML={{__html: `
+          @media (max-width: 768px) {
+            .hidden-on-mobile { display: none !important; }
+          }
+          @media (min-width: 769px) {
+            .hidden-on-desktop { display: none !important; }
+          }
+        `}} />
+      </>
+    )
+  }
+
+  return <div className={className} style={desktopStyle} aria-hidden="true" />
 }

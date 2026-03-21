@@ -2350,6 +2350,14 @@ html, body {
   border-right-color: white;
 }
 
+.scene--szene-0 .scene__chat-wrap .speech-bubble.blue::after {
+  border-right-color: #3182CE;
+}
+
+.scene--szene-0 .scene__chat-wrap .speech-bubble.green::after {
+  border-right-color: var(--rr-green-primary);
+}
+
 .scene--szene-0 .scene__chat-wrap .chat-message__paragraph {
   font-family: var(--font-sans);
   font-size: 1.05rem;

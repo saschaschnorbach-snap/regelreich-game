@@ -606,14 +606,19 @@ function shouldSuppressTransitionPlayerMessage({
   return false
 }
 
-function buildPlayerMessage(currentPart, index, option) {
+function buildPlayerMessage(currentPart, index, option, options = []) {
   if (!option?.label || isAvatarOption(option)) return null
+
+  const avatarOptionsCount = options.filter(isAvatarOption).length
+  const textOptionIndex = Math.max(0, index - avatarOptionsCount)
+  const bubbleColor = textOptionIndex % 2 === 0 ? 'blue' : 'green'
 
   return {
     id: `player:${currentPart}:${Date.now()}:${index}`,
     speakerType: 'player',
     speakerName: 'Du',
     text: option.label,
+    bubbleColor,
   }
 }
 
@@ -1773,7 +1778,7 @@ export function GameScreen({
     })
     const playerMessage = suppressPlayerMessage
       ? null
-      : buildPlayerMessage(currentPart, index, option)
+      : buildPlayerMessage(currentPart, index, option, options)
     if (playerMessage) {
       setChatMessages((prev) => [...prev, playerMessage])
     }

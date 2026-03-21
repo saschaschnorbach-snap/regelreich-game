@@ -9,7 +9,7 @@ export const SCENES = [
     id: -1,
     name: 'Start',
     backgroundImage: '/backgrounds/regelreich-city-highres.png',
-    backgroundImageMobile: '/backgrounds/regelreich-start-mobile-best.png',
+    backgroundImageMobile: '/backgrounds/regelreich-start-mobile-final.png',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
     speechBubbles: [],
