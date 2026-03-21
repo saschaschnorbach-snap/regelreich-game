@@ -2179,7 +2179,7 @@ html, body {
 @media (max-width: 768px) {
   .start-screen--comic {
     top: auto;
-    bottom: 8.5%;
+    bottom: 21%;
     transform: translateX(-50%);
   }
 }
