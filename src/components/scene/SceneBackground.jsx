@@ -9,7 +9,7 @@ export function SceneBackground({
   backgroundFit = 'cover',
 }) {
   const isEinzelbueroTablet = String(backgroundImage || '').includes('einzelbuero_tablet')
-  const isWelcomeScene = String(backgroundImage || '').includes('/backgrounds/Willkommen.png')
+  const isWelcomeScene = String(backgroundImage || '').includes('/backgrounds/regelreich-city-highres.png')
   const size = backgroundFit === 'cover' ? 'cover' : 'contain'
   const className = [
     'scene-background',

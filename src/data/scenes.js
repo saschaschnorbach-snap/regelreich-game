@@ -8,7 +8,7 @@ export const SCENES = [
   {
     id: -1,
     name: 'Start',
-    backgroundImage: '/backgrounds/Willkommen.png',
+    backgroundImage: '/backgrounds/regelreich-city-highres.png',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
     speechBubbles: [],
@@ -17,7 +17,7 @@ export const SCENES = [
   {
     id: 0,
     name: 'Avatar wählen',
-    backgroundImage: '/backgrounds/Willkommen.png',
+    backgroundImage: '/backgrounds/regelreich-city-highres.png',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
     speechBubbles: [],

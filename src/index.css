@@ -1745,7 +1745,7 @@ html, body {
   min-height: calc(100dvh - 3rem);
   background:
     linear-gradient(180deg, rgba(250, 253, 255, 0.2) 0%, rgba(245, 251, 255, 0.35) 100%),
-    url('/backgrounds/Willkommen.png') center / cover no-repeat;
+    url('/backgrounds/regelreich-city-highres.png') center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
