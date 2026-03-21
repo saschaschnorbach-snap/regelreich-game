@@ -2249,7 +2249,7 @@ html, body {
 
 
 /* -----------------------------------------------
-   Universal Chat Layout (based on Szene 0 Mobile)
+   Universal Chat Layout (Desktop right side, Mobile 2/3 bottom)
    ----------------------------------------------- */
 .scene {
   display: flex;
@@ -2264,45 +2264,40 @@ html, body {
 }
 
 .scene .scene-background {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: auto !important;
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
-  height: 50svh !important;
-  max-height: 50svh !important;
-  min-height: 0 !important;
+  height: 100% !important;
+  max-height: none !important;
   flex: none !important;
   background-size: cover !important;
   background-position: center top !important;
   z-index: 0;
 }
 
+/* Mobile Default Layout (Chatbox 2/3 bottom) */
 .scene__chat-wrap {
-  position: relative !important;
+  position: absolute !important;
   top: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-  right: auto !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
   width: 100% !important;
-  height: auto !important;
-  /* Ragt 10vh nach oben in das 50svh Bild rein */
-  margin: 40svh 0 0 0 !important;
+  height: 66.66svh !important; /* 2/3 of screen */
+  margin: 0 !important;
   padding: 0;
   z-index: 30;
   display: flex;
   flex-direction: column;
   background: transparent !important;
   -webkit-overflow-scrolling: touch;
-  flex: 1 1 auto !important;
 }
 
 .scene__chat-wrap .chat-panel {
   flex: 1 1 auto;
   min-height: 0;
   height: 100%;
-  background: rgba(13, 18, 69, 0.65) !important;
+  background: rgba(13, 18, 69, 0.50) !important; /* 50% transparency */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 24px 24px 0 0;
@@ -2314,8 +2309,21 @@ html, body {
   overflow: hidden;
 }
 
+/* Header visible on desktop, maybe hidden on mobile? The image shows "Regelreich" on desktop. */
 .scene__chat-wrap .chat-panel__header {
   display: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem 1.5rem;
+}
+
+.scene__chat-wrap .chat-panel__title {
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
 }
 
 .scene__chat-wrap .chat-panel__messages {
@@ -2414,10 +2422,23 @@ html, body {
   gap: 0.8rem;
 }
 
-/* Explicit override for landing screen background to prevent the universal 50svh from affecting it */
-.scene--landing-start .scene-background,
-.scene.scene--landing-start .scene-background {
-  height: 100vh !important;
-  height: 100dvh !important;
-  max-height: none !important;
+/* Desktop Layout (Right side floating) */
+@media (min-width: 769px) {
+  .scene__chat-wrap {
+    top: 5vh !important;
+    right: 5vw !important;
+    bottom: 5vh !important;
+    left: auto !important;
+    width: min(45vw, 550px) !important;
+    height: auto !important;
+    border-radius: 24px;
+  }
+  
+  .scene__chat-wrap .chat-panel {
+    border-radius: 24px;
+  }
+  
+  .scene__chat-wrap .chat-panel__header {
+    display: block;
+  }
 }
