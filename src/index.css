@@ -2155,7 +2155,7 @@ html, body {
   background: black;
 }
 
-.scene--landing-start .scene-background {
+.scene.scene--landing-start .scene-background {
   position: fixed !important;
   top: 0 !important;
   bottom: 0 !important;
@@ -2184,7 +2184,7 @@ html, body {
 @media (max-width: 768px) {
   .start-screen--comic {
     top: auto;
-    bottom: 35%; /* adjusted to be exactly over the painted button based on the user screenshot */
+    bottom: 18%; /* moved down by its own size */
     transform: translateX(-50%);
     width: 95%;
   }
@@ -2412,4 +2412,12 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+/* Explicit override for landing screen background to prevent the universal 50svh from affecting it */
+.scene--landing-start .scene-background,
+.scene.scene--landing-start .scene-background {
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-height: none !important;
 }
