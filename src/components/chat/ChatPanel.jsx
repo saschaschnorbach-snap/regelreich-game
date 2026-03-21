@@ -150,6 +150,8 @@ export function ChatPanel({
                   selectedHostId
                 )
 
+          const isRegelreich = title === 'Regelreich'
+          
           return (
             <article
               key={message.id}
@@ -161,9 +163,8 @@ export function ChatPanel({
                   speakerName={hostDisplayName}
                 />
               )}
-              <div
-                className={`chat-message__bubble ${isImageOnlyMessage ? 'chat-message__bubble--image-only' : ''} ${isBadgeImage ? 'chat-message__bubble--badge-only' : ''}`}
-              >
+              
+              <div className={isRegelreich ? 'speech-bubble-wrapper' : 'chat-message__content'}>
                 {message.speakerName &&
                   message.speakerType !== 'player' &&
                   !isBadgeImage &&
@@ -172,8 +173,12 @@ export function ChatPanel({
                     {hostDisplayName}
                   </strong>
                 )}
-                {!!message.imageSrc && (
-                  isJuniorBadge ? (
+                
+                <div
+                  className={`${isRegelreich ? 'speech-bubble' : 'chat-message__bubble'} ${isImageOnlyMessage ? 'chat-message__bubble--image-only' : ''} ${isBadgeImage ? 'chat-message__bubble--badge-only' : ''}`}
+                >
+                  {!!message.imageSrc && (
+                    isJuniorBadge ? (
                     <span
                       style={{
                         position: 'relative',
@@ -223,6 +228,7 @@ export function ChatPanel({
                   )
                 )}
                 {message.text ? renderMessageParagraphs(message.text) : null}
+                </div>
               </div>
             </article>
           )
@@ -262,19 +268,26 @@ export function ChatPanel({
           </div>
         )}
 
-        {textOptions.map((option, index) => (
-          <button
-            key={option.id ?? index}
-            type="button"
-            className="chat-panel__option"
-            onClick={() =>
-              onSelectOption?.(index + avatarOptions.length, option)
-            }
-            disabled={Boolean(option.disabled)}
-          >
-            {option.label}
-          </button>
-        ))}
+        {textOptions.map((option, index) => {
+          const isRegelreich = title === 'Regelreich'
+          const btnClass = isRegelreich 
+            ? `btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}` 
+            : 'chat-panel__option'
+
+          return (
+            <button
+              key={option.id ?? index}
+              type="button"
+              className={btnClass}
+              onClick={() =>
+                onSelectOption?.(index + avatarOptions.length, option)
+              }
+              disabled={Boolean(option.disabled)}
+            >
+              {option.label}
+            </button>
+          )
+        })}
       </footer>
     </section>
   )

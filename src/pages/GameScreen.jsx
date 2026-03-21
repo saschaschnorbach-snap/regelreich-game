@@ -2024,18 +2024,30 @@ export function GameScreen({
 
   if (isStartScreen) {
     return (
-      <div className="scene">
+      <div className="scene scene--landing-start">
         <SceneBackground
           backgroundImage={scene.backgroundImage}
+          backgroundImageMobile={scene.backgroundImageMobile}
           backgroundPlaceholder={scene.backgroundPlaceholder}
         />
-        <div className="start-screen">
+        <div className="start-screen start-screen--comic">
+          <div className="rr-welcome-sign">
+            <div className="rr-welcome-sign__inner">
+              <h1 className="rr-welcome-sign__title">
+                Willkommen<br />in Regelreich
+              </h1>
+              <p className="rr-welcome-sign__subtitle">
+                Regeln entstehen im Gespräch —<br />
+                lerne, Manipulation zu erkennen.
+              </p>
+            </div>
+          </div>
           <button
             type="button"
-            className="start-screen__button"
+            className="btn-start-pulsing"
             onClick={() => onPartChange?.(0)}
           >
-            Start
+            START
           </button>
         </div>
       </div>

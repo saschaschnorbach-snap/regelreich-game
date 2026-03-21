@@ -2144,3 +2144,152 @@ html, body {
   position: relative;
   top: 5%;
 }
+
+/* -----------------------------------------------
+   Regelreich Start Screen & Comic UI
+   ----------------------------------------------- */
+.start-screen--comic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rr-welcome-sign {
+  position: relative;
+  background-color: #69C9F0;
+  border: 3px solid #000450;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.15);
+  transform: rotate(-1deg);
+  width: 100%;
+}
+
+.rr-welcome-sign::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background-image: radial-gradient(#202983 20%, transparent 20%);
+  background-size: 8px 8px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.rr-welcome-sign__inner {
+  position: relative;
+  background: white;
+  border: 3px solid #000450;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.rr-welcome-sign__title {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #000450;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.rr-welcome-sign__subtitle {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .start-screen--comic {
+    top: auto;
+    bottom: 5svh;
+    transform: translateX(-50%);
+    width: 95%;
+  }
+  
+  .rr-welcome-sign__inner {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* Mobile Layout Szene 0 – Chatbox leicht transparent, ragt nach oben */
+@media (max-width: 768px) {
+  .scene--szene-0 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .scene--szene-0 .scene-background {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 50svh !important;
+    max-height: 50svh !important;
+    min-height: 0 !important;
+    flex: 0 0 50svh !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    z-index: 0;
+  }
+
+  .scene--szene-0 .scene__chat-wrap {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    /* Ragt 10vh nach oben in das 50svh Bild rein */
+    margin: -10vh 0 0 0 !important;
+    padding: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    background: transparent !important;
+    -webkit-overflow-scrolling: touch;
+    flex: 1 1 auto !important;
+  }
+
+  .scene--szene-0 .scene__chat-wrap .chat-panel {
+    flex: 1 1 auto;
+    min-height: 0;
+    height: 100%;
+    /* Etwas transparent, wie im Bild */
+    background: rgba(13, 18, 69, 0.90) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 24px 24px 0 0;
+    border: none;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .scene--szene-0 .scene__chat-wrap .chat-panel__header {
+    display: none;
+  }
+
+  .scene--szene-0 .scene__chat-wrap .chat-panel__messages {
+    padding-top: 1.5rem;
+  }
+}

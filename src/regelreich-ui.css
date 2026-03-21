@@ -1,0 +1,125 @@
+/* 
+   Regelreich UI Component Library - CSS 
+   Style: Comic / Modern Hybrid
+*/
+
+:root {
+  /* Color Palette */
+  --rr-blue-primary: #4DBEEE;
+  --rr-blue-dark: #202983;
+  --rr-green-primary: #8DE081;
+  --rr-green-dark: #5CAD52;
+  --rr-text-white: #FFFFFF;
+  --rr-text-dark: #000450;
+  
+  /* Shared Properties */
+  --rr-border-width: 3px;
+  --rr-shadow-offset: 4px;
+  --rr-font-main: 'Manrope', sans-serif;
+}
+
+/* 1. The Main Pulsing START Button */
+.btn-start-pulsing {
+  display: inline-block;
+  padding: 16px 48px;
+  background-color: var(--rr-blue-primary);
+  color: var(--rr-text-white);
+  font-family: var(--rr-font-main);
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: var(--rr-border-width) solid var(--rr-text-dark);
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 var(--rr-shadow-offset) 0 var(--rr-text-dark);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: pulse-grow 2s infinite ease-in-out;
+  outline: none;
+}
+
+.btn-start-pulsing:hover {
+  background-color: #69D0FF;
+  transform: translateY(-2px);
+}
+
+.btn-start-pulsing:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0 var(--rr-text-dark);
+}
+
+@keyframes pulse-grow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* 2. Dialog Interaction Buttons */
+.btn-dialog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-dialog-option {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-family: var(--rr-font-main);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border: var(--rr-border-width) solid var(--rr-text-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 var(--rr-shadow-offset) 0 var(--rr-text-dark);
+}
+
+/* Variant: Blue (Reasonable/Agree) */
+.btn-dialog-option.blue {
+  background-color: #3182CE;
+  color: white;
+}
+
+.btn-dialog-option.blue:hover {
+  background-color: #4299E1;
+}
+
+/* Variant: Green (Skeptical/Alternative) */
+.btn-dialog-option.green {
+  background-color: var(--rr-green-primary);
+  color: var(--rr-text-dark);
+}
+
+.btn-dialog-option.green:hover {
+  background-color: #A2F296;
+}
+
+.btn-dialog-option:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--rr-text-dark);
+}
+
+/* 3. The Comic Speech Bubble */
+.speech-bubble {
+  position: relative;
+  background: white;
+  border: var(--rr-border-width) solid var(--rr-text-dark);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid var(--rr-text-dark);
+}
