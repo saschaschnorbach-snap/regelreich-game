@@ -22,11 +22,11 @@ function resolveHostId(characterId, speakerName) {
 }
 
 function ClaraAvatar() {
-  return <img src="/backgrounds/avatar-klara.png" className="host-avatar__img" alt="Klara Blick" />
+  return <img src="/backgrounds/clara_blick_new.png" className="host-avatar__img" alt="Klara Blick" />
 }
 
 function UweAvatar() {
-  return <img src="/backgrounds/avatar-uwe.png" className="host-avatar__img" alt="Uwe R. Blick" />
+  return <img src="/backgrounds/uwe_blick_new.png" className="host-avatar__img" alt="Uwe R. Blick" />
 }
 
 function AmbassadorAvatar() {

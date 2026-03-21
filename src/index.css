@@ -2257,6 +2257,7 @@ html, body {
   .scene--activity .scene-background {
     height: 100svh !important;
     max-height: none !important;
+    background-size: 110% auto !important; /* Etwas zurück skaliert auf 110% (vorher cover) */
   }
   .scene--activity .scene__chat-wrap {
     top: 20svh !important;
