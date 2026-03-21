@@ -2257,7 +2257,7 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-/* Activity Screens - Chatbox 20% höher auf Mobile (startet bei 20svh) */
+/* Activity Screens - Chatbox 30% höher auf Mobile (startet bei 10svh) */
 @media (max-width: 768px) {
   .scene--activity .scene-background {
     height: 100svh !important;
@@ -2267,7 +2267,7 @@ html, body {
     bottom: auto !important;
   }
   .scene--activity .scene__chat-wrap {
-    top: 20svh !important;
+    top: 10svh !important;
     width: 90% !important;
     left: 50% !important;
     right: auto !important;
