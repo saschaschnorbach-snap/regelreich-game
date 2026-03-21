@@ -8,7 +8,7 @@ export const SCENES = [
   {
     id: -1,
     name: 'Start',
-    backgroundImage: '/backgrounds/WelcomeNew.jpg',
+    backgroundImage: '/backgrounds/WelcomeDesktop.jpg',
     backgroundImageMobile: '/backgrounds/WelcomeNew.jpg',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
