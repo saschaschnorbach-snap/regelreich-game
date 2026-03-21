@@ -134,7 +134,7 @@ export function MonitorActivityScene({
       lastMessageId,
       length: messages.length,
     }
-  }, [messages])
+  }, [messages, actionOptions])
 
   return (
     <div className="scene scene--activity">
@@ -593,25 +593,25 @@ export function MonitorActivityScene({
                   </div>
                 </article>
               ))}
-            </div>
 
-            <footer
-              className="chat-panel__options"
-              role="group"
-              aria-label="Aktivitätsoptionen"
-            >
-              {actionOptions.map((option, index) => (
-                <button
-                  key={option.id ?? index}
-                  type="button"
-                  className={`btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}`}
-                  onClick={() => onSelectOption?.(index, option)}
-                  disabled={Boolean(option.disabled)}
-                >
-                  {option.label}
-                </button>
-              ))}
-            </footer>
+              <footer
+                className="chat-panel__options"
+                role="group"
+                aria-label="Aktivitätsoptionen"
+              >
+                {actionOptions.map((option, index) => (
+                  <button
+                    key={option.id ?? index}
+                    type="button"
+                    className={`btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}`}
+                    onClick={() => onSelectOption?.(index, option)}
+                    disabled={Boolean(option.disabled)}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </footer>
+            </div>
         </div>
       </div>
     </div>

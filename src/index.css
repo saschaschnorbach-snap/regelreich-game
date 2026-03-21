@@ -2255,9 +2255,11 @@ html, body {
 /* Activity Screens - Chatbox 20% höher auf Mobile (startet bei 20svh) */
 @media (max-width: 768px) {
   .scene--activity .scene-background {
-    height: 100svh !important;
+    height: 80svh !important;
     max-height: none !important;
-    background-size: 110% auto !important; /* Etwas zurück skaliert auf 110% (vorher cover) */
+    background-size: cover !important;
+    top: 0 !important;
+    bottom: auto !important;
   }
   .scene--activity .scene__chat-wrap {
     top: 20svh !important;
