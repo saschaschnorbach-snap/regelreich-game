@@ -2199,7 +2199,7 @@ html, body {
 
 
 /* -----------------------------------------------
-   Universal Chat Layout (Desktop right side, Mobile 2/3 bottom)
+   Universal Chat Layout (Desktop right side, Mobile Szene 0 Stand davor)
    ----------------------------------------------- */
 .scene {
   display: flex;
@@ -2213,34 +2213,41 @@ html, body {
   position: relative;
 }
 
+/* Mobile Background */
 .scene .scene-background {
-  position: absolute !important;
-  inset: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
   width: 100% !important;
-  height: 100% !important;
-  max-height: none !important;
+  height: 50svh !important;
+  max-height: 50svh !important;
+  min-height: 0 !important;
   flex: none !important;
   background-size: cover !important;
   background-position: center top !important;
   z-index: 0;
 }
 
-/* Mobile Default Layout (Chatbox 2/3 bottom) */
+/* Mobile Chatbox */
 .scene__chat-wrap {
-  position: absolute !important;
+  position: relative !important;
   top: auto !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
   width: 100% !important;
-  height: 66.66svh !important; /* 2/3 of screen */
-  margin: 0 !important;
+  height: auto !important;
+  /* Ragt 10vh nach oben in das 50svh Bild rein (da background fixed 50svh ist, abzüglich 10vh Overlap = 40svh margin-top) */
+  margin: 40svh 0 0 0 !important;
   padding: 0;
   z-index: 30;
   display: flex;
   flex-direction: column;
   background: transparent !important;
   -webkit-overflow-scrolling: touch;
+  flex: 1 1 auto !important;
 }
 
 .scene__chat-wrap .chat-panel {
@@ -2374,6 +2381,14 @@ html, body {
 
 /* Desktop Layout (Right side floating) */
 @media (min-width: 769px) {
+  .scene .scene-background {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+  }
+
   .scene__chat-wrap {
     top: 5vh !important;
     right: 5vw !important;
