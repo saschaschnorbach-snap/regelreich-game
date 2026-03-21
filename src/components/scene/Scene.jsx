@@ -12,8 +12,10 @@ export function Scene({ scene, messages = [], options = [], onSelectOption, sele
   const AvatarComponent = getPlayerAvatarComponent(selectedAvatarId)
   const hideChatPanel = scene?.hideChatPanel === true
 
+  const sceneClass = scene?.id === 0 ? 'scene scene--szene-0' : 'scene'
+
   return (
-    <div className="scene">
+    <div className={sceneClass}>
       <SceneBackground
         backgroundImage={backgroundImage}
         backgroundPlaceholder={backgroundPlaceholder}
