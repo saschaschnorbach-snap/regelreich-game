@@ -2179,7 +2179,7 @@ html, body {
 @media (max-width: 768px) {
   .start-screen--comic {
     top: auto;
-    bottom: 21%;
+    bottom: 27%;
     transform: translateX(-50%);
   }
 }
@@ -2250,67 +2250,82 @@ html, body {
 
 
 /* -----------------------------------------------
-   Szene 0 - Layout (Desktop: Rechts schwebend / Mobile: Unten angedockt)
+   Universal Chat Layout (based on Szene 0 Mobile)
    ----------------------------------------------- */
-
-/* Desktop / Default Layout */
-.scene--szene-0 {
-  display: block;
-  position: relative;
+.scene {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   min-height: calc(100vh - 3rem);
   min-height: calc(100dvh - 3rem);
+  justify-content: flex-start;
+  align-items: stretch;
   overflow: hidden;
+  position: relative;
 }
 
-.scene--szene-0 .scene-background {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
+.scene .scene-background {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  width: 100% !important;
+  height: 50svh !important;
+  max-height: 50svh !important;
+  min-height: 0 !important;
+  flex: none !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  z-index: 0;
 }
 
-.scene--szene-0 .scene__chat-wrap {
-  position: absolute;
-  top: 5vh;
-  right: 5vw;
-  bottom: 5vh;
-  width: min(45vw, 550px);
+.scene__chat-wrap {
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: 100% !important;
+  height: auto !important;
+  /* Ragt 10vh nach oben in das 50svh Bild rein */
+  margin: 40svh 0 0 0 !important;
+  padding: 0;
   z-index: 30;
-  margin: 0;
   display: flex;
   flex-direction: column;
+  background: transparent !important;
+  -webkit-overflow-scrolling: touch;
+  flex: 1 1 auto !important;
 }
 
-/* Chat container inside Szene 0 */
-.scene--szene-0 .scene__chat-wrap .chat-panel {
-  flex: 1;
+.scene__chat-wrap .chat-panel {
+  flex: 1 1 auto;
+  min-height: 0;
   height: 100%;
-  border-radius: 24px;
+  background: rgba(13, 18, 69, 0.65) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px 24px 0 0;
   border: none;
-  background: #0D1245; /* Dunkles Blau */
-  color: var(--rr-text-white, #fff);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  color: var(--rr-text-white, #fff);
   overflow: hidden;
 }
 
-/* Header in Szene 0 Chat -> Remove Regelreich text */
-.scene--szene-0 .scene__chat-wrap .chat-panel__header {
+.scene__chat-wrap .chat-panel__header {
   display: none;
 }
 
-/* Messages area */
-.scene--szene-0 .scene__chat-wrap .chat-panel__messages {
-  padding: 2rem 1.5rem 1rem; /* Mehr Padding oben wegen fehlendem Header */
+.scene__chat-wrap .chat-panel__messages {
+  padding: 1.5rem 1.5rem 1rem;
   gap: 1.5rem;
   overflow-y: auto;
 }
 
-/* Using the imported speech-bubble class from UI library for messages in scene 0 */
-.scene--szene-0 .scene__chat-wrap .chat-message {
+.scene__chat-wrap .chat-message {
   display: flex;
   flex-direction: row;
   gap: 1.2rem;
@@ -2319,23 +2334,23 @@ html, body {
   position: relative;
 }
 
-.scene--szene-0 .scene__chat-wrap .chat-message--player {
+.scene__chat-wrap .chat-message--player {
   justify-content: flex-end;
 }
 
-.scene--szene-0 .scene__chat-wrap .speech-bubble-wrapper {
+.scene__chat-wrap .speech-bubble-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
 }
 
-.scene--szene-0 .scene__chat-wrap .chat-message--player .speech-bubble-wrapper {
-  flex: 0 1 85%; /* Make player bubbles slightly narrower (shorter) */
-  align-items: flex-end; /* Align the content to the right */
+.scene__chat-wrap .chat-message--player .speech-bubble-wrapper {
+  flex: 0 1 85%;
+  align-items: flex-end;
 }
 
-.scene--szene-0 .scene__chat-wrap .chat-message__speaker {
+.scene__chat-wrap .chat-message__speaker {
   position: static;
   font-family: var(--font-sans);
   font-size: 0.85rem;
@@ -2345,7 +2360,7 @@ html, body {
   padding-left: 0.5rem;
 }
 
-.scene--szene-0 .scene__chat-wrap .chat-message__avatar-wrap {
+.scene__chat-wrap .chat-message__avatar-wrap {
   width: 56px;
   height: 56px;
   flex-shrink: 0;
@@ -2359,13 +2374,13 @@ html, body {
   justify-content: center;
 }
 
-.scene--szene-0 .scene__chat-wrap .chat-message__avatar-img {
+.scene__chat-wrap .chat-message__avatar-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.scene--szene-0 .scene__chat-wrap .speech-bubble {
+.scene__chat-wrap .speech-bubble {
   flex: 1;
   min-width: 0;
   margin-bottom: 0;
@@ -2376,19 +2391,13 @@ html, body {
   margin-top: 2px;
 }
 
-.scene--szene-0 .scene__chat-wrap .speech-bubble::after {
+.scene__chat-wrap .speech-bubble::after,
+.scene__chat-wrap .speech-bubble.blue::after,
+.scene__chat-wrap .speech-bubble.green::after {
   display: none;
 }
 
-.scene--szene-0 .scene__chat-wrap .speech-bubble.blue::after {
-  display: none;
-}
-
-.scene--szene-0 .scene__chat-wrap .speech-bubble.green::after {
-  display: none;
-}
-
-.scene--szene-0 .scene__chat-wrap .chat-message__paragraph {
+.scene__chat-wrap .chat-message__paragraph {
   font-family: var(--font-sans);
   font-size: 1.05rem;
   font-weight: 400;
@@ -2397,80 +2406,11 @@ html, body {
   line-height: 1.5;
 }
 
-/* Options area - remove separation and use same container */
-.scene--szene-0 .scene__chat-wrap .chat-panel__options {
+.scene__chat-wrap .chat-panel__options {
   background: transparent;
   border-top: none;
   padding: 1rem 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-}
-
-/* Mobile Layout Szene 0 – Chatbox leicht transparent, ragt nach oben */
-@media (max-width: 768px) {
-  .scene--szene-0 {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-height: 0;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-
-  .scene--szene-0 .scene-background {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: auto !important;
-    width: 100% !important;
-    height: 50svh !important;
-    max-height: 50svh !important;
-    min-height: 0 !important;
-    flex: none !important;
-    background-size: cover !important;
-    background-position: center top !important;
-    z-index: 0;
-  }
-
-  .scene--szene-0 .scene__chat-wrap {
-    position: relative !important;
-    top: auto !important;
-    bottom: auto !important;
-    left: auto !important;
-    right: auto !important;
-    width: 100% !important;
-    height: auto !important;
-    /* Ragt 10vh nach oben in das 50svh Bild rein (da background fixed 50svh ist, müssen wir erst mal 50svh margin von oben lassen, abzüglich 10vh Overlap = 40svh margin-top) */
-    margin: 40svh 0 0 0 !important;
-    padding: 0;
-    z-index: 30;
-    display: flex;
-    flex-direction: column;
-    background: transparent !important;
-    -webkit-overflow-scrolling: touch;
-    flex: 1 1 auto !important;
-  }
-
-  .scene--szene-0 .scene__chat-wrap .chat-panel {
-    flex: 1 1 auto;
-    min-height: 0;
-    height: 100%;
-    /* Deutlich transparenter */
-    background: rgba(13, 18, 69, 0.65) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 24px 24px 0 0;
-    border: none;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  .scene--szene-0 .scene__chat-wrap .chat-panel__header {
-    display: none;
-  }
-
-  .scene--szene-0 .scene__chat-wrap .chat-panel__messages {
-    padding-top: 1.5rem;
-  }
 }

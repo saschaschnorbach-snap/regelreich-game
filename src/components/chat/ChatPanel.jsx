@@ -150,7 +150,7 @@ export function ChatPanel({
                   selectedHostId
                 )
 
-          const isRegelreich = title === 'Regelreich'
+          const isRegelreich = true
           
           return (
             <article
@@ -268,7 +268,7 @@ export function ChatPanel({
           )}
 
           {textOptions.map((option, index) => {
-            const isRegelreich = title === 'Regelreich'
+            const isRegelreich = true
             const btnClass = isRegelreich 
               ? `btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}` 
               : 'chat-panel__option'
