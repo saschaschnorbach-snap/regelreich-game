@@ -2148,6 +2148,21 @@ html, body {
 /* -----------------------------------------------
    Regelreich Start Screen & Comic UI
    ----------------------------------------------- */
+.scene--landing-start {
+  position: fixed;
+  inset: 0;
+  z-index: 100; /* above header */
+  background: black;
+}
+
+.scene--landing-start .scene-background {
+  position: fixed !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 0;
+}
+
 .start-screen--comic {
   display: flex;
   flex-direction: column;
@@ -2160,6 +2175,14 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .start-screen--comic {
+    top: auto;
+    bottom: 8%;
+    transform: translateX(-50%);
+  }
 }
 
 .rr-welcome-sign {
@@ -2346,16 +2369,15 @@ html, body {
 }
 
 .scene--szene-0 .scene__chat-wrap .speech-bubble::after {
-  top: 18px;
-  border-right-color: white;
+  display: none;
 }
 
 .scene--szene-0 .scene__chat-wrap .speech-bubble.blue::after {
-  border-right-color: #3182CE;
+  display: none;
 }
 
 .scene--szene-0 .scene__chat-wrap .speech-bubble.green::after {
-  border-right-color: var(--rr-green-primary);
+  display: none;
 }
 
 .scene--szene-0 .scene__chat-wrap .chat-message__paragraph {

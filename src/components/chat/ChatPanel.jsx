@@ -233,62 +233,62 @@ export function ChatPanel({
             </article>
           )
         })}
-      </div>
 
-      <footer
-        className="chat-panel__options"
-        role="group"
-        aria-label="Antwortoptionen"
-      >
-        {!!avatarOptions.length && (
-          <div
-            className="chat-panel__avatar-options"
-            role="group"
-            aria-label="Avatar-Auswahl"
-          >
-            {avatarOptions.map((option, index) => {
-              const avatarId =
-                option.avatarId || String(option.id || '').toLowerCase()
-              const AvatarComponent = getPlayerAvatarComponent(avatarId)
-              const isSelected = avatarId === selectedAvatarId
-
-              return (
-                <button
-                  key={option.id ?? `avatar-${index}`}
-                  type="button"
-                  className={`chat-panel__avatar-option ${isSelected ? 'chat-panel__avatar-option--selected' : ''}`}
-                  onClick={() => onSelectOption?.(index, option)}
-                  aria-label={`Avatar ${index + 1} auswählen`}
-                  aria-pressed={isSelected}
-                >
-                  <AvatarComponent className="chat-panel__avatar-image" />
-                </button>
-              )
-            })}
-          </div>
-        )}
-
-        {textOptions.map((option, index) => {
-          const isRegelreich = title === 'Regelreich'
-          const btnClass = isRegelreich 
-            ? `btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}` 
-            : 'chat-panel__option'
-
-          return (
-            <button
-              key={option.id ?? index}
-              type="button"
-              className={btnClass}
-              onClick={() =>
-                onSelectOption?.(index + avatarOptions.length, option)
-              }
-              disabled={Boolean(option.disabled)}
+        <footer
+          className="chat-panel__options"
+          role="group"
+          aria-label="Antwortoptionen"
+        >
+          {!!avatarOptions.length && (
+            <div
+              className="chat-panel__avatar-options"
+              role="group"
+              aria-label="Avatar-Auswahl"
             >
-              {option.label}
-            </button>
-          )
-        })}
-      </footer>
+              {avatarOptions.map((option, index) => {
+                const avatarId =
+                  option.avatarId || String(option.id || '').toLowerCase()
+                const AvatarComponent = getPlayerAvatarComponent(avatarId)
+                const isSelected = avatarId === selectedAvatarId
+
+                return (
+                  <button
+                    key={option.id ?? `avatar-${index}`}
+                    type="button"
+                    className={`chat-panel__avatar-option ${isSelected ? 'chat-panel__avatar-option--selected' : ''}`}
+                    onClick={() => onSelectOption?.(index, option)}
+                    aria-label={`Avatar ${index + 1} auswählen`}
+                    aria-pressed={isSelected}
+                  >
+                    <AvatarComponent className="chat-panel__avatar-image" />
+                  </button>
+                )
+              })}
+            </div>
+          )}
+
+          {textOptions.map((option, index) => {
+            const isRegelreich = title === 'Regelreich'
+            const btnClass = isRegelreich 
+              ? `btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}` 
+              : 'chat-panel__option'
+
+            return (
+              <button
+                key={option.id ?? index}
+                type="button"
+                className={btnClass}
+                onClick={() =>
+                  onSelectOption?.(index + avatarOptions.length, option)
+                }
+                disabled={Boolean(option.disabled)}
+              >
+                {option.label}
+              </button>
+            )
+          })}
+        </footer>
+      </div>
     </section>
   )
 }

@@ -766,7 +766,19 @@ export function GameScreen({
 }) {
   const scene = getSceneById(currentPart)
   const isStartScreen = Number(currentPart) === -1
-  const [stepIndex, setStepIndex] = useState(0)
+  const [stepIndex, setStepIndex] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const stored = window.localStorage.getItem(`stepIndex_part_${currentPart}`)
+      if (stored !== null) return Number(stored)
+    }
+    return 0
+  })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem(`stepIndex_part_${currentPart}`, stepIndex)
+    }
+  }, [currentPart, stepIndex])
   const [lastSelectedOptionId, setLastSelectedOptionId] = useState(null)
   const [chatMessages, setChatMessages] = useState([])
   const [sceneDialogs, setSceneDialogs] = useState(null)
@@ -2036,17 +2048,6 @@ export function GameScreen({
           backgroundPlaceholder={scene.backgroundPlaceholder}
         />
         <div className="start-screen start-screen--comic">
-          <div className="rr-welcome-sign">
-            <div className="rr-welcome-sign__inner">
-              <h1 className="rr-welcome-sign__title">
-                Willkommen<br />in Regelreich
-              </h1>
-              <p className="rr-welcome-sign__subtitle">
-                Regeln entstehen im Gespräch —<br />
-                lerne, Manipulation zu erkennen.
-              </p>
-            </div>
-          </div>
           <button
             type="button"
             className="btn-start-pulsing"
