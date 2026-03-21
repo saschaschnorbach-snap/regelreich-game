@@ -2258,7 +2258,7 @@ html, body {
     top: 20svh !important;
   }
   .scene--activity .scene__chat-wrap .chat-panel {
-    background: rgba(13, 18, 69, 0.80) !important;
+    background: rgba(13, 18, 69, 0.20) !important;
   }
 }
 .scene__chat-wrap .chat-panel {
