@@ -147,20 +147,20 @@ export function MonitorActivityScene({
         }
       />
 
-      <div className={`monitor-scene monitor-scene--${variant}`}>
-        <div className="monitor-scene__bezel">
-          <div className="monitor-scene__screen">
-            <header className="monitor-scene__header">
-              <h2 className="monitor-scene__title">
+      <div className="scene__chat-wrap">
+        
+          <div className="chat-panel">
+            <header className="chat-panel__header">
+              <h2 className="chat-panel__title">
                 {titleByVariant[variant] || titleByVariant.monitor}
               </h2>
             </header>
 
-            <div className="monitor-scene__messages" ref={scrollRef}>
+            <div className="chat-panel__messages" ref={scrollRef}>
               {leadMessages.map((message) => (
                 <article
                   key={message.id}
-                  className={`monitor-message monitor-message--${message.speakerType === 'player' ? 'player' : 'host'}`}
+                  className={`chat-message chat-message--${message.speakerType === 'player' ? 'player' : 'host'}`}
                 >
                   {message.speakerType !== 'player' && (
                     <HostAvatar
@@ -168,15 +168,17 @@ export function MonitorActivityScene({
                       speakerName={message.speakerName}
                     />
                   )}
-                  <div className="monitor-message__bubble">
+                  <div className="speech-bubble-wrapper">
                     {message.speakerType !== 'player' && (
-                      <strong className="monitor-message__speaker">
+                      <strong className="chat-message__speaker">
                         {message.speakerName || 'Host'}
                       </strong>
                     )}
-                    {renderMessageParagraphs(message.text, {
-                      className: 'monitor-message__paragraph',
-                    })}
+                    <div className={`speech-bubble ${message.speakerType === 'player' ? 'green' : ''}`}>
+                      {renderMessageParagraphs(message.text, {
+                        className: 'chat-message__paragraph',
+                      })}
+                    </div>
                   </div>
                 </article>
               ))}
@@ -569,7 +571,7 @@ export function MonitorActivityScene({
               {trailingMessages.map((message) => (
                 <article
                   key={message.id}
-                  className={`monitor-message monitor-message--${message.speakerType === 'player' ? 'player' : 'host'}`}
+                  className={`chat-message chat-message--${message.speakerType === 'player' ? 'player' : 'host'}`}
                 >
                   {message.speakerType !== 'player' && (
                     <HostAvatar
@@ -577,22 +579,24 @@ export function MonitorActivityScene({
                       speakerName={message.speakerName}
                     />
                   )}
-                  <div className="monitor-message__bubble">
+                  <div className="speech-bubble-wrapper">
                     {message.speakerType !== 'player' && (
-                      <strong className="monitor-message__speaker">
+                      <strong className="chat-message__speaker">
                         {message.speakerName || 'Host'}
                       </strong>
                     )}
-                    {renderMessageParagraphs(message.text, {
-                      className: 'monitor-message__paragraph',
-                    })}
+                    <div className={`speech-bubble ${message.speakerType === 'player' ? 'green' : ''}`}>
+                      {renderMessageParagraphs(message.text, {
+                        className: 'chat-message__paragraph',
+                      })}
+                    </div>
                   </div>
                 </article>
               ))}
             </div>
 
             <footer
-              className="monitor-scene__options"
+              className="chat-panel__options"
               role="group"
               aria-label="Aktivitätsoptionen"
             >
@@ -600,7 +604,7 @@ export function MonitorActivityScene({
                 <button
                   key={option.id ?? index}
                   type="button"
-                  className="monitor-scene__option"
+                  className={`btn-dialog-option ${index % 2 === 0 ? 'blue' : 'green'}`}
                   onClick={() => onSelectOption?.(index, option)}
                   disabled={Boolean(option.disabled)}
                 >
@@ -608,7 +612,6 @@ export function MonitorActivityScene({
                 </button>
               ))}
             </footer>
-          </div>
         </div>
       </div>
     </div>
