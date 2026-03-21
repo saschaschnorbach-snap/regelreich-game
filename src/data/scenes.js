@@ -8,8 +8,8 @@ export const SCENES = [
   {
     id: -1,
     name: 'Start',
-    backgroundImage: '/backgrounds/regelreich-city-highres.png',
-    backgroundImageMobile: '/backgrounds/regelreich-start-mobile-hires.png',
+    backgroundImage: '/backgrounds/WelcomeNew.jpg',
+    backgroundImageMobile: '/backgrounds/WelcomeNew.jpg',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
     speechBubbles: [],
@@ -18,8 +18,8 @@ export const SCENES = [
   {
     id: 0,
     name: 'Avatar wählen',
-    backgroundImage: '/backgrounds/regelreich-city-highres.png',
-    backgroundImageMobile: '/backgrounds/regelreich-start-mobile-hires.png',
+    backgroundImage: '/backgrounds/City.png',
+    backgroundImageMobile: '/backgrounds/City.png',
     backgroundPlaceholder: 'linear-gradient(180deg, #dff2ff 0%, #f7fcff 100%)',
     characters: [],
     speechBubbles: [],
@@ -28,7 +28,8 @@ export const SCENES = [
   {
     id: 1,
     name: 'Außenansicht & Einstieg',
-    backgroundImage: '/backgrounds/media-lab-entry-v2.png',
+    backgroundImage: '/backgrounds/NewMediaLabsEntry.jpg',
+    backgroundImageMobile: '/backgrounds/NewMediaLabsEntry.jpg',
     backgroundPlaceholder: 'linear-gradient(160deg, #87CEEB 0%, #B0E0E6 50%, #E0F4FF 100%)',
     characters: [
       { id: 'clara', name: 'Klara Blick', avatarUrl: null, position: { x: '18%', y: '62%' }, align: 'left' },
