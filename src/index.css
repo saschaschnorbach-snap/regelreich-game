@@ -1998,9 +1998,7 @@ html, body {
 
 /* Final override for Emma Poer sentence post styling (Part 2.3). */
 .monitor-select__paragraph--post .monitor-select__sentence,
-.monitor-select__paragraph--post .monitor-select__sentence:hover,
-.monitor-select__paragraph--post .monitor-select__sentence--selected,
-.monitor-select__paragraph--post .monitor-select__sentence--selected:hover {
+.monitor-select__paragraph--post .monitor-select__sentence:hover {
   background: #eceff1 !important;
   border-color: #fff !important;
   color: #000 !important;
@@ -2010,13 +2008,19 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.monitor-select__paragraph--post .monitor-select__sentence:hover,
-.monitor-select__paragraph--post .monitor-select__sentence--selected {
+.monitor-select__paragraph--post .monitor-select__sentence:hover {
   font-weight: 700 !important;
 }
 
+.monitor-select__paragraph--post .monitor-select__sentence--selected,
 .monitor-select__paragraph--post .monitor-select__sentence--selected:hover {
-  font-weight: 400 !important;
+  background: #4A6583 !important; /* dunkleres grau/blau */
+  border-color: #38516d !important;
+  color: #FFFFFF !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Emma Poer post cards in Part 2.4 */
@@ -2253,6 +2257,9 @@ html, body {
   .scene--activity .scene__chat-wrap {
     top: 20svh !important;
   }
+  .scene--activity .scene__chat-wrap .chat-panel {
+    background: rgba(13, 18, 69, 0.80) !important;
+  }
 }
 .scene__chat-wrap .chat-panel {
   flex: 1 1 auto;
@@ -2409,5 +2416,12 @@ html, body {
   
   .scene__chat-wrap .chat-panel__header {
     display: block;
+  }
+  
+  /* Center Activity Screens on Desktop */
+  .scene--activity .scene__chat-wrap {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
   }
 }
