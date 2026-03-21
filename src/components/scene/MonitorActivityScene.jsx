@@ -137,7 +137,7 @@ export function MonitorActivityScene({
   }, [messages])
 
   return (
-    <div className="scene">
+    <div className="scene scene--activity">
       <SceneBackground
         backgroundImage={backgroundImage}
         backgroundPlaceholder={
