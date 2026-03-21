@@ -2130,7 +2130,7 @@ html, body {
   z-index: 10;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 60%; /* 10% weiter nach unten geschoben für Desktop */
   left: 50%;
   transform: translate(-50%, -50%);
 }
