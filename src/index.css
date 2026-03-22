@@ -2241,10 +2241,12 @@ html, body {
 }
 @media (max-width: 768px) {
   .scene--szene-1 .scene-background {
-    background-size: 100% auto !important;
+    height: 45svh !important;
+    max-height: 45svh !important;
+    background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: top center !important;
-    background-color: #dff2ff !important;
+    background-position: center bottom !important;
+    background-color: transparent !important;
   }
 }
 
