@@ -42,8 +42,8 @@ export function SceneBackground({
           style={{
             ...desktopStyle,
             backgroundImage: `url(${backgroundImageMobile})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundSize: undefined, // Let CSS handle it
+            backgroundPosition: isWelcomeScene ? 'center top' : 'center',
           }} 
           aria-hidden="true" 
         />
