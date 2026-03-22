@@ -2241,12 +2241,15 @@ html, body {
 }
 @media (max-width: 768px) {
   .scene--szene-1 .scene-background {
-    height: 45svh !important;
-    max-height: 45svh !important;
+    height: 35svh !important;
+    max-height: 35svh !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center bottom !important;
     background-color: transparent !important;
+  }
+  .scene--szene-1 .scene__chat-wrap {
+    top: 32svh !important;
   }
 }
 
