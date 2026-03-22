@@ -2239,6 +2239,13 @@ html, body {
   height: 100svh !important;
   max-height: none !important;
 }
+@media (max-width: 768px) {
+  .scene--szene-1 .scene-background {
+    background-size: 100% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+  }
+}
 
 .scene__chat-wrap {
   position: absolute !important;
